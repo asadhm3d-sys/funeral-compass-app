@@ -19,6 +19,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useLang } from "@/lib/i18n";
+import { PROVIDER } from "@/lib/providerConfig";
 import { getRepository, useOwner } from "@/lib/plans";
 import { newReference, type SavedPlan } from "@/lib/plans/types";
 import { exportInvoicePdf } from "@/lib/invoicePdf";
@@ -36,13 +37,6 @@ const DEPOSIT_RATE = 0.1; // 10% booking deposit (demo)
 
 const isValidEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
 
-const OFFICES = [
-  "Eppingen",
-  "Sinsheim",
-  "Gemmingen",
-  "Schwaigern",
-  "Trauerhalle Mühlbach",
-];
 
 interface Props {
   state: WizardState;
@@ -236,7 +230,7 @@ export const PlanActions = ({ state }: Props) => {
                   <SelectValue placeholder={t("sb_office")} />
                 </SelectTrigger>
                 <SelectContent>
-                  {OFFICES.map((o) => (
+                  {PROVIDER.offices.map((o) => (
                     <SelectItem key={o} value={o}>
                       {o}
                     </SelectItem>

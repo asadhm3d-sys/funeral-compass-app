@@ -794,7 +794,7 @@ const dict = {
   // ── 24h help / trust / Sternenkinder ───────────────────────────
   eh_lead: { en: "You do not have to do this alone — we are available around the clock.", de: "Sie müssen das nicht allein durchstehen — wir sind rund um die Uhr für Sie da." },
   eh_phoneLabel: { en: "Call us:", de: "Rufen Sie uns an:" },
-  trust_master: { en: "Certified master undertaker (Bestattermeister)", de: "Meisterbetrieb (Bestattermeister)" },
+  trust_master: { en: "Qualified funeral professionals", de: "Qualifiziertes Bestattungsfachpersonal" },
   trust_personal: { en: "Personal consultation at 4 locations", de: "Persönliche Beratung an 4 Standorten" },
   trust_around: { en: "Available 24 hours a day", de: "24 Stunden erreichbar" },
   stars_notice: {

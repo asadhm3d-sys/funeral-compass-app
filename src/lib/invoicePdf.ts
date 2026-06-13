@@ -2,6 +2,7 @@ import jsPDF from "jspdf";
 import { translate, type Lang } from "@/lib/i18n";
 import { calculateBreakdown, calculateTotal, formatEUR, type WizardState } from "@/types/wizard";
 import type { SavedPlan } from "@/lib/plans/types";
+import { PROVIDER } from "@/lib/providerConfig";
 
 // =====================================================================
 // Mock invoice (Demo-Rechnung) — contains the mandatory invoice fields
@@ -16,12 +17,6 @@ import type { SavedPlan } from "@/lib/plans/types";
 
 const VAT_RATE = 0.19;
 
-const DEMO_PROVIDER = {
-  name: "Bestattungen Schöneberg (Demo)",
-  street: "Mühlbacher Str. 10",
-  city: "75031 Eppingen",
-  taxId: "USt-IdNr. DE999999999 (Demo)", // placeholder — not the real tax id
-};
 
 export interface InvoiceModel {
   demoBanner: string;
@@ -29,7 +24,7 @@ export interface InvoiceModel {
   invoiceNo: string;
   dateLabel: string;
   date: string;
-  provider: typeof DEMO_PROVIDER;
+  provider: typeof PROVIDER;
   customerLabel: string;
   customerLines: string[];
   referenceLabel: string;
@@ -68,7 +63,7 @@ export function buildInvoiceModel(plan: SavedPlan, lang: Lang): InvoiceModel {
     invoiceNo: `${translate(lang, "inv_number")} ${invoiceNo}`,
     dateLabel: translate(lang, "inv_date"),
     date: dateStr,
-    provider: DEMO_PROVIDER,
+    provider: PROVIDER,
     customerLabel: translate(lang, "inv_customer"),
     customerLines: customer,
     referenceLabel: translate(lang, "inv_reference"),
