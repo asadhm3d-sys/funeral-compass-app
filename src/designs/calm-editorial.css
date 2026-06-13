@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap");
+
+:root {
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 42 36% 97%;
+  --foreground: 30 12% 10%;
+  --card: 42 36% 98%;
+  --card-foreground: 30 12% 10%;
+  --popover: 42 36% 98%;
+  --popover-foreground: 30 12% 10%;
+  --primary: 30 12% 10%;
+  --primary-foreground: 42 36% 97%;
+  --primary-soft: 30 8% 44%;
+  --secondary: 42 18% 89%;
+  --secondary-foreground: 30 12% 10%;
+  --muted: 42 20% 91%;
+  --muted-foreground: 30 7% 42%;
+  --accent: 174 21% 38%;
+  --accent-foreground: 42 36% 97%;
+  --destructive: 357 48% 38%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 36 14% 78%;
+  --input: 30 7% 40%;
+  --ring: 174 21% 38%;
+  --radius: 2px;
+  --shadow-soft: 0 0 0 0 transparent;
+  --shadow-card: 0 0 0 0 transparent;
+  --gradient-warm: linear-gradient(180deg, hsl(42 36% 97%), hsl(42 34% 95%));
+  --gradient-hero: linear-gradient(135deg, hsl(42 36% 97%), hsl(42 22% 92%));
+  --transition-smooth: all 0.18s ease;
+  --sidebar-background: 42 36% 97%;
+  --sidebar-foreground: 30 12% 10%;
+  --sidebar-primary: 30 12% 10%;
+  --sidebar-primary-foreground: 42 36% 97%;
+  --sidebar-accent: 42 20% 91%;
+  --sidebar-accent-foreground: 30 12% 10%;
+  --sidebar-border: 36 14% 78%;
+  --sidebar-ring: 174 21% 38%;
+  --logo-ring-dark: #1b1a18;
+  --logo-ring-soft: #6f8c89;
+  --logo-path: #8fa8a3;
+  --logo-path-dark: #607c78;
+  --logo-flame: #b98223;
+  --logo-cutout: hsl(42 36% 97%);
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at 18% 10%, hsl(174 21% 38% / 0.08), transparent 18rem),
+    radial-gradient(circle at 88% 92%, hsl(36 45% 72% / 0.18), transparent 20rem),
+    repeating-linear-gradient(0deg, transparent 0 4.45rem, hsl(30 12% 10% / 0.045) 4.45rem 4.5rem),
+    hsl(42 36% 97%) !important;
+}
+
+.app-header {
+  background: hsl(var(--background) / 0.94) !important;
+  border-bottom: 1px solid hsl(var(--foreground) / 0.16) !important;
+  backdrop-filter: none !important;
+}
+
+.app-header-inner {
+  height: 68px !important;
+}
+
+.app-logo-mark {
+  border: 1px solid hsl(var(--foreground) / 0.22) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.app-logo-text {
+  font-family: "Source Serif 4", Georgia, serif !important;
+  font-size: 1.45rem !important;
+  font-weight: 600 !important;
+}
+
+.app-main {
+  max-width: 980px !important;
+  padding-top: 4.5rem !important;
+}
+
+.entry-title,
+.step-title {
+  font-family: "Source Serif 4", Georgia, serif !important;
+  font-size: clamp(2.7rem, 5vw, 5.6rem) !important;
+  line-height: 0.95 !important;
+  font-weight: 600 !important;
+}
+
+.entry-lead,
+.step-subtitle {
+  max-width: 620px !important;
+  font-size: 1.05rem !important;
+  line-height: 1.85 !important;
+}
+
+.entry-card-grid {
+  gap: 0 !important;
+  border-top: 1px solid hsl(var(--foreground) / 0.18);
+  border-left: 1px solid hsl(var(--foreground) / 0.18);
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 0 !important;
+  border-right: 1px solid hsl(var(--foreground) / 0.18) !important;
+  border-bottom: 1px solid hsl(var(--foreground) / 0.18) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.entry-card:hover,
+.option-card:hover {
+  transform: none !important;
+  background: hsl(var(--secondary) / 0.45) !important;
+}
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 5 / 3 !important;
+  border-bottom: 1px solid hsl(var(--foreground) / 0.18);
+}
+
+.entry-card img,
+.option-card img {
+  filter: grayscale(0.35) saturate(0.8);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.65rem !important;
+}
+
+.entry-card-icon {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border: 1px solid hsl(var(--foreground) / 0.18) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.entry-card-title,
+.option-card-title,
+.theme-section-title {
+  font-family: "Source Serif 4", Georgia, serif !important;
+  font-size: 1.35rem !important;
+}
+
+.app-button,
+.theme-pill {
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.theme-input {
+  border-radius: 0 !important;
+  background: transparent !important;
+  border-color: hsl(var(--foreground) / 0.28) !important;
+}
+
+.step-footer,
+.entry-actions {
+  border-top: 1px solid hsl(var(--foreground) / 0.18) !important;
+}
+
+.theme-progress-track {
+  height: 1px !important;
+  border-radius: 0 !important;
+  background: hsl(var(--foreground) / 0.2) !important;
+}
+
+.theme-progress-bar {
+  border-radius: 0 !important;
+  background: hsl(var(--foreground)) !important;
+}
+
+.app-footer {
+  border-top: 1px solid hsl(var(--foreground) / 0.16) !important;
+}

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-sans: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 38 30% 96%;
+  --foreground: 218 18% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 218 18% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 218 18% 12%;
+  --primary: 214 23% 24%;
+  --primary-foreground: 40 35% 97%;
+  --primary-soft: 214 13% 48%;
+  --secondary: 38 20% 89%;
+  --secondary-foreground: 218 18% 12%;
+  --muted: 35 21% 91%;
+  --muted-foreground: 218 8% 43%;
+  --accent: 31 48% 55%;
+  --accent-foreground: 218 18% 12%;
+  --destructive: 356 51% 38%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 32 16% 78%;
+  --input: 218 8% 42%;
+  --ring: 31 48% 55%;
+  --radius: 18px;
+  --shadow-soft: 0 26px 60px -42px hsl(214 26% 16% / 0.5);
+  --shadow-card: 0 18px 48px -38px hsl(214 22% 15% / 0.42);
+  --gradient-warm: linear-gradient(180deg, hsl(38 30% 96%) 0%, hsl(37 28% 91%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(38 30% 96%) 0%, hsl(31 32% 90%) 100%);
+  --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --sidebar-background: 38 30% 96%;
+  --sidebar-foreground: 218 18% 16%;
+  --sidebar-primary: 214 23% 24%;
+  --sidebar-primary-foreground: 40 35% 97%;
+  --sidebar-accent: 35 21% 91%;
+  --sidebar-accent-foreground: 218 18% 12%;
+  --sidebar-border: 32 16% 78%;
+  --sidebar-ring: 31 48% 55%;
+  --logo-ring-dark: #1f3549;
+  --logo-ring-soft: #6f9698;
+  --logo-path: #86a8a8;
+  --logo-path-dark: #5e8588;
+  --logo-flame: #d19a2f;
+  --logo-cutout: hsl(38 30% 96%);
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at 14% 16%, hsl(31 48% 55% / 0.2), transparent 17rem),
+    radial-gradient(circle at 88% 9%, hsl(214 23% 24% / 0.16), transparent 19rem),
+    linear-gradient(90deg, hsl(0 0% 100% / 0.44) 0 16%, transparent 16% 100%),
+    linear-gradient(180deg, hsl(38 30% 96%) 0%, hsl(34 31% 91%) 100%) !important;
+  background-size: auto, auto, 22rem 100%, auto !important;
+}
+
+.app-header {
+  border-bottom: 0 !important;
+  background: hsl(0 0% 100% / 0.72) !important;
+  box-shadow: 0 1px 0 hsl(var(--border) / 0.7), 0 18px 60px -54px hsl(214 25% 12% / 0.55);
+}
+
+.app-header-inner {
+  height: 76px !important;
+}
+
+.app-logo-mark {
+  border-radius: 14px !important;
+  background: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+.app-logo-text {
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+}
+
+.app-main {
+  max-width: 1120px !important;
+}
+
+.entry-hero,
+.step-header {
+  max-width: 760px !important;
+}
+
+.entry-title,
+.step-title {
+  font-size: clamp(2.25rem, 4vw, 4.6rem) !important;
+  line-height: 0.98 !important;
+  font-weight: 800 !important;
+}
+
+.entry-lead,
+.step-subtitle {
+  max-width: 680px;
+  font-size: 1.08rem !important;
+}
+
+.entry-card-grid {
+  gap: 1.5rem !important;
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 1px solid hsl(var(--border) / 0.75) !important;
+  border-radius: 24px !important;
+  background: hsl(var(--card) / 0.88) !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 16 / 10 !important;
+  border-bottom: 1px solid hsl(var(--border) / 0.65);
+}
+
+.entry-card img,
+.option-card img {
+  filter: saturate(0.82) contrast(1.04);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.55rem !important;
+}
+
+.entry-card-icon {
+  border-radius: 14px !important;
+  background: hsl(var(--secondary)) !important;
+}
+
+.app-button,
+.theme-pill {
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+.theme-input {
+  height: 2.9rem !important;
+  border-radius: 14px !important;
+  background: hsl(0 0% 100% / 0.78) !important;
+}
+
+.theme-progress-track {
+  height: 0.65rem !important;
+  border-radius: 999px !important;
+  background: hsl(var(--secondary)) !important;
+}
+
+.theme-progress-bar {
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))) !important;
+}
+
+.app-footer {
+  background: transparent !important;
+  border-top-style: dashed !important;
+}

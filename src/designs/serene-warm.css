@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap");
+
+:root {
+  --font-sans: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 40 23% 95%;
+  --foreground: 60 3% 11%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 60 3% 11%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 60 3% 11%;
+
+  --primary: 0 69% 31%;
+  --primary-foreground: 0 0% 100%;
+  --primary-soft: 0 20% 53%;
+
+  --secondary: 44 26% 87%;
+  --secondary-foreground: 60 3% 11%;
+
+  --muted: 38 20% 91%;
+  --muted-foreground: 0 1% 42%;
+
+  --accent: 44 22% 71%;
+  --accent-foreground: 60 3% 11%;
+
+  --destructive: 0 69% 31%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 34 14% 76%;
+  --input: 34 10% 50%;
+  --ring: 0 69% 31%;
+
+  --radius: 10px;
+
+  --shadow-soft: 0 14px 36px -26px hsl(0 30% 20% / 0.45);
+  --shadow-card: 0 10px 28px -24px hsl(0 20% 20% / 0.38);
+  --gradient-warm: linear-gradient(180deg, hsl(40 23% 95%) 0%, hsl(34 25% 92%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(40 23% 95%) 0%, hsl(0 0% 97%) 100%);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sidebar-background: 40 23% 96%;
+  --sidebar-foreground: 60 3% 18%;
+  --sidebar-primary: 0 69% 31%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 44 26% 90%;
+  --sidebar-accent-foreground: 60 3% 14%;
+  --sidebar-border: 34 14% 78%;
+  --sidebar-ring: 0 69% 31%;
+}
+
+.dark {
+  --background: 30 13% 12%;
+  --foreground: 42 22% 91%;
+  --card: 30 11% 16%;
+  --card-foreground: 42 22% 91%;
+  --popover: 30 11% 16%;
+  --popover-foreground: 42 22% 91%;
+  --primary: 4 45% 62%;
+  --primary-foreground: 30 13% 12%;
+  --primary-soft: 4 28% 34%;
+  --secondary: 34 13% 23%;
+  --secondary-foreground: 42 22% 91%;
+  --muted: 30 10% 19%;
+  --muted-foreground: 38 12% 68%;
+  --accent: 38 20% 35%;
+  --accent-foreground: 42 22% 91%;
+  --destructive: 4 45% 62%;
+  --destructive-foreground: 30 13% 12%;
+  --border: 30 10% 27%;
+  --input: 30 10% 27%;
+  --ring: 4 45% 62%;
+}
+

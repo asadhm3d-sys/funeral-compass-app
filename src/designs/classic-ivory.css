@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+:root {
+  --font-sans: "Libre Baskerville", Georgia, "Times New Roman", serif;
+
+  --background: 45 38% 96%;
+  --foreground: 32 18% 12%;
+
+  --card: 42 36% 99%;
+  --card-foreground: 32 18% 12%;
+
+  --popover: 42 36% 99%;
+  --popover-foreground: 32 18% 12%;
+
+  --primary: 332 44% 27%;
+  --primary-foreground: 45 38% 96%;
+  --primary-soft: 332 22% 47%;
+
+  --secondary: 43 28% 86%;
+  --secondary-foreground: 32 18% 12%;
+
+  --muted: 42 30% 90%;
+  --muted-foreground: 32 9% 41%;
+
+  --accent: 39 47% 61%;
+  --accent-foreground: 32 18% 12%;
+
+  --destructive: 356 48% 35%;
+  --destructive-foreground: 45 38% 96%;
+
+  --border: 38 22% 75%;
+  --input: 32 9% 44%;
+  --ring: 332 44% 27%;
+
+  --radius: 4px;
+
+  --shadow-soft: 0 16px 34px -28px hsl(32 30% 15% / 0.42);
+  --shadow-card: 0 10px 24px -22px hsl(32 30% 15% / 0.34);
+  --gradient-warm: linear-gradient(180deg, hsl(45 38% 96%) 0%, hsl(43 32% 92%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(45 38% 96%) 0%, hsl(39 42% 91%) 100%);
+  --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sidebar-background: 45 38% 97%;
+  --sidebar-foreground: 32 18% 16%;
+  --sidebar-primary: 332 44% 27%;
+  --sidebar-primary-foreground: 45 38% 96%;
+  --sidebar-accent: 42 30% 90%;
+  --sidebar-accent-foreground: 32 18% 13%;
+  --sidebar-border: 38 22% 77%;
+  --sidebar-ring: 332 44% 27%;
+}
+
+.dark {
+  --background: 32 18% 10%;
+  --foreground: 45 30% 91%;
+  --card: 32 16% 14%;
+  --card-foreground: 45 30% 91%;
+  --popover: 32 16% 14%;
+  --popover-foreground: 45 30% 91%;
+  --primary: 39 45% 63%;
+  --primary-foreground: 32 18% 10%;
+  --primary-soft: 332 22% 42%;
+  --secondary: 32 14% 22%;
+  --secondary-foreground: 45 30% 91%;
+  --muted: 32 13% 18%;
+  --muted-foreground: 45 12% 68%;
+  --accent: 332 30% 48%;
+  --accent-foreground: 45 30% 91%;
+  --destructive: 356 48% 58%;
+  --destructive-foreground: 32 18% 10%;
+  --border: 32 13% 27%;
+  --input: 32 13% 27%;
+  --ring: 39 45% 63%;
+}
+

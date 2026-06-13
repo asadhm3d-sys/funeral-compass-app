@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-sans: "Afacad", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 86 30% 94%;
+  --foreground: 155 18% 13%;
+  --card: 88 28% 98%;
+  --card-foreground: 155 18% 13%;
+  --popover: 88 28% 98%;
+  --popover-foreground: 155 18% 13%;
+  --primary: 154 33% 27%;
+  --primary-foreground: 88 28% 98%;
+  --primary-soft: 154 18% 48%;
+  --secondary: 70 22% 86%;
+  --secondary-foreground: 155 18% 13%;
+  --muted: 88 20% 88%;
+  --muted-foreground: 155 9% 40%;
+  --accent: 26 44% 55%;
+  --accent-foreground: 155 18% 13%;
+  --destructive: 356 48% 38%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 88 18% 75%;
+  --input: 155 9% 40%;
+  --ring: 154 33% 27%;
+  --radius: 28px;
+  --shadow-soft: 0 24px 58px -42px hsl(154 32% 18% / 0.48);
+  --shadow-card: 0 16px 42px -34px hsl(154 30% 18% / 0.36);
+  --gradient-warm: linear-gradient(145deg, hsl(86 30% 94%) 0%, hsl(66 28% 90%) 55%, hsl(154 18% 88%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(86 30% 94%), hsl(154 18% 88%));
+  --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --sidebar-background: 86 30% 94%;
+  --sidebar-foreground: 155 18% 13%;
+  --sidebar-primary: 154 33% 27%;
+  --sidebar-primary-foreground: 88 28% 98%;
+  --sidebar-accent: 88 20% 88%;
+  --sidebar-accent-foreground: 155 18% 13%;
+  --sidebar-border: 88 18% 75%;
+  --sidebar-ring: 154 33% 27%;
+  --logo-ring-dark: #244938;
+  --logo-ring-soft: #6c9583;
+  --logo-path: #8aa99b;
+  --logo-path-dark: #5f8274;
+  --logo-flame: #c7892f;
+  --logo-cutout: hsl(86 30% 94%);
+}
+
+.app-shell {
+  background:
+    radial-gradient(ellipse at 12% 18%, hsl(154 33% 27% / 0.16), transparent 21rem),
+    radial-gradient(ellipse at 92% 16%, hsl(26 44% 55% / 0.16), transparent 18rem),
+    radial-gradient(ellipse at 62% 88%, hsl(70 35% 62% / 0.25), transparent 24rem),
+    linear-gradient(145deg, hsl(86 30% 94%), hsl(66 28% 90%) 52%, hsl(154 18% 88%)) !important;
+}
+
+.app-header {
+  border-bottom: 0 !important;
+  background: hsl(88 28% 98% / 0.72) !important;
+  box-shadow: 0 1px 0 hsl(var(--border) / 0.6);
+}
+
+.app-header-inner {
+  height: 74px !important;
+}
+
+.app-logo-mark {
+  border-radius: 18px 18px 8px 18px !important;
+  background: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+.app-logo-text {
+  font-size: 1.28rem !important;
+  font-weight: 800 !important;
+}
+
+.app-main {
+  max-width: 1100px !important;
+}
+
+.entry-title,
+.step-title {
+  font-size: clamp(2.4rem, 5vw, 5rem) !important;
+  line-height: 0.98 !important;
+  font-weight: 800 !important;
+}
+
+.entry-lead,
+.step-subtitle {
+  max-width: 660px !important;
+  font-size: 1.1rem !important;
+}
+
+.entry-card-grid {
+  gap: 1.25rem !important;
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 1px solid hsl(var(--border) / 0.65) !important;
+  border-radius: 30px 30px 14px 30px !important;
+  background: hsl(var(--card) / 0.82) !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.entry-card:hover,
+.option-card:hover {
+  transform: translateY(-3px) !important;
+}
+
+.option-card.is-selected,
+.entry-card.is-selected {
+  border-color: hsl(var(--primary)) !important;
+  border-width: 2px !important;
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.18), var(--shadow-card) !important;
+}
+
+
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 4 / 3 !important;
+  border-radius: 26px 26px 0 0 !important;
+}
+
+.entry-card img,
+.option-card img {
+  filter: saturate(0.92) contrast(1.02) brightness(0.98);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.55rem !important;
+}
+
+.entry-card-icon {
+  border-radius: 16px 16px 6px 16px !important;
+  background: hsl(var(--primary) / 0.1) !important;
+  color: hsl(var(--primary)) !important;
+}
+
+.app-button,
+.theme-pill {
+  border-radius: 18px 18px 8px 18px !important;
+}
+
+.theme-input {
+  height: 2.85rem !important;
+  border-radius: 18px 18px 8px 18px !important;
+  background: hsl(var(--card) / 0.76) !important;
+}
+
+.theme-progress-track {
+  height: 0.55rem !important;
+  background: hsl(var(--card) / 0.9) !important;
+}
+
+.theme-progress-bar {
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))) !important;
+}
+
+.app-footer {
+  border-top: 0 !important;
+}

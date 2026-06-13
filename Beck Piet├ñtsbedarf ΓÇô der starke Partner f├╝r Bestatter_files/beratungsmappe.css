@@ -1,0 +1,99 @@
+#main {
+    display: flex;
+	height: 750px;
+	padding-bottom: 2em;
+	width: 100%;
+}
+#categ-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em auto;
+    margin-bottom: 2em;
+}
+
+.categ-btn {
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.categ-btn span.active {
+    cursor: default;
+    text-decoration: underline;
+}
+
+#articles {
+    flex-basis: 15%;
+	overflow: auto;
+	overflow-x: visible;
+    padding: 0 1em 0 0.2em;
+}
+#article {
+    position: relative;
+    flex: 1;
+}
+#articles-listbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+div.ar-btn {
+	margin: 0.5em 0 0.5em 0;
+    padding: 0.5em;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+div.ar-btn * {
+    text-align: center;
+    width: auto;
+}
+div.ar-btn p{
+	margin: 0;
+}
+
+#artikel-next, #artikel-prev {
+    font-size: 32px;
+    position: absolute;
+    cursor: pointer;
+	color: #fff;
+	background: #0bb0e7;
+    padding: 0.25em;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    line-height: 0.25em;
+    text-align: center;
+    top: 45%;
+}
+#artikel-prev{
+	left: 1em;
+} 
+#artikel-next{
+	right: 1em;
+}
+#artikel-stage{
+	padding: 0 2em;
+}
+
+/* wishlist add */
+#add-button-cell {
+    /*padding: 3em 3em 0 0;*/
+    text-align: right;
+}
+.wladd span  {
+    /*font-size: 82px;*/
+    cursor: pointer;
+}
+.wladd span.button.check  {
+    background-color: #487e4c; 
+}
+@media screen and (max-width: 1100px){
+	#articles{
+		flex-basis: 30%;
+	}
+	.mappe{
+		width: 100%!important;
+	}
+}

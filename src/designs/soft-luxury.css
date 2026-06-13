@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@600;700&display=swap");
+
+:root {
+  --font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 220 13% 10%;
+  --foreground: 42 31% 92%;
+  --card: 220 12% 14%;
+  --card-foreground: 42 31% 92%;
+  --popover: 220 12% 14%;
+  --popover-foreground: 42 31% 92%;
+  --primary: 42 54% 68%;
+  --primary-foreground: 220 13% 10%;
+  --primary-soft: 42 28% 48%;
+  --secondary: 220 10% 20%;
+  --secondary-foreground: 42 31% 92%;
+  --muted: 220 10% 18%;
+  --muted-foreground: 42 12% 68%;
+  --accent: 353 28% 54%;
+  --accent-foreground: 42 31% 92%;
+  --destructive: 356 48% 58%;
+  --destructive-foreground: 220 13% 10%;
+  --border: 42 22% 42%;
+  --input: 42 12% 64%;
+  --ring: 42 54% 68%;
+  --radius: 16px;
+  --shadow-soft: 0 28px 70px -44px hsl(0 0% 0% / 0.8);
+  --shadow-card: 0 24px 64px -42px hsl(0 0% 0% / 0.74);
+  --gradient-warm: linear-gradient(160deg, hsl(220 13% 10%) 0%, hsl(220 11% 15%) 48%, hsl(32 16% 16%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(220 13% 10%), hsl(32 16% 16%));
+  --transition-smooth: all 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  --sidebar-background: 220 13% 10%;
+  --sidebar-foreground: 42 31% 92%;
+  --sidebar-primary: 42 54% 68%;
+  --sidebar-primary-foreground: 220 13% 10%;
+  --sidebar-accent: 220 10% 20%;
+  --sidebar-accent-foreground: 42 31% 92%;
+  --sidebar-border: 42 22% 42%;
+  --sidebar-ring: 42 54% 68%;
+  --logo-ring-dark: #e1c47a;
+  --logo-ring-soft: #8f7771;
+  --logo-path: #9fb7b2;
+  --logo-path-dark: #748d8d;
+  --logo-flame: #f0c86e;
+  --logo-cutout: hsl(220 13% 10%);
+}
+
+.app-shell {
+  background:
+    radial-gradient(ellipse at 50% -12%, hsl(42 54% 68% / 0.24), transparent 31rem),
+    radial-gradient(circle at 12% 78%, hsl(353 28% 54% / 0.22), transparent 18rem),
+    radial-gradient(circle at 82% 72%, hsl(42 30% 30% / 0.18), transparent 21rem),
+    linear-gradient(180deg, hsl(220 13% 10%) 0%, hsl(220 12% 12%) 46%, hsl(32 16% 16%) 100%) !important;
+  color: hsl(var(--foreground));
+}
+
+.app-header {
+  border-bottom: 1px solid hsl(var(--border) / 0.28) !important;
+  background: hsl(220 13% 10% / 0.78) !important;
+  box-shadow: 0 20px 70px -58px hsl(0 0% 0% / 0.85);
+}
+
+.app-logo-mark {
+  border: 1px solid hsl(var(--primary) / 0.52) !important;
+  background: hsl(var(--primary) / 0.12) !important;
+  color: hsl(var(--primary)) !important;
+}
+
+.app-logo-text {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-size: 1.35rem !important;
+}
+
+.app-main {
+  max-width: 1060px !important;
+}
+
+.entry-title,
+.step-title {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-size: clamp(2.6rem, 5vw, 5.2rem) !important;
+  line-height: 0.98 !important;
+  font-weight: 700 !important;
+}
+
+.entry-lead,
+.step-subtitle {
+  color: hsl(var(--muted-foreground)) !important;
+  font-size: 1.08rem !important;
+}
+
+.entry-card-grid {
+  gap: 1.25rem !important;
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 1px solid hsl(var(--border) / 0.34) !important;
+  border-radius: 22px !important;
+  background:
+    linear-gradient(180deg, hsl(0 0% 100% / 0.08), hsl(0 0% 100% / 0.035)),
+    hsl(var(--card) / 0.9) !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.entry-card:hover,
+.option-card:hover {
+  border-color: hsl(var(--primary) / 0.68) !important;
+}
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 16 / 9 !important;
+  background: hsl(220 10% 18%) !important;
+}
+
+.entry-card img,
+.option-card img {
+  filter: grayscale(0.24) sepia(0.12) saturate(0.85) brightness(0.78);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.65rem !important;
+}
+
+.entry-card-icon {
+  background: hsl(var(--primary) / 0.13) !important;
+  color: hsl(var(--primary)) !important;
+  border: 1px solid hsl(var(--primary) / 0.35);
+}
+
+.app-button {
+  border-radius: 999px !important;
+  box-shadow: 0 14px 28px -20px hsl(var(--primary) / 0.55) !important;
+}
+
+.theme-pill {
+  border-radius: 999px !important;
+  background: hsl(0 0% 100% / 0.04) !important;
+}
+
+.theme-input {
+  border-radius: 14px !important;
+  border-color: hsl(var(--border) / 0.45) !important;
+  background: hsl(0 0% 100% / 0.06) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.theme-progress-track {
+  background: hsl(0 0% 100% / 0.08) !important;
+}
+
+.theme-progress-bar {
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))) !important;
+}
+
+.step-footer,
+.entry-actions,
+.app-footer {
+  border-color: hsl(var(--border) / 0.28) !important;
+}

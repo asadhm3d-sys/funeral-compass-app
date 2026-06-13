@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<!--Cookie-Consent-Tool-->
+					<script>if(!("gdprAppliesGlobally" in window)){window.gdprAppliesGlobally=true}if(!("cmp_id" in window)||window.cmp_id<1){window.cmp_id=0}if(!("cmp_cdid" in window)){window.cmp_cdid="b83477f321681"}if(!("cmp_params" in window)){window.cmp_params=""}if(!("cmp_host" in window)){window.cmp_host="d.delivery.consentmanager.net"}if(!("cmp_cdn" in window)){window.cmp_cdn="cdn.consentmanager.net"}if(!("cmp_proto" in window)){window.cmp_proto="https:"}if(!("cmp_codesrc" in window)){window.cmp_codesrc="1"}window.cmp_getsupportedLangs=function(){var b=["DE","EN","FR","IT","NO","DA","FI","ES","PT","RO","BG","ET","EL","GA","HR","LV","LT","MT","NL","PL","SV","SK","SL","CS","HU","RU","SR","ZH","TR","UK","AR","BS"];if("cmp_customlanguages" in window){for(var a=0;a<window.cmp_customlanguages.length;a++){b.push(window.cmp_customlanguages[a].l.toUpperCase())}}return b};window.cmp_getRTLLangs=function(){var a=["AR"];if("cmp_customlanguages" in window){for(var b=0;b<window.cmp_customlanguages.length;b++){if("r" in window.cmp_customlanguages[b]&&window.cmp_customlanguages[b].r){a.push(window.cmp_customlanguages[b].l)}}}return a};window.cmp_getlang=function(j){if(typeof(j)!="boolean"){j=true}if(j&&typeof(cmp_getlang.usedlang)=="string"&&cmp_getlang.usedlang!==""){return cmp_getlang.usedlang}var g=window.cmp_getsupportedLangs();var c=[];var f=location.hash;var e=location.search;var a="languages" in navigator?navigator.languages:[];if(f.indexOf("cmplang=")!=-1){c.push(f.substr(f.indexOf("cmplang=")+8,2).toUpperCase())}else{if(e.indexOf("cmplang=")!=-1){c.push(e.substr(e.indexOf("cmplang=")+8,2).toUpperCase())}else{if("cmp_setlang" in window&&window.cmp_setlang!=""){c.push(window.cmp_setlang.toUpperCase())}else{if(a.length>0){for(var d=0;d<a.length;d++){c.push(a[d])}}}}}if("language" in navigator){c.push(navigator.language)}if("userLanguage" in navigator){c.push(navigator.userLanguage)}var h="";for(var d=0;d<c.length;d++){var b=c[d].toUpperCase();if(g.indexOf(b)!=-1){h=b;break}if(b.indexOf("-")!=-1){b=b.substr(0,2)}if(g.indexOf(b)!=-1){h=b;break}}if(h==""&&typeof(cmp_getlang.defaultlang)=="string"&&cmp_getlang.defaultlang!==""){return cmp_getlang.defaultlang}else{if(h==""){h="EN"}}h=h.toUpperCase();return h};(function(){var y=document;var z=y.getElementsByTagName;var j=window;var r="";var b="_en";if("cmp_getlang" in j){r=j.cmp_getlang().toLowerCase();if("cmp_customlanguages" in j){var g=j.cmp_customlanguages;for(var u=0;u<g.length;u++){if(g[u].l.toLowerCase()==r){r="en";break}}}b="_"+r}function A(e,D){e+="=";var d="";var m=e.length;var i=location;var E=i.hash;var w=i.search;var s=E.indexOf(e);var C=w.indexOf(e);if(s!=-1){d=E.substring(s+m,9999)}else{if(C!=-1){d=w.substring(C+m,9999)}else{return D}}var B=d.indexOf("&");if(B!=-1){d=d.substring(0,B)}return d}var n=("cmp_proto" in j)?j.cmp_proto:"https:";if(n!="http:"&&n!="https:"){n="https:"}var h=("cmp_ref" in j)?j.cmp_ref:location.href;if(h.length>300){h=h.substring(0,300)}var k=y.createElement("script");k.setAttribute("data-cmp-ab","1");var c=A("cmpdesign","cmp_design" in j?j.cmp_design:"");var f=A("cmpregulationkey","cmp_regulationkey" in j?j.cmp_regulationkey:"");var v=A("cmpgppkey","cmp_gppkey" in j?j.cmp_gppkey:"");var p=A("cmpatt","cmp_att" in j?j.cmp_att:"");k.src=n+"//"+j.cmp_host+"/delivery/cmp.php?"+("cmp_id" in j&&j.cmp_id>0?"id="+j.cmp_id:"")+("cmp_cdid" in j?"&cdid="+j.cmp_cdid:"")+"&h="+encodeURIComponent(h)+(c!=""?"&cmpdesign="+encodeURIComponent(c):"")+(f!=""?"&cmpregulationkey="+encodeURIComponent(f):"")+(v!=""?"&cmpgppkey="+encodeURIComponent(v):"")+(p!=""?"&cmpatt="+encodeURIComponent(p):"")+("cmp_params" in j?"&"+j.cmp_params:"")+(y.cookie.length>0?"&__cmpfcc=1":"")+"&l="+r.toLowerCase()+"&o="+(new Date()).getTime();k.type="text/javascript";k.async=true;if(y.currentScript&&y.currentScript.parentElement){y.currentScript.parentElement.appendChild(k)}else{if(y.body){y.body.appendChild(k)}else{var q=["body","div","span","script","head"];for(var u=0;u<q.length;u++){var x=z(q[u]);if(x.length>0){x[0].appendChild(k);break}}}}var o="js";var t=A("cmpdebugunminimized","cmpdebugunminimized" in j?j.cmpdebugunminimized:0)>0?"":".min";var a=A("cmpdebugcoverage","cmp_debugcoverage" in j?j.cmp_debugcoverage:"");if(a=="1"){o="instrumented";t=""}var k=y.createElement("script");k.src=n+"//"+j.cmp_cdn+"/delivery/"+o+"/cmp"+b+t+".js";k.type="text/javascript";k.setAttribute("data-cmp-ab","1");k.async=true;if(y.currentScript&&y.currentScript.parentElement){y.currentScript.parentElement.appendChild(k)}else{if(y.body){y.body.appendChild(k)}else{var x=z("body");if(x.length==0){x=z("div")}if(x.length==0){x=z("span")}if(x.length==0){x=z("ins")}if(x.length==0){x=z("script")}if(x.length==0){x=z("head")}if(x.length>0){x[0].appendChild(k)}}}})();window.cmp_addFrame=function(b){if(!window.frames[b]){if(document.body){var a=document.createElement("iframe");a.style.cssText="display:none";if("cmp_cdn" in window&&"cmp_ultrablocking" in window&&window.cmp_ultrablocking>0){a.src="//"+window.cmp_cdn+"/delivery/empty.html"}a.name=b;a.setAttribute("title","Intentionally hidden, please ignore");a.setAttribute("role","none");a.setAttribute("tabindex","-1");document.body.appendChild(a)}else{window.setTimeout(window.cmp_addFrame,10,b)}}};window.cmp_rc=function(c,b){var j=document.cookie;var g="";var e=0;var f=false;while(j!=""&&e<100){e++;while(j.substr(0,1)==" "){j=j.substr(1,j.length)}var h=j.substring(0,j.indexOf("="));if(j.indexOf(";")!=-1){var k=j.substring(j.indexOf("=")+1,j.indexOf(";"))}else{var k=j.substr(j.indexOf("=")+1,j.length)}if(c==h){g=k;f=true}var d=j.indexOf(";")+1;if(d==0){d=j.length}j=j.substring(d,j.length)}if(!f&&typeof(b)=="string"){g=b}return(g)};window.cmp_stub=function(){var a=arguments;__cmp.a=__cmp.a||[];if(!a.length){return __cmp.a}else{if(a[0]==="ping"){if(a[1]===2){a[2]({gdprApplies:gdprAppliesGlobally,cmpLoaded:false,cmpStatus:"stub",displayStatus:"hidden",apiVersion:"2.2",cmpId:31},true)}else{a[2](false,true)}}else{if(a[0]==="getUSPData"){a[2]({version:1,uspString:window.cmp_rc("__cmpccpausps","1---")},true)}else{if(a[0]==="getTCData"){__cmp.a.push([].slice.apply(a))}else{if(a[0]==="addEventListener"||a[0]==="removeEventListener"){__cmp.a.push([].slice.apply(a))}else{if(a.length==4&&a[3]===false){a[2]({},false)}else{__cmp.a.push([].slice.apply(a))}}}}}}};window.cmp_gpp_ping=function(){return{gppVersion:"1.1",cmpStatus:"stub",cmpDisplayStatus:"hidden",signalStatus:"not ready",supportedAPIs:["5:tcfcav1","7:usnat","8:usca","9:usva","10:usco","11:usut","12:usct"],cmpId:31,sectionList:[],applicableSections:[0],gppString:"",parsedSections:{}}};window.cmp_gppstub=function(){var c=arguments;__gpp.q=__gpp.q||[];if(!c.length){return __gpp.q}var h=c[0];var g=c.length>1?c[1]:null;var f=c.length>2?c[2]:null;var a=null;var j=false;if(h==="ping"){a=window.cmp_gpp_ping();j=true}else{if(h==="addEventListener"){__gpp.e=__gpp.e||[];if(!("lastId" in __gpp)){__gpp.lastId=0}__gpp.lastId++;var d=__gpp.lastId;__gpp.e.push({id:d,callback:g});a={eventName:"listenerRegistered",listenerId:d,data:true,pingData:window.cmp_gpp_ping()};j=true}else{if(h==="removeEventListener"){__gpp.e=__gpp.e||[];a=false;for(var e=0;e<__gpp.e.length;e++){if(__gpp.e[e].id==f){__gpp.e[e].splice(e,1);a=true;break}}j=true}else{__gpp.q.push([].slice.apply(c))}}}if(a!==null&&typeof(g)==="function"){g(a,j)}};window.cmp_msghandler=function(d){var a=typeof d.data==="string";try{var c=a?JSON.parse(d.data):d.data}catch(f){var c=null}if(typeof(c)==="object"&&c!==null&&"__cmpCall" in c){var b=c.__cmpCall;window.__cmp(b.command,b.parameter,function(h,g){var e={__cmpReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")})}if(typeof(c)==="object"&&c!==null&&"__uspapiCall" in c){var b=c.__uspapiCall;window.__uspapi(b.command,b.version,function(h,g){var e={__uspapiReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")})}if(typeof(c)==="object"&&c!==null&&"__tcfapiCall" in c){var b=c.__tcfapiCall;window.__tcfapi(b.command,b.version,function(h,g){var e={__tcfapiReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")},b.parameter)}if(typeof(c)==="object"&&c!==null&&"__gppCall" in c){var b=c.__gppCall;window.__gpp(b.command,function(h,g){var e={__gppReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")},"parameter" in b?b.parameter:null,"version" in b?b.version:1)}};window.cmp_setStub=function(a){if(!(a in window)||(typeof(window[a])!=="function"&&typeof(window[a])!=="object"&&(typeof(window[a])==="undefined"||window[a]!==null))){window[a]=window.cmp_stub;window[a].msgHandler=window.cmp_msghandler;window.addEventListener("message",window.cmp_msghandler,false)}};window.cmp_setGppStub=function(a){if(!(a in window)||(typeof(window[a])!=="function"&&typeof(window[a])!=="object"&&(typeof(window[a])==="undefined"||window[a]!==null))){window[a]=window.cmp_gppstub;window[a].msgHandler=window.cmp_msghandler;window.addEventListener("message",window.cmp_msghandler,false)}};window.cmp_addFrame("__cmpLocator");if(!("cmp_disableusp" in window)||!window.cmp_disableusp){window.cmp_addFrame("__uspapiLocator")}if(!("cmp_disabletcf" in window)||!window.cmp_disabletcf){window.cmp_addFrame("__tcfapiLocator")}if(!("cmp_disablegpp" in window)||!window.cmp_disablegpp){window.cmp_addFrame("__gppLocator")}window.cmp_setStub("__cmp");if(!("cmp_disabletcf" in window)||!window.cmp_disabletcf){window.cmp_setStub("__tcfapi")}if(!("cmp_disableusp" in window)||!window.cmp_disableusp){window.cmp_setStub("__uspapi")}if(!("cmp_disablegpp" in window)||!window.cmp_disablegpp){window.cmp_setGppStub("__gpp")};</script><script data-cmp-ab="1" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/cmp.php" type="text/javascript" async=""></script><script src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/cmp_en.min.js" type="text/javascript" data-cmp-ab="1" async=""></script>
+				
+		<title>Beck Pietätsbedarf – der starke Partner für Bestatter</title>
+		<meta charset="UTF-8">
+		<meta name="Description" lang="de" content="Entdecken Sie alles für den Bestatter auf unserer Website! Wir sind Ihr Partner für Särge ✔ Urnen ✔ Bestattungszubehör ✔ Sonderwünsche ✔ → Jetzt klicken">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="google-site-verification" content="TBjNId8TqP5T__a0M3J3WBeEGvebz-za2pJHdhVY1fA">
+		
+		<meta name="msapplication-TileColor" content="#0d3172">
+<meta name="msapplication-TileImage" content="https://www.beck-pietaetsbedarf.de/images/icons/favicon/ms-icon-144x144.png">   
+<meta name="theme-color" content="#0d3172">
+
+<!--Favicon / Lesezeichen-->
+<link rel="shortcut icon" href="https://www.beck-pietaetsbedarf.de/images/favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://www.beck-pietaetsbedarf.de/images/favicon/favicon.ico">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.beck-pietaetsbedarf.de/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.beck-pietaetsbedarf.de/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.beck-pietaetsbedarf.de/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://www.beck-pietaetsbedarf.de/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="https://www.beck-pietaetsbedarf.de/images/favicon/safari-pinned-tab.svg" color="#0d3172">
+<meta name="msapplication-TileColor" content="#0d3172">
+<meta name="theme-color" content="#ffffff">
+
+<link href="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/wps7nnw.css">
+
+<script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/jquery-3.6.4.min.js"></script>
+
+<!--<script type="text/javascript" src="https://www.beck-pietaetsbedarf.de/js/app.js"></script>-->
+<script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/app251008.js"></script>
+<script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/CartButton.js"></script>
+<script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/WishlistButton.js"></script>
+<!-- Beratungsmappe -->
+    <script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/_template.js"></script>
+    <script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/beratungsMappe.js"></script>
+    <link href="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/beratungsmappe.css" rel="stylesheet" type="text/css">
+
+<!-- Owl Carousel -->
+
+<!-- Menu -->
+<script type="text/javascript" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/jquery.smartmenus.js"></script>
+<link href="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/sm-core-css.css" rel="stylesheet" type="text/css">
+<link href="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/sm-beck.css" rel="stylesheet" type="text/css">
+
+<!-- Swipebox -->
+<link href="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/swipebox.css" rel="stylesheet" type="text/css">
+<script src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/jquery.swipebox.js"></script>
+
+		
+		<!-- Google Tag Manager -->
+					<script data-cmp-vendor="s905" type="text/plain" class="cmplazyload">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-WD8TDNQB');</script>
+				<!-- End Google Tag Manager -->
+	</head>
+	<body data-home="https://www.beck-pietaetsbedarf.de" data-popup="0" data-price-change="0"><div id="cmpbox" class="cmpbox cmpstyleroot cmpboxclosed cmpboxclosed2 cmpbox1" aria-modal="true" role="dialog" lang="EN" aria-labelledby="cmpboxheadline1" style="display: none;" data-nosnippet=""></div>
+				<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD8TDNQB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+						<header>
+							<div id="user-menu">
+					<div class="container">
+						<div class="um-row col">
+							<div class="um-wo">
+																	<span class="um-txt">Sie befinden sich in der </span><span>Beratungsmappe</span><span class="um-dp">:</span>
+															</div>
+							<div>
+																									<a href="#" data-role="vendor-map"><span class="material-icons-outlined">library_books</span> Beratungsmappe</a>
+																<a href="https://www.beck-pietaetsbedarf.de/merkzettel"><span class="material-icons-outlined">grading</span> Merkzettel</a>
+																<a href="https://www.beck-pietaetsbedarf.de/login" title="Abmelden">
+									<span class="material-icons-outlined">logout</span>
+									<span id="um-logout"> Abmelden</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="user-sub-menu">
+					<div class="usm-wrap" style="margin-left: 1274px;">
+												<a href="#" id="vendormap-print">Drucken</a>
+					</div>
+				</div>
+						<div class="container">
+	<div class="col large-3 medium-2 small-2-3" id="logo">
+		<a href="https://www.beck-pietaetsbedarf.de/">
+							<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/b877a184-c690-11ef-8e0e-525446430c7f.png" style="max-height: 71px;" alt="Bestattungen Schöneberg GmbH &amp; Co. KG" title="Bestattungen Schöneberg GmbH &amp; Co. KG">
+					</a>
+	</div>
+	<div class="col large-9 medium-4 small-1-3" id="menue">
+		<div id="mobil-search-menu" class="col-right no-padding-rl">
+			<a href="#nav-open" class="nav-show button menu">Menü</a>			
+		</div>
+		<nav id="main-nav" class="right">
+			<a href="#nav-closed" class="nav-hide button close right margin-b">x</a>
+			<div class="main-nav">
+				<ul id="main-menu" class="sm sm-beck" data-smartmenus-id="17785804933171162"><li><a href="https://www.beck-pietaetsbedarf.de/mappestart">Beratungsmappe</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte" class="has-submenu" id="sm-17785804933171162-1" aria-haspopup="true" aria-controls="sm-17785804933171162-2" aria-expanded="false">Produkte<span class="sub-arrow"></span></a><ul class="mega-menu" id="sm-17785804933171162-2" role="group" aria-hidden="true" aria-labelledby="sm-17785804933171162-1" aria-expanded="false"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg">Särge</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/sargform">Klassische Särge</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/truhe">Truhen</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/koerperform">Särge in Körperform</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/uebergroessen">Übergrößen</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/kindersarg">Kindersärge</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/kindersarg/mose-koerbchen">Mose-Körbchen</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/kindersarg/kinderwiege">Kinderwiege</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/kindersarg/motiv-kindersaerge">Motiv-Kindersärge</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/sarg/kindersarg/himmelsbettchen">Himmelsbettchen</a></li></ul></li></ul></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/waesche">Wäsche</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/waesche/decke">Decken</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/waesche/talar">Talare</a></li></ul></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urne">Urnen</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urne/standardurne">Standardurne</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urne/gedenkurne">Gedenkurne</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urne/kinderurne">Kinderurne</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urne/seeurne">Seeurne</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urnen/dekor">Dekor</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/urne/urnenzubehoer">Urnenzubehör</a></li></ul></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/gedenkartikel">Gedenkartikel</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/grabkreuze">Grabkreuze</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/grabkreuze/kreuz">Kreuze</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/grabkreuze/tafel">Tafeln</a></li></ul></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer">Zubehör</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/beschlag">Beschläge</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/folie">Folien</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/friedhofstechnik">Friedhofstechnik</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/handschuhe">Handschuhe</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/hygienebedarf">Hygienebedarf</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/sarginnenausstattung">Sarginnenausstattung</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/sargkreuze">Sargkreuze</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/streuartikel">Streuartikel</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/tragetasche">Tragetasche</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/zubehoer/trauerdruck">Trauerdruck</a></li></ul></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko">Dekorationen</a><ul class="mega-menu"><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/artikel">Dekorationsartikel</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/graeser">Gräser</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/kerzen">Kerzen</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/orchidee">Orchideen</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/pult">Pulte</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/saeule">Säulen</a></li><li><a href="https://www.beck-pietaetsbedarf.de/produkte/deko/vase">Vasen</a></li></ul></li></ul></li><li><a href="https://www.beck-pietaetsbedarf.de/katalog">Katalog</a></li><li><a href="https://www.beck-pietaetsbedarf.de/blog">Aktuelles</a></li></ul>				<div id="search">
+					<form action="https://www.beck-pietaetsbedarf.de/suche" method="get" class="form-suche">
+						<label class="suchen" for="suchwort"></label><input type="text" name="suchwort" id="suchwort" minlength="2" required="" placeholder="Suche"><input type="submit" value="" class="button b-search">
+											</form>
+				</div>
+				<div id="some">
+					<a href="https://www.facebook.com/beckpietaetsbedarf/" title="Facebook" target="_blank">
+						<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/facebook-color.png" alt="Facebook">
+					</a>
+					&nbsp;
+					<a href="https://www.instagram.com/beck_pietaetsbedarf_gmbh/" title="Instagram" target="_blank">
+						<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/instagram-color.png" alt="Instagram">
+					</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>		</header>
+		<main role="main" class="bg-weiss" data-mz="0">
+			<div class="container" id="mapcontainer" data-categ="3" data-mz="0" style="padding-top: 8.5em;">
+	<!-- KATEGORIEN -->
+	<div id="categ-box" class="col">
+	<div class="categ-btn" data-id="0">
+		
+		
+			<span class="material-icons-outlined ">home</span>
+		
+	</div>
+
+	<div class="categ-btn" data-id="3">
+		
+		
+			<span class="active">Särge</span>
+		
+	</div>
+
+	<div class="categ-btn" data-id="20">
+		
+		
+			<span class="">Klassische Särge</span>
+		
+	</div>
+
+	<div class="categ-btn" data-id="21">
+		
+		
+			<span class="">Truhen</span>
+		
+	</div>
+
+	<div class="categ-btn" data-id="19">
+		
+		
+			<span class="">Särge in Körperform</span>
+		
+	</div>
+
+	<div class="categ-btn" data-id="30">
+		
+		
+			<span class="">Übergrößen</span>
+		
+	</div>
+
+	<div class="categ-btn" data-id="18">
+		
+		
+			<span class="">Kindersärge</span>
+		
+	</div>
+</div>
+	<div class="hinweis-mobil">	
+		<p class="errmsg"><strong>Hinweis:</strong> Diese Funktion wird auf 
+kleinen Bildschirmen nicht optimal dargestellt. Für eine bessere Nutzung
+ empfehlen wir die Verwendung eines größeren Geräts.</p>
+	</div>
+	<div id="main" data-uid="265">
+		<!-- ARTIKEL-ÜBERSICHT -->
+		<div id="articles">
+			<div id="articles-listbox">
+	<div class="ar-btn shadowbox" data-id="13621">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/as402-57_002.jpg"></div>
+		<p>AS402/57/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="8515">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/k402astfr-47_002.jpg"></div>
+		<p>K402astfr./47/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="9199">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa412-47_002.jpg"></div>
+		<p>PA412/47/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="9301">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa412ros-47_002.jpg"></div>
+		<p>PA412Ros/47/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="9511">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa462ros-52.jpg"></div>
+		<p>PA462Ros/52/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="6558">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/51a-5-54.jpg"></div>
+		<p>51a-5/54/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="7652">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/er500-112.jpg"></div>
+		<p>ER500/112/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="7944">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/fi500-521.jpg"></div>
+		<p>Fi500/521/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10048">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa902-170.jpg"></div>
+		<p>PA902/170/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="14052">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/bud8000-108.jpg"></div>
+		<p>BUD8000/108/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="7292">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/e200-309_002.jpg"></div>
+		<p>E200/309/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="7356">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/e700-0_002.jpg"></div>
+		<p>E700/0/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="7456">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/efbc3000-163_002.jpg"></div>
+		<p>EFBC3000/163/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="351">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/300-729_002.jpg"></div>
+		<p>300/729/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="246">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/scala-1-254_002.jpg"></div>
+		<p>Scala 1/254</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="248">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/scala-3-254.jpg"></div>
+		<p>Scala 3/254</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="6919">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/80nuss-176_002.jpg"></div>
+		<p>80Nuss/176/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10339">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/se102-89.jpg"></div>
+		<p>SE102/89/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10769">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tar7016-527_002.jpg"></div>
+		<p>TAR7016/527/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="6003">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/21champ-129_002.jpg"></div>
+		<p>21champ./129/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="8731">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/lentia.jpg"></div>
+		<p>Lentia/0/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10899">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/toscana-weiss-703_002.jpg"></div>
+		<p>Toscana weiß/703/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10844">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/toscana-schw-703_002.jpg"></div>
+		<p>Toscana schw./703/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10609">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5046-421.jpg"></div>
+		<p>TAK5046/421/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10553">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5006-523_002.jpg"></div>
+		<p>TAK5006/523/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10688">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5086-93.jpg"></div>
+		<p>TAK5086/93/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10584">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5046-159_002.jpg"></div>
+		<p>TAK5046/159/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="5895">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/16a-91_002.jpg"></div>
+		<p>16a-ÜB-ÜL/91/4</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="9085">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa411hell-110.jpg"></div>
+		<p>PA411hellÜB/110/6</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="13873">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/100ueb-163.jpg"></div>
+		<p>100ÜB/163/6</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="10917">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v01-20_002.jpg"></div>
+		<p>V01/20/1</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="15814">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v06-658.jpg"></div>
+		<p>V06/658/1</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="11241">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v16-35.jpg"></div>
+		<p>V16/35/2</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="11333">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v21-22_002.jpg"></div>
+		<p>V21/22/1</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="11340">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v21-28.jpg"></div>
+		<p>V21/28/1</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="14336">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/mose-90_002.jpg"></div>
+		<p>Mose-H/125</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="13750">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/sa-hb4-30_002.jpg"></div>
+		<p>SA-HB4/60-FL</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="152">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/gks85n-b_002.jpg"></div>
+		<p>GKS85N-B</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="153">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/gks85w-b_002.jpg"></div>
+		<p>GKS85W-B</p>
+	</div>
+
+	<div class="ar-btn shadowbox" data-id="145">
+		<div><img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/gks100w-b.jpg"></div>
+		<p>GKS100W-B</p>
+	</div>
+</div>
+		</div>
+		<!-- ARTIKEL-DETAILS -->
+		<div id="article">
+			<div class="col large-12 medium-6 small-2">
+			<div id="artikel-prev">&lt;</div>
+			<div id="artikel-next">&gt;</div>
+			<div id="artikel-stage"><div style="display: block;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Aspe, natur</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/as402-57.jpg" class="swipebox" title="AS402/57/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/as402-57.jpg" alt="AS402/57/4" title="AS402/57/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Aspe, natur, 4/4-fach Kunststoffbeschlag altflämisch montiert, Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">AS402/57/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Aspe</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.457,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="13621" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, astfrei, honigfarben</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/k402astfr-47.jpg" class="swipebox" title="K402astfr./47/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/k402astfr-47.jpg" alt="K402astfr./47/4" title="K402astfr./47/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, astfrei, honigfarben - 4/4-fach Kunststoffbeschlag altflämisch montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">K402astfr./47/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.448,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="8515" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Pappel, hell</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/pa412-47.jpg" class="swipebox" title="PA412/47/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa412-47.jpg" alt="PA412/47/4" title="PA412/47/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Pappel, hell - 4/4-fach Kunststoffbeschlag altflämisch montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">PA412/47/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.425,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="9199" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Pappel, hell, Rosenprägung</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/pa412ros-47.jpg" class="swipebox" title="PA412Ros/47/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa412ros-47.jpg" alt="PA412Ros/47/4" title="PA412Ros/47/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Pappel, hell, Rosenprägung - 4/4-fach Kunststoffbeschlag altflämisch montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">PA412Ros/47/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.446,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="9301" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Pappel, patiniert, Rosenprägung</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/pa462ros-52.jpg" class="swipebox" title="PA462Ros/52/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa462ros-52_002.jpg" alt="PA462Ros/52/4" title="PA462Ros/52/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Pappel, patiniert, Rosenprägung - 4/4-fach Kunststoffbeschlag altkupfer montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">PA462Ros/52/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.452,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="9511" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, Eichenfurnier, Palmenschnitzung schwarz</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/51a-5-54.jpg" class="swipebox" title="51a-5/54/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/51a-5-54_002.jpg" alt="51a-5/54/4" title="51a-5/54/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, Eichenfurnier, Palmenschnitzung schwarz - 6/6-fach Kunststoffbeschlag altkupfer montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">51a-5/54/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer, Eiche</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.533,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="6558" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Erlensarg astig, natur</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/er500-112.jpg" class="swipebox" title="ER500, 6/6-B22VA, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/er500-112_002.jpg" alt="ER500, 6/6-B22VA, Kugel" title="ER500, 6/6-B22VA, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Erlensarg astig, natur - 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">ER500/112/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Erle</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.537,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="7652" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Fichte, altsilber, gebürstet</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/fi500-521.jpg" class="swipebox" title="Fi500/521/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/fi500-521_002.jpg" alt="Fi500/521/4" title="Fi500/521/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Fichte, altsilber, gebürstet - 4/4-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Fi500/521/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Fichte</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.740,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="7944" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Pappel, mahagonifarben</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/pa902-170.jpg" class="swipebox" title="PA902, 4/4-B21VA, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa902-170_002.jpg" alt="PA902, 4/4-B21VA, Kugel" title="PA902, 4/4-B21VA, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Pappel, mahagonifarben - 4/4-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">PA902/170/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel, Mahagoni</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.500,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10048" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Belluno Kernbuche natur</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/bud8000-108.jpg" class="swipebox" title="BUD8000/108" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/bud8000-108_002.jpg" alt="BUD8000/108" title="BUD8000/108" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Belluno Kernbuche natur, 6/6-fach Metallbeschlag Edelstahl mit Schrauben montiert, Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">BUD8000/108/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Buche</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.862,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="14052" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Eiche massiv, astig, geölt</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/e200-309.jpg" class="swipebox" title="E200, 6/6-B41natur, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/e200-309.jpg" alt="E200, 6/6-B41natur, Kugel" title="E200, 6/6-B41natur, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Eiche massiv, astig, geölt - 6/6-fach Seilbeschlag natur, altmessing mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">E200/309/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Eiche</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.647,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="7292" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Eiche massiv, gebuttert, Intarsie Almheu</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/e700-0.jpg" class="swipebox" title="E700/0/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/e700-0.jpg" alt="E700/0/4" title="E700/0/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Eiche massiv, gebuttert, Intarsie Almheu, 6/6-fach Beschlag Almheu mit Kugelschrauben -  - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">E700/0/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Eiche, Almheu</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">2.107,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="7356" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, Eichenfurnier, astig, geölt</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/efbc3000-163.jpg" class="swipebox" title="EFBC3000/163/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/efbc3000-163.jpg" alt="EFBC3000/163/4" title="EFBC3000/163/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, Eichenfurnier, astig, geölt - 6/6-fach Metallbeschlag altmessing mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">EFBC3000/163/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer, Eiche</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.690,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="7456" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/300-729.jpg" class="swipebox" title="300Mahago HG, 6/6-B52altm.,Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/300-729.jpg" alt="300Mahago HG, 6/6-B52altm.,Kugel" title="300Mahago HG, 6/6-B52altm.,Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Mahagoni massiv, Hochglanz, 6/6-fach Metallbeschlag altmessing mit Kugelschrauben, Ausschlag de Luxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">300/729/4</div>
+			</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">2.276,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="351" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Tosca-Santos-Palisander</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/scala-1-254.jpg" class="swipebox" title="Tosca-Santos, 6/6-B24VA, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/scala-1-254.jpg" alt="Tosca-Santos, 6/6-B24VA, Kugel" title="Tosca-Santos, 6/6-B24VA, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Tosca-Santos-Palisander, 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Scala 1/254</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Eiche, Palisander</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">3.208,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="246" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Scala Rigoletto, Satin Nussfurnier</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/scala-3-254.jpg" class="swipebox" title="Scala Rigoletto, 6/6-B24VA, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/scala-3-254_002.jpg" alt="Scala Rigoletto, 6/6-B24VA, Kugel" title="Scala Rigoletto, 6/6-B24VA, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Scala Rigoletto, Satin Nussfurnier, 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Scala 3/254</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Eiche, Nussbaum</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">3.208,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="248" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, Nussbaumfurnier</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/80nuss-176.jpg" class="swipebox" title="80 Nuss, 6/6-B21VA, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/80nuss-176.jpg" alt="80 Nuss, 6/6-B21VA, Kugel" title="80 Nuss, 6/6-B21VA, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, Nussbaumfurnier - 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">80Nuss/176/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer, Nussbaum</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.825,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="6919" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Skandinavische Espe</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/se102-89.jpg" class="swipebox" title="SE102, 6/6-B22altm., SOR" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/se102-89_002.jpg" alt="SE102, 6/6-B22altm., SOR" title="SE102, 6/6-B22altm., SOR" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Skandinavische Espe - 6/6-fach Metallbeschlag altmessing mit Schrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">SE102/89/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Espe</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.670,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10339" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Tanne, natur, geschwungene Form</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/tar7016-527.jpg" class="swipebox" title="TAR7016, 6/6-B27 VA Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tar7016-527.jpg" alt="TAR7016, 6/6-B27 VA Kugel" title="TAR7016, 6/6-B27 VA Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Tanne, natur, geschwungene Form - 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">TAR7016/527/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Tanne</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.997,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10769" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, champagnerfarben</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/21champ-129.jpg" class="swipebox" title="21Champ., 6/6-B22nig, SMR" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/21champ-129.jpg" alt="21Champ., 6/6-B22nig, SMR" title="21Champ., 6/6-B22nig, SMR" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, champagnerfarben - 6/6-fach Metallbeschlag Nickel mit Schrauben und Rosette montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">21champ./129/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.813,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="6003" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Truhensarg, Birke massiv, weiß hochglanz mit Zierstäben</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/lentia.jpg" class="swipebox" title="Lentia" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/lentia_002.jpg" alt="Lentia" title="Lentia" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Truhensarg, Birke massiv, weiß hochglanz mit Zierstäben, 6/6-fach Stangenbeschlag -  - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Lentia/0/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Birke</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">2.201,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="8731" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Weichholz, lackiert weiß, seidenmatt</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/toscana-weiss-703.jpg" class="swipebox" title="Toscana weiß_703/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/toscana-weiss-703.jpg" alt="Toscana weiß_703/4" title="Toscana weiß_703/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Weichholz, lackiert weiß, seidenmatt - 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Toscana weiß/703/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.732,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10899" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Weichholz, lackiert schwarz, seidenmatt</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/toscana-schw-703.jpg" class="swipebox" title="Toscana schwarz,6/6-B52VA, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/toscana-schw-703.jpg" alt="Toscana schwarz,6/6-B52VA, Kugel" title="Toscana schwarz,6/6-B52VA, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Weichholz, lackiert schwarz, seidenmatt - 6/6-fach Metallbeschlag Edelstahl mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Toscana schw./703/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.732,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10844" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Tanne gebeizt, Körperform</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/tak5046-421.jpg" class="swipebox" title="TAK5046, 6/6-B32, Kugel" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5046-421_002.jpg" alt="TAK5046, 6/6-B32, Kugel" title="TAK5046, 6/6-B32, Kugel" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Tanne gebeizt, Körperform - 6/6-fach Holzstangenbeschlag gebeizt mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">TAK5046/421/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Tanne</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.895,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10609" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Tanne, natur, Körperform</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/tak5006-523.jpg" class="swipebox" title="TAK5006/523/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5006-523.jpg" alt="TAK5006/523/4" title="TAK5006/523/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Tanne, natur, Körperform - 6/6-fach Metallbeschlag Edelstahl mit Schrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">TAK5006/523/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Tanne</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.932,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10553" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Tanne mahagonifarben, Hochglanz, Körperform</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/tak5086-93.jpg" class="swipebox" title="TAK5086/93/4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5086-93_002.jpg" alt="TAK5086/93/4" title="TAK5086/93/4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Tanne mahagonifarben, Hochglanz, Körperform - 6/6-fach Metallbeschlag altmessing mit Kugelschrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">TAK5086/93/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Tanne, Mahagoni</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.830,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10688" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Tanne gebeizt, Körperform</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/tak5046-159.jpg" class="swipebox" title="TAK5046/6" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/tak5046-159.jpg" alt="TAK5046/6" title="TAK5046/6" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Tanne gebeizt, Körperform - 6/6-fach Metallbeschlag altmessing mit Schrauben montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">TAK5046/159/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Tanne</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.843,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10584" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer patiniert, Überbreite und Überlänge</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/16a-91.jpg" class="swipebox" title="16a-ÜB-ÜL/91" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/16a-91.jpg" alt="16a-ÜB-ÜL/91" title="16a-ÜB-ÜL/91" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer patiniert, Überbreite und 
+Überlänge - 6/6-fach Metallbeschlag altmessing mit Schrauben und Rosette
+ montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">16a-ÜB-ÜL/91/4</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.865,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="5895" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Pappel, hell, Überbreite</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/pa411hell-110.jpg" class="swipebox" title="PA411hellÜB/110" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/pa411hell-110_002.jpg" alt="PA411hellÜB/110" title="PA411hellÜB/110" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Pappel, hell, Überbreite - 6/6-fach Metallbeschlag Edelstahl mit Schrauben und Rosette montiert - Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">PA411hellÜB/110/6</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Pappel</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.628,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="9085" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Eiche massiv, astig, geölt, Überbreite</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/100ueb-163.jpg" class="swipebox" title="100ÜB/163/6" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/100ueb-163_002.jpg" alt="100ÜB/163/6" title="100ÜB/163/6" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Eiche massiv, astig, geölt, Überbreite, 6/6-fach Metallbeschlag altmessing mit Kugelschrauben montiert, Ausschlag deluxe</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">100ÜB/163/6</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Eiche</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">1.993,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="13873" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer unbehandelt</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/v01-20.jpg" class="swipebox" title="V01" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v01-20.jpg" alt="V01" title="V01" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer unbehandelt - 2 Sargschrauben - Ausschlag mit Folie, Vlies, Bespannung</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">V01/20/1</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">620,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="10917" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, Papierdekor Buche</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/v06-658.jpg" class="swipebox" title="V06/658" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v06-658_002.jpg" alt="V06/658" title="V06/658" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, Papierdekor Buche - 4/4-fach 
+Holzbeschlag Holzbeschlag natur mit Kugelschrauben montiert - Ausschlag 
+mit Folie, Vlies, Bespannung</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">V06/658/1</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer, Buche</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">760,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="15814" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, patiniert, lackiert</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/v16-35.jpg" class="swipebox" title="V16, 4/4-B01altfl." style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v16-35_002.jpg" alt="V16, 4/4-B01altfl." title="V16, 4/4-B01altfl." style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, patiniert, lackiert, 2 
+Kehlungen, Palmenprägung - 4/4-fach Kunststoffbeschlag altflämisch 
+montiert - Ausschlag mit Folie, Matratze, Bespannung</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">V16/35/2</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">790,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="11241" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, gebeizt hell, lackiert, Überbreite</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/v21-22.jpg" class="swipebox" title="V21/22/1" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v21-22.jpg" alt="V21/22/1" title="V21/22/1" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, gebeizt hell, lackiert, Überbreite - 2 Sargschrauben mit Rosette - Ausschlag mit Folie, Vlies, Bespannung</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">V21/22/1</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">830,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="11333" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kiefer, gebeizt hell, lackiert, Überbreite</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/v21-28.jpg" class="swipebox" title="V21/28/1" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/v21-28_002.jpg" alt="V21/28/1" title="V21/28/1" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kiefer, gebeizt hell, lackiert, 
+Überbreite - 4/4-fach Kremierbarer Kunststoffbeschlag montiert - 
+Ausschlag mit Folie, Vlies, Bespannung</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">V21/28/1</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">870,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="11340" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kindersarg, Mose-Körbchen</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/mose-90.jpg" class="swipebox" title="Mose-H/125" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/mose-90.jpg" alt="Mose-H/125" title="Mose-H/125" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kindersarg, Mose-Körbchen, 125 cm, honigfarben</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">Mose-H/125</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Rattan</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">522,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="14336" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Himmelsbettchen "Himmelblau" mit Flügel</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/sa-hb4-30.jpg" class="swipebox" title="SA-HB4" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/sa-hb4-30.jpg" alt="SA-HB4" title="SA-HB4" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Himmelsbettchen "Himmelblau" mit Flügel, 60 cm</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">SA-HB4/60-FL</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Holz, Filz</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">486,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="13750" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kindersarg Kiefer, lackiert Natur</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/gks85n-b.jpg" class="swipebox" title="GKS85N-B" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/gks85n-b.jpg" alt="GKS85N-B" title="GKS85N-B" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kindersarg Kiefer, lackiert Natur 85cm, mit Beschlag und Ausschlag</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">GKS85N-B</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">279,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="152" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kindersarg Kiefer, lackiert weiß</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/gks85w-b.jpg" class="swipebox" title="GKS85W-B" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/gks85w-b.jpg" alt="GKS85W-B" title="GKS85W-B" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kindersarg Kiefer, lackiert weiß 85cm, mit Beschlag und Ausschlag</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">GKS85W-B</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">288,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="153" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div><div style="display: none;">
+	
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1>Kindersarg Kiefer, lackiert weiß</h1>
+		</div>
+	
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/saerge/l/gks100w-b.jpg" class="swipebox" title="GKS100W-B" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/gks100w-b_002.jpg" alt="GKS100W-B" title="GKS100W-B" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em>Kindersarg Kiefer, lackiert weiß 100cm, mit Beschlag</em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td">GKS100W-B</div>
+			</div>
+			
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td">Kiefer</div>
+				</div>
+			
+			
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big">311,00 €</strong><br>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				
+					<span class="button" data-id="145" data-mz="0">Auf den Merkzettel</span>
+				
+			</div>
+		<div>
+	</div>
+</div></div></div></div>
+		</div>
+	</div>
+</div>
+<!-- TEMPLATES -->
+<script type="text/template" id="artikel-templ">
+	<% if (ist_sarg) { %>
+		<div class="col large-12 medium-6 small-2 mappe">
+			<h1><%= name %></h1>
+		</div>
+	<% } %>
+	<div class="col large-9 medium-3 small-2 mappe">
+		<a href="https://www.beck-pietaetsbedarf.de/images/artikel/<%= bilder[0].l %>" class="swipebox" title="<%= bilder[0].title %>" style="display: block">
+			<div class="shadowbox" style="width: 100%; text-align: center;margin-bottom:0;">
+				<img src="https://www.beck-pietaetsbedarf.de/images/artikel/<%= bilder[0].l %>" alt="<%= bilder[0].alt %>" title="<%= bilder[0].title %>" style="max-height: 550px;">
+			</div>
+		</a>
+	</div>
+	<div class="col large-3 medium-3 small-2 mappe">
+		<p style="margin-bottom:0;"><em><%= name_lang %></em></p>
+		<div class="table">
+			<div class="tr">
+				<div class="td">Artikelnr.: </div>
+				<div class="td"><%= nr %></div>
+			</div>
+			<% if (holzart) { %>
+				<div class="tr">
+					<div class="td">Material: </div>
+					<div class="td"><%= holzart %></div>
+				</div>
+			<% } %>
+			<% if (hat_preis) { %>
+				<div class="tr">
+					<div class="td">Preis: </div>
+					<div class="td">
+						<div class="price-row">
+							<p>
+								<strong class="price big"><%= preis %> &euro;</strong><br/>
+								<span>inkl. Mwst.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			<% } %>
+		</div>
+		<div class="wladd">
+			<div id="add-button-cell">
+				<!-- <input type="number" id="mz-anz" class="cart-num margin-b" name="menge" maxlength="3" value="1" /> -->
+				<% if (merkzettel_id == 0) { %>
+					<span class="button" data-id="<%= id %>" data-mz="0">Auf den Merkzettel</span>
+				<% } else { %>
+					<span class="check button" data-id="<%= id %>" data-mz="<%= merkzettel_id %>">Ist auf dem Merkzettel</span>
+				<% } %>
+			</div>
+		<div>
+	</div>
+</script>
+<script type="text/template" id="kateg-templ">
+	<div class="categ-btn" data-id="<%= id %>">
+		<% var state = (active) ? "active" : ""; %>
+		<% if (id == 0) { %>
+			<span class="material-icons-outlined <%= state %>">home</span>
+		<% } else { %>
+			<span class="<%= state %>"><%= name %></span>
+		<% } %>
+	</div>
+</script>
+<script type="text/template" id="arbutton-templ">
+	<div class="ar-btn shadowbox" data-id="<%= id %>">
+		<div><img src="https://www.beck-pietaetsbedarf.de/images/artikel/<%= bilder[0].s %>"/></div>
+		<p><%= nr %></p>
+	</div>
+</script>
+
+<script type="application/json" id="kategorien-baum">[{"id":3,"pid":0,"url_id":11457,"url_pid":null,"name":"Sarg","menu_name":"S\u00e4rge","active":true,"url":"produkte\/sarg","sort":1,"line":0,"order_type":2,"is_last":false,"index":0,"level":1,"children":[{"id":20,"pid":3,"url_id":11474,"url_pid":null,"name":"Sargform","menu_name":"Klassische S\u00e4rge","active":true,"url":"produkte\/sarg\/sargform","sort":1,"line":0,"order_type":2,"is_last":false,"index":0,"level":2,"children":[],"show_children":false,"path":"Produkte\/Sarg\/Sargform","url_path":"produkte\/sarg\/produkte\/sarg\/sargform","id_path":"3\/20\/","num_articles":-1,"title":"Klassische S\u00e4rge \u2013 gro\u00dfe Auswahl, schneller Versand","descr":"Entdecken Sie unsere klassischen Sargmodelle in rustikaler Eleganz! \u2714 Gro\u00dfe Auswahl \u2714 Verschiedene Holzarten \u2714 Schneller Versand f\u00fcr Bestatter","keywords":"","text":"S\u00e4rge mit klassischer Formgebung bestechen durch ihre rustikale Eleganz. Die Produkte in Sargform sind nach wie vor sehr gefragt und in verschiedenen Holzarten erh\u00e4ltlich.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":21,"pid":3,"url_id":11475,"url_pid":null,"name":"Truhe","menu_name":"Truhen","active":true,"url":"produkte\/sarg\/truhe","sort":2,"line":0,"order_type":2,"is_last":false,"index":1,"level":2,"children":[],"show_children":false,"path":"Produkte\/Sarg\/Truhe","url_path":"produkte\/sarg\/produkte\/sarg\/truhe","id_path":"3\/21\/","num_articles":-1,"title":"Elegante Truhens\u00e4rge \u2013 hier erh\u00e4ltlich ","descr":"Finden Sie bei uns passende S\u00e4rge f\u00fcr Ihre Kunden! Z. B. klassische Truhen. \u2714 Gro\u00dfe Auswahl \u2714 Diverse Holzarten \u2714 Farbige Modelle \u2714 Amerikanische Truhen","keywords":"","text":"Bei uns finden Sie immer den passenden Sarg! Wir bieten Ihnen Truhen in gro\u00dfer Auswahl \u2013 von klassischen Modellen \u00fcber farbige S\u00e4rge bis hin zu amerikanischen Truhen.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":19,"pid":3,"url_id":11473,"url_pid":null,"name":"K\u00f6rperform","menu_name":"S\u00e4rge in K\u00f6rperform","active":true,"url":"produkte\/sarg\/koerperform","sort":3,"line":0,"order_type":2,"is_last":false,"index":2,"level":2,"children":[],"show_children":false,"path":"Produkte\/Sarg\/K\u00f6rperform","url_path":"produkte\/sarg\/produkte\/sarg\/koerperform","id_path":"3\/19\/","num_articles":-1,"title":"S\u00e4rge in K\u00f6rperform von Beck Piet\u00e4tsbedarf","descr":"Wir sind der Partner f\u00fcr Bestatter \u2013 entdecken Sie online unsere S\u00e4rge in K\u00f6rperform! Gerne k\u00f6nnen Sie uns auch an unserem Standort in Eschelbronn besuchen.","keywords":"","text":"Wir bieten Ihnen S\u00e4rge in K\u00f6rperform aus massivem Holz. In Kombination mit edlen Griffen erhalten die S\u00e4rge eine moderne Note.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":30,"pid":3,"url_id":11804,"url_pid":null,"name":"\u00dcbergr\u00f6\u00dfen","menu_name":"","active":true,"url":"produkte\/sarg\/uebergroessen","sort":4,"line":0,"order_type":0,"is_last":false,"index":3,"level":2,"children":[],"show_children":false,"path":"Produkte\/Sarg\/\u00dcbergr\u00f6\u00dfen","url_path":"produkte\/sarg\/produkte\/sarg\/uebergroessen","id_path":"3\/30\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":18,"pid":3,"url_id":11472,"url_pid":null,"name":"Kindersarg","menu_name":"Kinders\u00e4rge","active":true,"url":"produkte\/sarg\/kindersarg","sort":5,"line":0,"order_type":0,"is_last":true,"index":4,"level":2,"children":[{"id":29,"pid":18,"url_id":11483,"url_pid":null,"name":"Mose-K\u00f6rbchen","menu_name":"","active":true,"url":"produkte\/sarg\/kindersarg\/mose-koerbchen","sort":1,"line":0,"order_type":2,"is_last":false,"index":0,"level":3,"children":[],"show_children":false,"path":"Produkte\/Sarg\/Kindersarg\/Mose-K\u00f6rbchen","url_path":"produkte\/sarg\/produkte\/sarg\/kindersarg\/produkte\/sarg\/kindersarg\/mose-koerbchen","id_path":"3\/18\/29\/","num_articles":-1,"title":"Mose-K\u00f6rbchen \u2013 erh\u00e4ltlich bei Beck Piet\u00e4tsbedarf","descr":"Geflochtene Korbs\u00e4rge aus Rattan f\u00fcr Kinder. \u2714 Schneller Versand f\u00fcr Bestatter. \u2192 Jetzt klicken & Sortiment entdecken","keywords":"","text":"Alles f\u00fcr die Kinderbeerdigung: In unseren honigfarbenen Mose-K\u00f6rbchen aus Rattan finden Kinder ihre letzte Ruhest\u00e4tte.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":46,"pid":18,"url_id":25188,"url_pid":null,"name":"Himmelsbettchen","menu_name":"","active":true,"url":"produkte\/sarg\/kindersarg\/himmelsbettchen","sort":4,"line":0,"order_type":1,"is_last":true,"index":3,"level":3,"children":[],"show_children":false,"path":"Produkte\/Sarg\/Kindersarg\/Himmelsbettchen","url_path":"produkte\/sarg\/produkte\/sarg\/kindersarg\/produkte\/sarg\/kindersarg\/himmelsbettchen","id_path":"3\/18\/46\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false}],"show_children":false,"path":"Produkte\/Sarg\/Kindersarg","url_path":"produkte\/sarg\/produkte\/sarg\/kindersarg","id_path":"3\/18\/","num_articles":-1,"title":"Bestattungsbedarf: S\u00e4rge f\u00fcr Babys, Kleinkinder & Kinder","descr":"Bei uns erhalten Sie Kinders\u00e4rge, Fr\u00fchchens\u00e4rge & Kinderwiegen, die einf\u00fchlsam gestaltet wurden. F\u00fcr den w\u00fcrdevollen Abschied der Allerkleinsten.","keywords":"","text":"Von Fr\u00fchchens\u00e4rgen \u00fcber Kinders\u00e4rge bis hin zu Kinderwiegen: Bei uns erhalten Sie einf\u00fchlsam gestaltete S\u00e4rge f\u00fcr Babys, Kleinkinder und Kinder.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/kindersarg.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false}],"show_children":false,"path":"Produkte\/Sarg","url_path":"produkte\/sarg","id_path":"3\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"Im Bereich Bestattungsbedarf bieten wir eine vielseitige Auswahl an hochwertigen S\u00e4rgen, die den Rahmen f\u00fcr eine w\u00fcrdevolle Abschiednahme schaffen. Unterschiedliche Materialien, Designs und Ausf\u00fchrungen erm\u00f6glichen es Bestattern, individuell auf W\u00fcnsche einzugehen. Jeder Sarg l\u00e4sst sich passgenau an pers\u00f6nliche Anforderungen und Vorstellungen anpassen.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/sarg.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":5,"pid":0,"url_id":11459,"url_pid":null,"name":"W\u00e4sche","menu_name":"W\u00e4sche","active":true,"url":"produkte\/waesche","sort":2,"line":0,"order_type":0,"is_last":false,"index":1,"level":1,"children":[{"id":22,"pid":5,"url_id":11476,"url_pid":null,"name":"Decke","menu_name":"Decken","active":true,"url":"produkte\/waesche\/decke","sort":1,"line":0,"order_type":2,"is_last":false,"index":0,"level":2,"children":[],"show_children":false,"path":"Produkte\/W\u00e4sche\/Decke","url_path":"produkte\/waesche\/produkte\/waesche\/decke","id_path":"5\/22\/","num_articles":-1,"title":"Elegante Bestattungsw\u00e4sche: unsere Deckengarnituren","descr":"Unsere edlen Deckengarnituren vollenden jede Sargausstattung. \u2714 Verschiedene Designs & Farben \u2714 Schnelle Lieferung > Jetzt bei uns entdecken","keywords":"","text":"<b>Deckengarnituren<\/b> sind ein pr\u00e4gendes Element der Sargausstattung und tragen wesentlich zu einer stimmigen und w\u00fcrdevollen Aufbahrung bei. Sie schaffen ein ruhiges Gesamtbild und unterstreichen die gew\u00fcnschte Anmutung \u2013 von klassisch bis modern.<br\/><br\/>\r\nUnser Portfolio als <b>Fachhandel f\u00fcr Trauerwaren<\/b> bietet eine umfangreiche Auswahl an <b>Decken in unterschiedlichen Materialien, Farben und Designs<\/b>, die sich flexibel an individuelle Anforderungen anpassen lassen. So erm\u00f6glichen unsere Produkte eine harmonische Abstimmung der Sargausstattung und eine hochwertige Pr\u00e4sentation im Rahmen der Bestattung.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":23,"pid":5,"url_id":11477,"url_pid":null,"name":"Talar","menu_name":"Talare","active":true,"url":"produkte\/waesche\/talar","sort":2,"line":0,"order_type":2,"is_last":true,"index":1,"level":2,"children":[],"show_children":false,"path":"Produkte\/W\u00e4sche\/Talar","url_path":"produkte\/waesche\/produkte\/waesche\/talar","id_path":"5\/23\/","num_articles":-1,"title":"Talare bei Beck Piet\u00e4tsbedarf","descr":"Hochwertige Totenhemden von Beck Piet\u00e4tsbedarf. Mit den schlichten Talaren ist jeder Verstorbene gut gekleidet. \u2192 Auf der Website st\u00f6bern","keywords":"","text":"<b>Talare und Totenhemden<\/b> geh\u00f6ren zur klassischen Ausstattung in der Bestattung und erm\u00f6glichen eine schlichte, w\u00fcrdevolle Einkleidung von Verstorbenen. Sie unterstreichen ein gepflegtes Erscheinungsbild und tragen zu einer ruhigen, angemessenen Aufbahrung bei.<br\/><br\/>\r\nBei uns als <b>Vollsortimenter f\u00fcr Bestattungsbedarf<\/b> finden Bestatter eine Auswahl an <b>Talaren f\u00fcr Damen und Herren<\/b>, die auf eine praktische Handhabung und einen sicheren Sitz ausgelegt sind. Unterschiedliche Ausf\u00fchrungen bieten Flexibilit\u00e4t im Einsatz und unterst\u00fctzen eine respektvolle Vorbereitung im Bestattungsalltag.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false}],"show_children":false,"path":"Produkte\/W\u00e4sche","url_path":"produkte\/waesche","id_path":"5\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"F\u00fcr eine piet\u00e4tvolle Aufbahrung ist die passende Bestattungsw\u00e4sche unverzichtbar. Unser Sortiment umfasst sorgf\u00e4ltig ausgew\u00e4hlte Produkte wie Sargausstattungen, Matratzen und Kissen, die eine w\u00fcrdevolle Pr\u00e4sentation unterst\u00fctzen. Sie tragen ma\u00dfgeblich dazu bei, den letzten Abschied respektvoll zu gestalten.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/waesche.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":4,"pid":0,"url_id":11458,"url_pid":null,"name":"Urne","menu_name":"Urnen","active":true,"url":"produkte\/urne","sort":3,"line":0,"order_type":1,"is_last":false,"index":2,"level":1,"children":[{"id":44,"pid":4,"url_id":23062,"url_pid":null,"name":"Standardurne","menu_name":"","active":true,"url":"produkte\/urne\/standardurne","sort":1,"line":0,"order_type":2,"is_last":false,"index":0,"level":2,"children":[],"show_children":false,"path":"Produkte\/Urne\/Standardurne","url_path":"produkte\/urne\/produkte\/urne\/standardurne","id_path":"4\/44\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false}],"show_children":false,"path":"Produkte\/Urne","url_path":"produkte\/urne","id_path":"4\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"Urnen sind ein zentraler Bestandteil moderner Bestattungsformen und bieten vielf\u00e4ltige M\u00f6glichkeiten f\u00fcr eine individuelle und w\u00fcrdevolle Abschiedsgestaltung. Als Gro\u00dfh\u00e4ndler f\u00fcr Bestatter bieten wir eine breite Auswahl an Urnen verschiedenster Hersteller - aus Holz, Metall oder biologisch abbaubaren Materialien - bundesweit schnell und verl\u00e4sslich geliefert.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/urne.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":43,"pid":0,"url_id":22927,"url_pid":null,"name":"Gedenkartikel","menu_name":"","active":true,"url":"produkte\/gedenkartikel","sort":4,"line":0,"order_type":2,"is_last":false,"index":3,"level":1,"children":[],"show_children":false,"path":"Produkte\/Gedenkartikel","url_path":"produkte\/gedenkartikel","id_path":"43\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"Erinnerungsst\u00fccke helfen dabei, die Abschiednahme pers\u00f6nlich und bedeutungsvoll zu gestalten. Gedenkartikel wie Lichter oder individuelle Andenken schaffen bleibende Verbindungen und geben Hinterbliebenen Raum f\u00fcr ein w\u00fcrdevolles Gedenken.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/gedenkartikel.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":2,"pid":0,"url_id":11456,"url_pid":null,"name":"Grabkreuze","menu_name":"","active":true,"url":"produkte\/grabkreuze","sort":5,"line":0,"order_type":2,"is_last":false,"index":4,"level":1,"children":[{"id":16,"pid":2,"url_id":11470,"url_pid":null,"name":"Kreuz","menu_name":"Kreuze","active":true,"url":"produkte\/grabkreuze\/kreuz","sort":1,"line":0,"order_type":2,"is_last":false,"index":0,"level":2,"children":[],"show_children":false,"path":"Produkte\/Grabkreuze\/Kreuz","url_path":"produkte\/grabkreuze\/produkte\/grabkreuze\/kreuz","id_path":"2\/16\/","num_articles":-1,"title":"Grabkreuze \u2013 jetzt Modellvielfalt entdecken","descr":"Grabkreuze aus Holz, z. B. aus massiver Eiche, d\u00fcrfen bei keiner Beerdigung fehlen. Klicken Sie sich durch unser Sortiment & entdecken Sie diverse Designs.","keywords":"","text":"<b>Grabkreuze<\/b> sind ein zentraler Bestandteil der tempor\u00e4ren Grabkennzeichnung und schaffen eine klare, w\u00fcrdige Orientierung an der Ruhest\u00e4tte. Sie erm\u00f6glichen eine gut sichtbare Beschriftung und tragen zu einem geordneten und respektvollen Gesamtbild im Rahmen der Beisetzung bei.<br\/><br\/>\r\nAls <b>Fachgro\u00dfhandel f\u00fcr Bestatterbedarf<\/b> bietet Beck eine Auswahl an <b>Kreuzen f\u00fcr die Grabkennzeichnung<\/b>, die speziell auf die Anforderungen im t\u00e4glichen Einsatz abgestimmt ist. Unterschiedliche Gr\u00f6\u00dfen, Ausf\u00fchrungen und Materialien erm\u00f6glichen eine flexible Verwendung \u2013 von schlichten bis hin zu klassisch gestalteten Varianten.<br\/><br\/>\r\nUnsere <b>Grabkreuze<\/b> \u00fcberzeugen durch stabile Verarbeitung, einfache Handhabung und eine zuverl\u00e4ssige Verf\u00fcgbarkeit, sodass Sie auch bei kurzfristigem Bedarf schnell reagieren k\u00f6nnen.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false},{"id":17,"pid":2,"url_id":11471,"url_pid":null,"name":"Tafel","menu_name":"Tafeln","active":true,"url":"produkte\/grabkreuze\/tafel","sort":2,"line":0,"order_type":2,"is_last":true,"index":1,"level":2,"children":[],"show_children":false,"path":"Produkte\/Grabkreuze\/Tafel","url_path":"produkte\/grabkreuze\/produkte\/grabkreuze\/tafel","id_path":"2\/17\/","num_articles":-1,"title":"Schlicht & sch\u00f6n: Gedenktafeln f\u00fcr jedes Grab","descr":"Grabtafeln aus Echtholz, dank Lackierungen gut gesch\u00fctzt gegen Witterungseinfl\u00fcsse. \u2192 Jetzt bei Beck Piet\u00e4tsbedarf entdecken","keywords":"","text":"Tafeln aus Echtholz sind sind ein zentraler Bestandteil der tempor\u00e4ren Grabkennzeichnung und verbinden Funktionalit\u00e4t mit einem respektvollen Erscheinungsbild.<br\/><br\/>\r\nAls <b>Gro\u00dfhandel f\u00fcr Bestattungsbedarf<\/b> bieten wir <b>hochwertige, wetterbest\u00e4ndige Kreuztafeln in verschiedenen Materialien, Formen und Gr\u00f6\u00dfen<\/b> \u2013 ideal f\u00fcr eine klare Beschriftung und eine w\u00fcrdevolle Pr\u00e4sentation am Grab. Unsere Produkte erf\u00fcllen die hohen Anforderungen professioneller Bestatter und \u00fcberzeugen durch langlebige Qualit\u00e4t sowie einfache Handhabung.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/default.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false}],"show_children":false,"path":"Produkte\/Grabkreuze","url_path":"produkte\/grabkreuze","id_path":"2\/","num_articles":-1,"title":"","descr":"","keywords":"","text":"Als Teil einer geordneten und w\u00fcrdevollen Bestattung dienen Grabkreuze der vor\u00fcbergehenden Kennzeichnung der Ruhest\u00e4tte. Sie unterst\u00fctzen Bestatter bei der klaren Strukturierung des Grabfeldes und erm\u00f6glichen eine angemessene Beschriftung.","img":"https:\/\/www.beck-pietaetsbedarf.de\/images\/kategorien\/grabkreuze.jpg","img_alt":"","img_title":"","tag":null,"\u0000Kategorie\u0000for_admin":false}]</script>
+					</div></main>
+		<a href="#" rel="nofollow" id="totop" title="Zum Seitenanfang"></a>
+<div style="clear: both;"></div>
+<footer class="b2c">
+	<div class="container">
+					<div class="jur">
+				<div>
+					<p><b>Rechtliches</b></p>
+					<p>
+						<a href="https://www.beck-pietaetsbedarf.de/datenschutz" title="Datenschutzerklärung">Datenschutzerklärung</a><br>
+						<a href="https://www.beck-pietaetsbedarf.de/impressum" title="Impressum">Impressum</a><br>
+						<a href="https://www.beck-pietaetsbedarf.de/pdf/agb-shop.pdf" target="_blank" title="Impressum">AGB</a>
+					</p>
+				</div>
+			</div>
+			</div>
+</footer>
+		<div id="overlay"></div>
+		
+					<div id="vendor-admin-box">
+				<div id="vendor-admin-close">
+					<img src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/close.png">
+				</div>
+				<iframe></iframe>
+			</div>
+		
+		<div id="notif-wrap">
+			<div id="notification"><p></p></div>
+		</div>
+		<div id="price-chg-dlg">
+			<form class="form">
+				<h1>Es gab Preisänderungen bei Artikeln in Ihrer Beratungsmappe.</h1>
+				<p>Gehen Sie für mehr Informationen hierzu bei <var>Beratungsmappe › Bearbeiten</var> auf die Startseite.</p>
+				<div class="btnrow">
+					<button class="button" type="button" id="price-chg-cancel">Wieder erinnern</button>
+					<button class="button" type="button" id="price-chg-open">Öffnen</button>
+					<button class="button" type="button" id="price-chg-ok">OK</button>
+				</div>
+			</form>
+		</div>
+	
+
+<iframe style="display: none;" name="__cmpLocator" title="Intentionally hidden, please ignore" role="none" tabindex="-1"></iframe><iframe style="display: none;" name="__uspapiLocator" title="Intentionally hidden, please ignore" role="none" tabindex="-1"></iframe><iframe style="display: none;" name="__tcfapiLocator" title="Intentionally hidden, please ignore" role="none" tabindex="-1"></iframe><iframe style="display: none;" name="__gppLocator" title="Intentionally hidden, please ignore" role="none" tabindex="-1"></iframe><script async="" type="text/javascript" data-cmp-ab="2" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/bV8xLndfNzIwNzUucl9HRFBSLmxfZW4uZF8zLnhfMS52LnAudF8zLnh0XzU.js"></script><iframe data-cmp-ab="1" style="display: none;" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/crossdomain.htm" name="__cmpcdframe" title="Intentionally hidden, please ignore" role="none" tabindex="-1"></iframe><div id="cmpboxrecall" class="cmpboxrecall cmpstyleroot"><a class="cmpboxrecalllink" href="#" tabindex="0" aria-haspopup="dialog" role="button" draggable="false"><img style="width:20px; height:20px;" class="cmpboxrecallicon" width="20" height="20" alt="Privacy settings" title="Privacy settings" data-cmp-ab="1" src="Beck%20Piet%C3%A4tsbedarf%20%E2%80%93%20der%20starke%20Partner%20f%C3%BCr%20Bestatter_files/recall_shield.svg"><span class="cmpboxrecalltxt cmptxt_recallbtn">Privacy settings</span></a></div><style type="text/css">.cmpstyleroot,.cmpstyleroot *{--x6pt:6pt;--x7pt:7pt;--x8pt:8pt;--x9pt:9pt;--x10pt:10pt;--x11pt:11pt;--x12pt:12pt;--clrBackground:#FFFFFF;--clrHeadline:#3B3B3B;--clrText:#5F5F5F;--clrTextSecondary:#CFCFCF;--clrButton:#3276AE;--clrButtonText:#FFFFFF;--clrLink:#666666;--clrHighlight:#FFFDCD}body div#cmpwrapper.cmpwrapper:empty,div#cmpwrapper.cmpwrapper,div#cmpwrapper.cmpwrapper:empty,div.cmpwrapper,div.cmpwrapper:empty{display:block!important}.cmpstyleroot.cmpboxwcag,.cmpstyleroot.cmpboxwcag *{--x6pt:0.5000rem;--x7pt:0.5834rem;--x8pt:0.6666rem;--x9pt:0.7500rem;--x10pt:0.8333rem;--x11pt:0.9166rem;--x12pt:1.0000rem}.cmpbox{position:fixed;font-family:Arial,sans-serif;background-color:var(--clrBackground);-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.75);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.75);box-shadow:0 0 5px 0 rgba(0,0,0,.75);box-sizing:border-box;transition-property:background-color,height,width,max-height,max-width,display,position,left,top,bottom,right,transform;transition-duration:.9s;transition-timing-function:ease;z-index:9999999;max-height:100vh;max-width:100vw;text-underline-position:under;touch-action:manipulation;-ms-touch-action:manipulation}.cmpbox.cmpnotransition{transition:none}.cmpbox IMG,.cmpbox SVG,.cmpbox img,.cmpbox svg{display:inline-block!important}.cmpboxrecall IMG,.cmpboxrecall SVG,.cmpboxrecall img,.cmpboxrecall svg{display:inline-block!important}.cmpboxinner,.cmpboxinner2{height:100%;max-width:1400px;margin-left:auto;margin-right:auto}.cmpfullscreen .cmpboxinner{display:flex;flex-direction:column}.cmpbox0{bottom:0;right:0;width:600px}.cmpbox1{bottom:0;left:0;width:100%}.cmpbox2{bottom:0;left:50%;width:600px;-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);-o-transform:translate(-50%,0);transform:translate(-50%,0)}.cmpbox3{position:fixed;top:50%;left:50%;width:600px;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.cmpbox4{top:0;left:50%;width:600px;-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);-o-transform:translate(-50%,0);transform:translate(-50%,0)}.cmpbox5{top:0;left:0;width:100%}.cmpbox6{top:0;right:0;height:100%;max-width:300px}.cmpbox7{top:0;left:0;height:100%;max-width:300px}.cmpbox8{width:100%;position:relative!important;margin-left:auto;margin-right:auto}.cmpbox9{bottom:0;left:0;width:600px}.cmpbox10{top:0;left:0;width:600px}.cmpbox11{top:0;right:0;width:600px}.cmpbox8.cmpfullscreen{position:absolute!important;top:0;left:0;width:100%}.cmpboxBG{position:fixed;left:0;top:0;width:100%;height:100%;background-color:#cfcfcf;opacity:.5;z-index:8999999}.cmpbox *,.cmpbox>*{font-family:Arial,sans-serif;text-decoration:none;box-sizing:border-box;border:0 solid #fff;vertical-align:middle;transition-property:background-color,height,width,max-height,max-width,display,position;transition-duration:.9s;transition-timing-function:ease}.cmpboxhl{font-size:var(--x12pt);color:var(--clrHeadline);vertical-align:baseline}.cmpboxh2{font-size:var(--x12pt);color:var(--clrHeadline);vertical-align:baseline;font-weight:400;opacity:.8;margin-bottom:.5em;margin-top:2em}.cmpboxhl *,.cmpboxtxt *,.cmpcookiesdescrboxcontent *{vertical-align:baseline}.cmpcornerbtn .cmpboxhl{max-width:calc(100% - 200px)}.cmpboxbtns{text-align:center;min-height:50px;flex-shrink:0}.cmpboxtxtdiv{z-index:33333;position:relative}.cmpboxtxt,.cmpcookieinfocontent p,.cmpcookiesdescrboxcontent p,.cmpprpsdescr{font-size:var(--x11pt);line-height:1.3em;color:var(--clrText);text-align:justify}.cmpboxbtn,.cmpboxbtn *,.cmpboxtxt,.cmpboxtxt *,.cmpmore *,.cmpprpsdescr,.cmpprpsdescr *{vertical-align:baseline}.cmpprpsdescr{margin-bottom:10px}.cmpprpshl{margin-top:15px;margin-bottom:5px}.cmpcompanyaddr,.cmpdpoinfo{margin-top:10px}.cmpboxbtn{font-size:var(--x11pt);margin:10px;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.5);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.5);box-shadow:0 0 5px 0 rgba(0,0,0,.5);width:200px;max-width:100%;display:inline-block;text-align:center;position:relative;height:auto;padding:7px 0 7px 10px;border-radius:3px;line-height:normal}.cmpboxbtnyescustom2disabled,.cmpboxbtnyescustomdisabled{cursor:not-allowed!important;opacity:.5}.cmpboxbtn.cmpboxbtnsave{padding-left:0}.cmpbox1 .cmpboxcontent{display:inline-block;max-width:70%;padding-bottom:0}.cmpbox1 .cmpboxbtns{display:inline-block;min-width:30%;margin-top:40px;max-width:30%}.cmpbox5 .cmpboxcontent,.cmpbox8 .cmpboxcontent{display:inline-block;max-width:70%;padding-bottom:0}.cmpbox5 .cmpboxbtns,.cmpbox8 .cmpboxbtns{display:inline-block;min-width:30%;margin-top:40px;max-width:30%}.cmpfullscreen.cmpbox1 .cmpboxbtns,.cmpfullscreen.cmpbox5 .cmpboxbtns,.cmpfullscreen.cmpbox8 .cmpboxbtns{display:block;margin-top:10px;max-width:100%;width:100%}@media (max-width:1500px){.cmpbox1 .cmpboxcontent{max-width:calc(100% - 450px)}.cmpbox1 .cmpboxbtns{min-width:450px}.cmpbox5 .cmpboxcontent,.cmpbox8 .cmpboxcontent{max-width:calc(100% - 450px)}.cmpbox5 .cmpboxbtns,.cmpbox8 .cmpboxbtns{min-width:450px}}@media (max-width:1200px){.cmpbox1 .cmpboxcontent{max-width:calc(100% - 250px)}.cmpbox1 .cmpboxbtns{width:250px;min-width:250px}.cmpbox5 .cmpboxcontent,.cmpbox8 .cmpboxcontent{max-width:calc(100% - 250px)}.cmpbox5 .cmpboxbtns,.cmpbox8 .cmpboxbtns{width:250px;min-width:250px}.cmpfullscreen.cmpbox1 .cmpboxbtns,.cmpfullscreen.cmpbox5 .cmpboxbtns,.cmpfullscreen.cmpbox8 .cmpboxbtns{display:block;margin-top:10px;max-width:100%;width:100%}.cmpfullscreen .cmpboxbtn{display:inline-block;margin-bottom:10px}}@media (max-width:800px){.cmpbox1 .cmpboxcontent{max-width:100%;width:100%;display:block}.cmpbox1 .cmpboxbtns{width:100%;display:block;max-width:100%;margin-top:0}.cmpbox5 .cmpboxcontent,.cmpbox8 .cmpboxcontent{max-width:100%;width:100%;display:block}.cmpbox5 .cmpboxbtns,.cmpbox8 .cmpboxbtns{width:100%;display:block;max-width:100%;margin-top:0}.cmpfullscreen.cmpbox1 .cmpboxbtns,.cmpfullscreen.cmpbox5 .cmpboxbtns,.cmpfullscreen.cmpbox8 .cmpboxbtns{margin-top:10px}.cmpboxbtn{display:inline-block;margin:10px}}@media (max-width:600px){.cmpbox0,.cmpbox2,.cmpbox3,.cmpbox4{width:100%}}@media (max-width:400px){.cmpbox6,.cmpbox7{width:100%}}.cmpboxbtnno,A.cmpboxbtnno,A.cmpboxbtnno:link{background-color:var(--clrButton);color:var(--clrButtonText)}.cmpboxbtncustom,A.cmpboxbtncustom,A.cmpboxbtncustom:link{background-color:var(--clrButton);color:var(--clrButtonText);padding-left:0}.cmpboxbtnsettings,A.cmpboxbtnsettings,A.cmpboxbtnsettings:link{background-color:var(--clrButton);color:var(--clrButtonText);padding-left:0}.cmpboxbtnyes,A.cmpboxbtnyes,A.cmpboxbtnyes:link{background-color:var(--clrButton);color:var(--clrButtonText)}.cmpboxbtnsave,A.cmpboxbtnsave,A.cmpboxbtnsave:link{background-color:var(--clrButton);color:var(--clrButtonText)}.cmpboxbtnaccept,A.cmpboxbtnaccept,A.cmpboxbtnaccept:link{background-color:var(--clrButton);color:var(--clrButtonText)}.cmpboxbtnreject,A.cmpboxbtnreject,A.cmpboxbtnreject:link{background-color:var(--clrButton);color:var(--clrButtonText)}.cmpboxbtn,.cmpmorelink{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none}.cmpboxbtn span{vertical-align:middle}.cmpboxbtn SVG,.cmpboxbtn svg{vertical-align:middle}.cmplogo{position:absolute}.cmplogo2{position:absolute;padding:2px;right:2px;bottom:0;font-size:var(--x7pt);line-height:2px;color:#666}.cmplogo2 span{font-size:var(--x7pt);color:#666;text-decoration:none;line-height:2px;margin-left:5px}.cmplogo2 A,.cmplogo2 A:link{display:inline-block;font-size:var(--x7pt);color:#575d80;text-decoration:none;line-height:2px}.cmplogo2.cmplogoXL,.cmplogo2.cmplogoXL A,.cmplogo2.cmplogoXL A:link,.cmplogo2.cmplogoXL span{font-size:var(--x7pt)}.cmplogo2.cmplogoXXL{background:rgba(0,0,0,.1);border-radius:15px;padding-left:10px;padding-right:10px;margin-bottom:2px;opacity:.4}.cmplogo2.cmplogoXXL:focus,.cmplogo2.cmplogoXXL:hover{opacity:1}.cmplogo2.cmplogoXXL,.cmplogo2.cmplogoXXL A,.cmplogo2.cmplogoXXL A:link,.cmplogo2.cmplogoXXL span{font-size:var(--x9pt)}.cmpdl2{width:16px;height:16px;border:0 solid #fff;padding:0;margin:0 2px 0 0}.cmplogo2hx{vertical-align:middle}.cmplogo2h{vertical-align:middle;display:none}.cmplogo2:focus .cmplogo2h,.cmplogo2:hover .cmplogo2h{display:inline}.cmplogo2 .cmplogo2h.cmplogo2hvis{display:inline!important}.cmplanguage{display:block;border-radius:5px;position:absolute;padding:6px 3px;text-align:left;left:3px;bottom:3px;font-size:var(--x7pt);line-height:2px;color:#666;transition:.4s all ease;border:1px solid transparent;cursor:pointer}.cmplanguage:focus,.cmplanguage:hover{background-color:#fffdcd;border:1px solid #ffd341;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.25);box-shadow:0 0 5px 0 rgba(0,0,0,.25)}.cmplangicon{width:16px;height:auto;-webkit-filter:grayscale(60%);filter:grayscale(60%)}.cmplangiconiso{height:1em;line-height:1.25em;font-size:8pt;width:1.5em;display:inline-block;vertical-align:middle;text-align:center}.cmplanguageloc{line-height:1em;font-size:var(--x6pt);position:absolute;right:0;bottom:0;color:#000;border-radius:30px;background-color:rgba(255,255,255,.8);padding:2px;white-space:nowrap}.cmplangicon:focus,.cmplangicon:hover,.cmplanguage:focus .cmplangicon,.cmplanguage:hover .cmplangicon{-webkit-filter:grayscale(0%);filter:grayscale(0%)}.cmpaltlangs{position:absolute;bottom:-1px;left:-1px;background-color:#fffdcd;border:1px solid #ffd341;border-radius:5px;width:144px;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.25);box-shadow:0 0 5px 0 rgba(0,0,0,.25);z-index:33334}.cmpaltlang{display:inline-block;padding:6px 3px;font-size:var(--x7pt);line-height:2px;color:#666;border:1px solid #f7e939;border-radius:5px;background-color:#ffffe3;margin:2px;cursor:pointer;position:relative;z-index:33334}.cmpaltlang:focus,.cmpaltlang:hover{background-color:#fff;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.25);box-shadow:0 0 5px 0 rgba(0,0,0,.25)}.cmpaltlangcurrent{display:block;cursor:pointer}.cmpaltlangcurrent>div{display:inline-block;position:relative;padding:6px 3px}.cmpmore{text-align:center;font-size:var(--x9pt);color:var(--clrLink);line-height:1em}.cmpmorelink,A.cmpmorelink,A.cmpmorelink:link{padding:10px;display:inline-block}.cmpimg{width:15px;height:15px;position:absolute;left:10px;top:0;border:0;margin-top:.6em}.cmpdl{max-height:50px;max-width:200px;border:0}.cmptblbox{height:calc(100% - 60px);overflow-y:auto;padding-right:5px;max-width:800px;min-height:100px;margin-right:auto;margin-left:auto;width:100%}.cmpbox:dir(rtl) .cmptblbox,.cmpbox[dir=rtl] .cmptblbox{padding-right:0;padding-left:5px}.cmpboxheadline{max-width:800px;margin-right:auto;margin-left:auto;width:100%;flex-shrink:0;vertical-align:baseline}.cmpboxnavi{width:200px;float:left}.cmpboxnaviitem{border:1px solid silver;border-radius:5px;padding:10px;margin-bottom:5px;cursor:pointer}.cmpbox[dir=rtl] .cmpboxnaviitem{padding-right:30px}.cmpboxnaviitem *{vertical-align:middle}.cmpboxnaviitem img{margin-right:5px}.cmpboxnaviitem .cmptogglelink{display:inline-block;text-align:center}.cmpbox:dir(rtl) .cmptblbox,.cmpbox[dir=rtl] .cmptblbox{margin-right:0;margin-left:5px}.cmpboxnaviitemactive{background-color:var(--clrHighlight)}.cmpboxdetails{float:left;width:calc(100% - 200px);padding-left:15px}.cmpcookienonavi .cmpboxdetails{float:none;width:100%;padding-left:0}@media (max-width:570px){.cmpboxnavi{width:100%;float:none}.cmpboxnaviitem{border:1px solid silver;border-radius:5px;padding:5px;margin-bottom:3px;font-size:var(--x10pt)}.cmpboxnaviitemactive{background-color:var(--clrHighlight)}.cmpboxdetails{float:none;width:100%;padding-left:0}}.cmptbl{border:0 solid #fff;width:100%}.cmptbl TH{font-size:var(--x10pt);font-weight:700;border-bottom:2px solid var(--clrTextSecondary);color:var(--clrText)}.cmpclose{position:absolute;right:2px;top:2px}.cmptbl Td{font-size:var(--x9pt);text-align:center;color:var(--clrText)}td.cmptdborder{border-bottom:1px solid silver}.cmpcookietbl Td{font-size:var(--x9pt);border-bottom:1px solid silver;text-align:left;color:var(--clrText)}td.cmpvendname{text-align:right}.cmpimgyesno{border:0 solid #fff;width:40px;height:20px;color:var(--clrTextSecondary)}.cmpwelcomeprpsbtn .cmpimgyesno{border:0 solid #fff;width:40px;height:20px;color:var(--clrTextSecondary)}.cmpimgyesno svg,.cmptogglespan svg{border:0 solid #fff;width:40px;height:20px;color:var(--clrTextSecondary)}.cmpimgsaveno{border:0 solid #fff;width:40px;height:20px;color:var(--clrTextSecondary)}.cmpwelcomeprpsbtn .cmpimgsaveno{border:0 solid #fff;width:40px;height:20px;color:var(--clrTextSecondary)}.cmpboxwelcomeprps{text-align:left;display:flex;flex-wrap:wrap}.cmpwelcomeprpsbox{display:flex;flex-direction:column;position:relative;width:100%;cursor:pointer}.cmpwelcomeprpsboxinner{padding-right:28px}.cmpwelcomeprpsbox:after,.cmpwelcomeprpsbox:before{content:"";position:absolute;top:calc(1em - 4px);width:6px;border:1px solid var(--clrTextSecondary)}.cmpwelcomeprpsboxnoarrow:after,.cmpwelcomeprpsboxnoarrow:before{display:none}.cmpwelcomeprpsbox:hover::after,.cmpwelcomeprpsbox:hover::before{border:1px solid var(--clrText)}.cmpwelcomeprpsbox:before{transform:rotateZ(45deg);-webkit-transform:rotateZ(-45deg);right:10px}.cmpwelcomeprpsbox:after{transform:rotateZ(-45deg);-webkit-transform:rotateZ(45deg);right:15px}.cmpwelcomeprpsdescr,.cmpwelcomeprpsvendors{transition:all .5s ease;visibility:visible;opacity:1;height:auto;overflow:visible;width:100%}.cmpwelcomeprpsdescrinactive,.cmpwelcomeprpsvendorsinactive{visibility:hidden;opacity:0;height:0;overflow:hidden;margin:0!important;padding:0!important}.cmpwelcomeprpsboxactive:after,.cmpwelcomeprpsboxactive:before{content:"";position:absolute;top:calc(1em - 4px);width:6px;border:1px solid var(--clrTextSecondary)}.cmpwelcomeprpsboxactive:hover::after,.cmpwelcomeprpsboxactive:hover::before{border:1px solid var(--clrText)}.cmpwelcomeprpsboxactive:before{transform:rotateZ(45deg);-webkit-transform:rotateZ(45deg);right:11px}.cmpwelcomeprpsboxactive:after{transform:rotateZ(-45deg);-webkit-transform:rotateZ(-45deg);right:15px}.cmpwelcomeprps{column-span:none;display:inline-flex;margin-bottom:5px;width:240px;text-align:left;margin-right:15px;align-items:center}.cmpwelcomeprpsbox .cmpwelcomeprps{width:100%}.cmpbox:dir(rtl) .cmpwelcomeprps,.cmpbox[dir=rtl] .cmpwelcomeprps{margin-right:0;margin-left:15px}.cmpwelcomeprpsbtn{display:inline;margin-right:5px;flex-shrink:0}.cmpbox:dir(rtl) .cmpwelcomeprpsbtn,.cmpbox[dir=rtl] .cmpwelcomeprpsbtn{margin-right:0;margin-left:5px}.cmpwelcomeprpstxt{display:inline;padding-top:2px;cursor:pointer;vertical-align:baseline}.cmpwelcomeprpstxt.cmpwelcomeprpstxtnopointer{cursor:auto}.cmpbox.cmpfullscreen{width:100%;height:100%;transform:none!important;left:0;top:0;max-width:unset;max-height:unset}TD.cmpallprps,TD.cmpallvend,TH.cmpallprps,TH.cmpallvend{background-color:var(--clrHighlight)}TD.cmpcenter,TH.cmpcenter{text-align:center}TD.cmpsmallborder,TH.cmpsmallborder{border-bottom:1px solid var(--clrTextSecondary)}.cmpboxtxt svg{width:16px;height:16px}.cmpcolorcodingtxt{font-size:var(--x10pt);color:#333;padding:5px;line-height:1.2em}.cmppurposeicon svg{width:16px;height:16px}.cmpvendorpurposes svg{fill:#333333;width:14px;height:14px}.cmpcolorcodingtxtconsent{color:#333;font-weight:700}.cmpvendorlegintpurposes svg{fill:#B4B4B4;width:14px;height:14px}.cmpcolorcodingtxtlegint{color:#b4b4b4;font-weight:700}.cmpvendorfeatures svg{fill:#5781AD;width:14px;height:14px}.cmpcolorcodingtxtfeatures{color:#5781ad;font-weight:700}.cmpboxrecall{position:fixed;bottom:10px;left:10px;border-radius:30px;padding:3px;vertical-align:middle;line-height:1.5em;z-index:7999999}.cmpboxrecall *{font-size:var(--x9pt);line-height:1.5em;vertical-align:middle}.cmpboxrecalltxt{display:none;font-family:Arial,sans-serif;padding-right:10px}.cmpbox:dir(rtl) .cmpboxrecalltxt,.cmpbox[dir=rtl] .cmpboxrecalltxt{padding-right:0;padding-left:10px}A.cmpboxrecalllink,A.cmpboxrecalllink:active,A.cmpboxrecalllink:focus,A.cmpboxrecalllink:hover,A.cmpboxrecalllink:link,A.cmpboxrecalllink:visited{display:block;height:20px;color:#0b9ac5;text-decoration:none}.cmpboxrecall{background-color:#f7fcff;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.25);box-shadow:0 0 5px 0 rgba(0,0,0,.25)}A.cmpboxrecalllink:focus .cmpboxrecalltxt,A.cmpboxrecalllink:hover .cmpboxrecalltxt{display:inline}@media print{.cmpboxrecall{display:none!important}}.cmprecallwarning{background-color:rgba(255,237,176,.86)!important;box-shadow:0 0 0 0 rgba(255,39,39,.8);transform:scale(1);animation:cmp_pulse 2s infinite;padding:20px;border-radius:100px}.cmprecallwarning A.cmpboxrecalllink{height:100%}.cmprecallwarning:hover{background-color:#ffedb0!important}.cmprecallwarning2{background-color:#fff!important;box-shadow:0 0 0 0 rgba(255,39,39,.8);transform:scale(1);animation:cmp_pulse2 1s infinite;padding:20px;margin-bottom:100px}.cmprecallwarning2:hover{background-color:#f4e1a8!important}.cmprecallwarning2 .cmpboxrecalllink{display:inline-block!important;width:30px!important;height:30px!important}.cmprecallwarningA{background-color:#fff3f3!important;padding:30px;animation:cmp_pulse2 1s infinite}.cmprecallwarningB{background-color:#ff9898!important;padding:30px;animation:cmp_pulse2 3s infinite}@keyframes cmp_pulse{0%{transform:scale(.9);box-shadow:0 0 0 0 rgba(255,211,65,.7)}70%{transform:scale(1);box-shadow:0 0 0 10px rgba(255,211,65,0)}100%{transform:scale(.9);box-shadow:0 0 0 0 rgba(255,211,65,0)}}@keyframes cmp_pulse2{0%{transform:scale(.9);box-shadow:0 0 0 0 rgba(255,39,39,.8)}70%{transform:scale(1);box-shadow:0 0 0 10px rgba(255,211,65,0)}100%{transform:scale(.9);box-shadow:0 0 0 0 rgba(255,211,65,0)}}.cmptdchoice{width:100px}.cmponofftext{display:block;font-size:var(--x8pt);color:var(--clrText)}.cmppurposedescription{position:absolute;left:calc(50% - 400px);top:25%;background-color:var(--clrBackground);margin-left:auto;margin-right:auto;padding:20px;box-shadow:0 0 15px 0 rgba(0,0,0,.25);width:800px;max-width:75%;max-height:75%;overflow-y:auto}@media (max-width:820px){.cmppurposedescription{left:12%;top:12%}}.cmppurposedescrboxhl{font-size:var(--x11pt);color:var(--clrHeadline)}.cmppurposedescrtext{font-size:var(--x11pt);line-height:1.2em;color:var(--clrText);text-align:justify}.cmpageverifybox{max-width:300px;margin-left:auto;margin-right:auto}.cmpageverifybox SELECT.cmpageverify{display:inline-block;padding:3px;line-height:2em;font-size:var(--x11pt);border:0 solid #fff;margin:0 0 5px}.cmpageverifybox SELECT.cmpageverifymonth{margin-left:10px}.cmpageverifybox SELECT.cmpageverifyday{margin-left:10px}.cmpageverifytype1 SELECT.cmpageverify,.cmpageverifytype4 SELECT.cmpageverify{display:inline-block;width:100%}.cmpageverifytype2 SELECT.cmpageverify{display:inline-block;width:calc(50% - 10px)}.cmpageverifytype3 SELECT.cmpageverify{display:inline-block;width:calc(33% - 20px)}.cmpageverifybox INPUT.cmpagewrong,.cmpageverifybox SELECT.cmpagewrong{background-color:#f6592c;color:#fff}.cmpageverifyagetxt,.cmpageverifydaytxt,.cmpageverifymonthtxt,.cmpageverifyyeartxt{font-size:smaller}INPUT.cmpageverifyage,INPUT.cmpageverifyday,INPUT.cmpageverifymonth,INPUT.cmpageverifyyear{border:1px solid var(--clrTextSecondary);padding-left:.5rem;padding-right:.5rem;text-align:center;margin-left:2px;margin-right:2px;border-radius:2px}INPUT.cmpageverifyyear{width:5rem}INPUT.cmpageverifyage,INPUT.cmpageverifyday,INPUT.cmpageverifymonth{width:3rem}.cmpcookieinfobox,.cmpcookiesdescrbox{height:100%}.cmpcookieinfobox .cmpboxdetails,.cmpcookiesdescrbox .cmpboxdetails{display:flex;flex-direction:column;height:100%}@media (max-height:926px) and (max-width:480px) and (orientation:portrait){.cmpcookieinfobox,.cmpcookiesdescrbox{display:flex;flex-direction:column}.cmpcookieinfobox .cmpboxdetails,.cmpcookiesdescrbox .cmpboxdetails{display:contents}}.cmpcookiesdescrboxhl{font-size:var(--x11pt);color:var(--clrHeadline)}.cmpcookieinfocontent h4,.cmpcookiesdescrboxcontent h4,.cmpcookiesdescrboxh2{font-size:var(--x11pt);color:var(--clrHeadline)}.cmpcookiesdescrtable{flex-grow:10;overflow-y:auto}.cmpcookieinfobox .cmpcookiesdescrboxcontent,.cmpcookiesdescrbox .cmpcookiesdescrboxcontent{flex-grow:1;flex-shrink:1;overflow:auto}.cmpcookieinfobox .cmpboxbtnsmore,.cmpcookiesdescrbox .cmpboxbtnsmore{flex-grow:0;flex-shrink:0}@media (max-width:321px),(max-height:321px){.cmpbox{font-size-adjust:0.38!important;line-height:1.05em!important;padding:5px!important}}@media (max-height:450px) and (max-width:450px){.cmpbox{max-height:100%!important;max-width:100%!important;height:100%!important;width:100%!important}.cmpboxinner{flex-direction:column!important}.cmpboxbtns{max-width:100%!important;min-height:auto!important}.cmpboxbtn{max-width:100%!important}}@media (max-height:600px) and (min-width:926px){.cmpbox3{height:100%}.cmpbox3 .cmpboxinner{display:flex;flex-direction:column}.cmpbox3 .cmpboxinner .cmpboxcontent{overflow:auto}}@media (max-width:414px) and (max-height:736px),(max-width:736px) and (max-height:414px){.cmpbox{padding:10px!important}}.cmpbox6 .cmpboxinner,.cmpbox7 .cmpboxinner{display:flex;flex-direction:column}.cmpbox6 .cmpboxcontent,.cmpbox7 .cmpboxcontent{flex-grow:1;overflow:auto}@media (max-height:926px) and (max-width:480px) and (orientation:portrait){.cmpbox{width:100%;max-height:60%;min-height:300px;height:300px;overflow:auto!important;-webkit-overflow-scrolling:auto!important;padding:15px!important}.cmpboxinner{display:flex;flex-direction:column}.cmpboxcontent{flex-grow:1;overflow:auto;-webkit-overflow-scrolling:auto}.cmpboxbtns{flex-grow:1}.cmpbox.cmpfullscreen{max-height:100%!important;height:100%!important}.cmpboxbtn{margin:5px}A.cmpmorelink:link{padding:3px}.cmpwelcomeprps{width:100%}}@media (max-width:926px) and (max-height:480px) and (orientation:landscape){.cmpbox{width:100%;max-height:90%;min-height:150px;height:350px;overflow:auto!important;-webkit-overflow-scrolling:auto!important;padding:15px!important}.cmpboxinner{display:flex;flex-direction:row}.cmpboxcontent{flex-grow:1;overflow:auto;-webkit-overflow-scrolling:auto}.cmpboxbtns{flex-grow:1;flex-shrink:1;min-height:50px;max-width:250px!important;width:100%}.cmpfullscreen .cmpboxbtns{flex-shrink:0;max-width:100%!important;width:100%}.cmpboxbtn{margin:5px}.cmpbox.cmpfullscreen{max-height:100%!important;height:100%!important}A.cmpmorelink:link{padding:3px}.cmpcornerbtn .cmpboxbtns{padding-top:50px}}@media (max-width:650px) and (min-width:570px){.cmpboxCustomMenu1 .cmpcookieinfotable-wrapper{display:block}.cmpboxCustomMenu1 .cmpcookieinfotable-header{margin-bottom:10px}.cmpboxCustomMenu1 .cmpcookieinfotable-body,.cmpboxCustomMenu1 .cmpcookieinfotable-header{display:block;grid-template-columns:none}.cmpboxCustomMenu1 .cmpcookieinfotable-cell,.cmpboxCustomMenu1 .cmpcookieinfotable-cellHeader{display:block;width:100%;box-sizing:border-box}.cmpboxCustomMenu1 .cmpcookieinfotable-row{display:flex;flex-direction:column;margin-bottom:10px;padding:10px}}@media (max-width:520px){.cmpcookieinfotable-wrapper{display:block}.cmpcookieinfotable-header{margin-bottom:10px}.cmpcookieinfotable-body,.cmpcookieinfotable-header{display:block;grid-template-columns:none}.cmpcookieinfotable-cell,.cmpcookieinfotable-cellHeader{display:block;width:100%;box-sizing:border-box}.cmpcookieinfotable-row{display:flex;flex-direction:column;margin-bottom:10px;padding:10px}}.cmpcookieinfotable{width:100%}.cmpcookieinfotable td,.cmpcookieinfotable th{text-align:left}.cmpcookieinfotable_descr{font-size:smaller;padding-bottom:10px}.cmpvendorbox2{text-align:left!important;position:relative;padding-right:20px}.cmpbox:dir(rtl) .cmpvendorbox2,.cmpbox[dir=rtl] .cmpvendorbox2{padding-right:0;padding-left:20px}.cmppurposebox2{text-align:left!important;position:relative;padding-right:20px}.cmpbox:dir(rtl) .cmppurposebox2,.cmpbox[dir=rtl] .cmppurposebox2{padding-right:0;padding-left:20px}.cmpvendorinfohl{font-weight:700;margin-top:15px}.cmpdatacategory{background-color:rgba(0,0,0,.2);padding:3px;border-radius:5px;margin-right:5px;line-height:2em}.cmplazypreviewiframe{position:relative;overflow:hidden;box-sizing:border-box;font-family:Arial,sans-serif;background-repeat:no-repeat;background-position:center;background-size:cover}.cmplazypreviewiframe *,.cmplazypreviewiframe>*{font-family:Arial,sans-serif;text-decoration:none;box-sizing:border-box;border:0 solid #fff;vertical-align:middle}.cmplazypreviewmsg{margin:0;position:absolute;top:50%;-ms-transform:translateY(-50%);transform:translateY(-50%);background-color:rgba(255,255,255,.95);width:100%;padding:20px}.cmplazypreviewmsg *{font-size:var(--x11pt);color:#242424}.cmplazypreviewmsginner{max-width:90%;width:640px;margin-left:auto;margin-right:auto}.cmplazyhl{font-weight:700}.cmplazybtn{text-align:center;cursor:pointer}.cmplazycb{font-size:var(--x10pt);text-align:center}.cmphelpicon,.cmpsubvendoricon{width:16px;height:16px;max-width:16px;max-height:16px;margin-right:2px;margin-left:4px}.cmpsubvendoricon{width:14px;height:14px;max-width:14px;max-height:14px;margin-right:2px;margin-left:4px}.cmpbox:dir(rtl) .cmphelpicon,.cmpbox[dir=rtl] .cmphelpicon{margin-right:4px;margin-left:2px}.cmphelpicon path,.cmpsubvendoricon path{fill:#666666}.cmpvendoricon{width:16px;height:16px;max-width:16px;max-height:16px;padding:0;margin:0 2px 0 4px}.cmpvendboxclose,A.cmpvendboxclose,A.cmpvendboxclose:link{position:absolute;right:5px;top:5px}.cmpvendboxclose svg{width:16px;height:16px;fill:#666666}.cmplisticon{width:14px;height:14px;margin-top:3px;margin-right:5px;flex-shrink:0}.cmpbox:dir(rtl) .cmplisticon,.cmpbox[dir=rtl] .cmplisticon{margin-right:0;margin-left:5px}.cmpcarousel{display:flex;flex-direction:column;overflow:hidden}.cmpcarouselexpanded .cmpboxnavi.cmpcarouselexpandnavi .cmpboxnaviitem{cursor:auto}.cmpboxnavi.cmpcarouselexpandnavi,.cmpboxnavi.cmpcarouselnavi{width:100%;float:none}.cmpcarouselcontent{padding:15px}.cmpboxdetailscarousel{float:none;width:100%;padding:0}@media (max-width:926px) and (max-height:480px) and (orientation:landscape){.cmpboxdetailscarousel{display:block;overflow-y:auto}.cmpcarouselexpandnavi,.cmpcarouselnavi{overflow:auto}}.cmpcarouselnavi .cmpboxnaviitem{position:relative}.cmpcarouselnavi .cmpboxnaviitem:after,.cmpcarouselnavi .cmpboxnaviitem:before{content:"";position:absolute;top:calc(50% - 2px);width:6px;border:1px solid var(--clrText)}.cmpcarouselnavi .cmpboxnaviitem:before{transform:rotateZ(45deg);-webkit-transform:rotateZ(-45deg);right:10px}.cmpcarouselnavi .cmpboxnaviitem:after{transform:rotateZ(-45deg);-webkit-transform:rotateZ(45deg);right:15px}.cmpcarouselnavi .cmpboxnaviitemactive:after,.cmpcarouselnavi .cmpboxnaviitemactive:before{content:"";position:absolute;top:calc(50% - 2px);width:6px;border:1px solid var(--clrTextSecondary)}.cmpcarouselnavi .cmpboxnaviitemactive:before{transform:rotateZ(45deg);-webkit-transform:rotateZ(45deg);right:10px}.cmpcarouselnavi .cmpboxnaviitemactive:after{transform:rotateZ(-45deg);-webkit-transform:rotateZ(-45deg);right:15px}@media print{.cmpbox{display:none!important;visibility:hidden!important}}.cmpboxcontentpass .cmpmore{color:#666}.cmpcontentpasslogin{flex:0 0 auto!important}.cmpcontentpassloginlogo{margin-right:.4em!important;margin-left:.75em!important;margin-bottom:-.1em!important;height:.9em!important}.cmpcontentpassboxmiddle{display:flex}.cmpcontentpassboxmiddle2{display:flex}.cmpcontentpassboxleft{width:50%;margin-right:30px}.cmpcontentpassboxright{width:50%;margin-left:30px}.cmpwelectboxright{width:50%;margin-left:30px}.cmpcontentpassboxmiddle.cmpcontentpass.cmpwelect .cmpcontentpassboxleft,.cmpcontentpassboxmiddle.cmpcontentpass.cmpwelect .cmpcontentpassboxright,.cmpcontentpassboxmiddle.cmpcontentpass.cmpwelect .cmpwelectboxright,.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxleft,.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxright,.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpwelectboxright{width:calc(33% - 20px)}.cmpcontentpassboxmiddle.cmpcontentpass.cmpwelect .cmpcontentpassboxright,.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxright{margin-left:0}.cmpcontentpassboxbottom{margin-top:60px}.cmpcontentpassboxbottom2{margin-bottom:60px}.contentpassboxstyle2,.contentpassboxstyle3{display:flex;flex-direction:row}.contentpassboxstyle2 .cmpcontentpassboxbottom2,.contentpassboxstyle3 .cmpcontentpassboxbottom2{margin-bottom:0}.contentpassboxstyle2 .cmpcontentpassboxmiddle2{width:calc(50% - 30px);margin-right:30px;display:flex;flex-direction:column}.contentpassboxstyle3 .cmpcontentpassboxmiddle2{width:calc(50% - 30px);margin-left:30px;display:flex;flex-direction:column}.contentpassboxstyle2 .cmpcontentpassboxbottom{width:calc(50% - 30px);margin-top:0;margin-left:30px;display:flex;flex-direction:column}.contentpassboxstyle3 .cmpcontentpassboxbottom2{width:calc(50% - 30px);margin-top:0;margin-right:30px;display:flex;flex-direction:column}.contentpassboxstyle2 .cmpcontentpassboxleft,.contentpassboxstyle2 .cmpcontentpassboxright,.contentpassboxstyle2 .cmpwelectboxright,.contentpassboxstyle3 .cmpcontentpassboxleft,.contentpassboxstyle3 .cmpcontentpassboxright,.contentpassboxstyle3 .cmpwelectboxright{width:100%!important;margin:0}.contentpassboxstyle2 .cmpcontentpassboxleft+.cmpcontentpassboxright,.contentpassboxstyle2 .cmpcontentpassboxleft+.cmpwelectboxright,.contentpassboxstyle3 .cmpcontentpassboxleft+.cmpcontentpassboxright,.contentpassboxstyle3 .cmpcontentpassboxleft+.cmpwelectboxright{margin-top:60px}.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxleft,.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxright,.cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpwelectboxright,.cmpcontentpassboxmiddle3.cmpcontentpass.cmpwelect .cmpcontentpassboxleft,.cmpcontentpassboxmiddle3.cmpcontentpass.cmpwelect .cmpcontentpassboxright,.cmpcontentpassboxmiddle3.cmpcontentpass.cmpwelect .cmpwelectboxright{margin-top:30px}.contentpassboxstyle1 .cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxleft,.contentpassboxstyle1 .cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpcontentpassboxright,.contentpassboxstyle1 .cmpcontentpassboxmiddle2.cmpcontentpass.cmpwelect .cmpwelectboxright,.contentpassboxstyle2 .cmpcontentpassboxleft,.contentpassboxstyle3 .cmpcontentpassboxleft{margin-top:0!important}.cmpcontentpassloginlogo{width:.9em;height:.9em}.cmpcontentpasssignuplogo{width:.9em;height:.9em;margin-right:10px}.cmpwelectlogo{width:.9em;height:.9em;margin-right:10px}.cmpwelectiframe{width:100%;height:640px;max-height:80vh;border:0 solid #fff;background-color:transparent}@media (max-height:926px) and (max-width:480px) and (orientation:portrait),(max-height:480px) and (max-width:926px) and (orientation:landscape){.cmpcontentpassbox.contentpassboxstyle2,.cmpcontentpassbox.contentpassboxstyle3{display:block!important}.cmpcontentpassbox.contentpassboxstyle2 .cmpcontentpassboxmiddle,.cmpcontentpassbox.contentpassboxstyle2 .cmpcontentpassboxmiddle2,.cmpcontentpassbox.contentpassboxstyle3 .cmpcontentpassboxmiddle,.cmpcontentpassbox.contentpassboxstyle3 .cmpcontentpassboxmiddle2,.cmpcontentpassboxmiddle,.cmpcontentpassboxmiddle2{display:block!important;margin-right:0!important;margin-left:0!important;width:100%!important}.cmpcontentpassboxleft{width:100%!important;margin-right:0!important;margin-top:30px}.cmpcontentpassboxright{width:100%!important;margin-left:0!important;margin-top:30px}.cmpcontentpassbox .cmpcontentpassboxmiddle .cmpcontentpassboxbottom,.cmpcontentpassbox .cmpcontentpassboxmiddle .cmpcontentpassboxbottom2,.cmpcontentpassbox .cmpcontentpassboxmiddle2 .cmpcontentpassboxbottom,.cmpcontentpassbox .cmpcontentpassboxmiddle2 .cmpcontentpassboxbottom2,.cmpcontentpassboxbottom,.cmpcontentpassboxbottom2{display:block!important;width:100%!important;margin-top:30px!important;margin-left:0!important;margin-right:0!important}.cmpwelectboxright{width:100%!important;margin-left:0!important;margin-top:30px}.cmpboxcontentpass .cmpboxinner{display:flex!important;flex-direction:column!important}}.cmpvendortogglebox{display:flex}.cmpvendortoggleboxd{display:flex;padding-right:20px}.cmpvendortoggleboxd>span{align-self:center;padding-right:10px}.cmpvendortoggleboxd>a{align-self:center}.cmpvendortoggleboxd .cmponofftext{display:inline}.cmppurposetogglebox{display:flex}.cmppurposetoggleboxd{display:flex;padding-right:20px}.cmppurposetoggleboxd>span{align-self:center;padding-right:10px}.cmppurposetoggleboxd>a{align-self:center}.cmppurposetoggleboxd .cmponofftext{display:inline}.cmpexplicitconsentbtn{padding:3px 8px;font-size:var(--x9pt);-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.5);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.5);box-shadow:0 0 5px 0 rgba(0,0,0,.5);border-radius:3px}span.cmptooltiplink{display:inline-block;position:relative;border-bottom:1px dotted var(--clrText);color:inherit}.cmptooltip{min-width:220px;max-width:400px;position:absolute;background-color:#fff;top:calc(100% + 10px);left:50%;transform:translate(-50%,0);padding:3px;border-radius:3px;z-index:99999999;border:1px solid var(--clrTextSecondary);box-shadow:0 1px 8px rgba(0,0,0,.2);visibility:hidden;opacity:0;transition:opacity .8s}span.cmptooltiplink:active .cmptooltip,span.cmptooltiplink:focus .cmptooltip,span.cmptooltiplink:hover .cmptooltip{visibility:visible;opacity:1}i.cmptooltiparrow{position:absolute;bottom:100%;left:50%;margin-left:-12px;width:24px;height:12px;overflow:hidden}i.cmptooltiparrow::after{content:"";position:absolute;width:12px;height:12px;left:50%;transform:translate(-50%,50%) rotate(45deg);background-color:var(--clrBackground);border:1px solid var(--clrTextSecondary);box-shadow:0 1px 8px rgba(0,0,0,.1)}div.cmpexpandcontent{display:none}.cmpbox table caption{display:none}.cmpboxbtnnocorner{z-index:99999}.cmpboxbtncustomcorner svg,.cmpboxbtnnocorner svg,.cmpboxbtnsavecorner svg,.cmpboxbtnyescorner svg{fill:currentColor}.cmpboxcookieicon{display:block;float:right;width:200px;margin-top:50px}.cmpboxcookieicon svg{width:100%;height:auto}.cmpboxcookieiconsilhouette{position:absolute;right:0;top:0;width:50%;z-index:-3;max-height:100%;overflow:hidden}.cmpboxcookieiconsilhouette svg.cmpcookieiconsilhouette{width:100%;height:auto}.cmpboxcookieiconsilhouette .silhouetteFill{fill:var(--clrButton);opacity:.1}@media (max-height:926px) and (max-width:480px) and (orientation:portrait){.cmpboxcookieicon{width:100px}}.cmpsliderbox{transition:all .8s ease;position:relative;z-index:0}.cmpsliderpointer{transition:all .8s ease;position:absolute;top:.6em;left:0;margin-left:45px;border-radius:30px;padding-left:14px;padding-top:14px;width:1px;height:1px;background-color:var(--clrButton);z-index:10}.cmpsliderpanel{position:absolute;top:.6em;left:0;margin-left:45px;border-radius:30px;padding-left:5px;width:1px;height:100%;background-color:var(--clrButton);opacity:.1;z-index:1}.cmpsliderpanel.cmpsliderpanelActive{height:0;opacity:.8;top:calc(.6em + 4px);z-index:2}.cmpsliderstationouter{position:relative}.cmpsliderstation{position:absolute;top:.7em;left:0;margin-left:45px;border-radius:30px;padding-left:12px;padding-top:12px;width:1px;height:1px;background-color:var(--clrButton);opacity:.5;z-index:3}.cmpslideritemActive .cmpsliderstation{opacity:.8;z-index:4}.cmpslideritem{margin-left:90px;margin-bottom:10px;position:relative;padding:5px;border-radius:5px;cursor:pointer}.cmpslideritem .cmpsliderhl,.cmpslideritem .cmpslidertxt{opacity:.8}.cmpslideritemActive .cmpsliderhl,.cmpslideritemActive .cmpslidertxt{opacity:1}.cmpslideritemouterActive{position:relative}.cmpslideritem:last-of-type{margin-bottom:0}.cmpsliderhl{color:var(--clrHeadline);font-size:var(--x11pt);font-weight:700}.cmpslidertxt{color:var(--clrText)}.cmpslidercenter{-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);-o-transform:translate(-50%,0);transform:translate(-50%,0)}.cmplastupdate{display:block;position:absolute;padding-left:3px;padding-right:3px;padding-top:8px;padding-bottom:6px;left:32px;bottom:3px;font-size:var(--x7pt);line-height:1em;color:var(--clrText);opacity:.5;border:1px solid transparent;cursor:pointer;border-radius:5px;text-align:left;transition:.4s all ease}.cmplastupdate.cmpwithtcf{left:76px}.cmplastupdate:hover{opacity:1;background-color:#fffdcd;border:1px solid #ffd341;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.25);box-shadow:0 0 5px 0 rgba(0,0,0,.25)}.cmptcfcookieinfo{display:block;position:absolute;padding-left:3px;padding-right:3px;padding-top:3px;padding-bottom:4px;left:30px;bottom:3px;line-height:1em;color:var(--clrText);background-color:var(--clrBackground);border:1px solid transparent;cursor:pointer;border-radius:5px;text-align:left;font-size:var(--x7pt);transition:.4s all ease}.cmptcfcookieinfo:focus,.cmptcfcookieinfo:hover{background-color:#fffdcd;border:1px solid #ffd341;-webkit-box-shadow:0 0 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 0 5px 0 rgba(0,0,0,.25);box-shadow:0 0 5px 0 rgba(0,0,0,.25)}.cmptcfcookieinfo SVG,.cmptcfcookieinfo svg{margin-left:0}.cmptcfcookieinfo .cmptcfcookieinfotxt{padding-left:3px;padding-right:3px;padding-top:5px;padding-bottom:2px;display:none}.cmptcfcookieinfo:hover .cmptcfcookieinfoicon{display:none}.cmptcfcookieinfo:hover .cmptcfcookieinfotxt{display:inline-block}.cmpboxtxtdivpurposeicon{display:inline-block}svg.cmpexternallinkicon,svg.cmpicon,svg.cmpicosvgfill,svg.cmppurposeicon,svg.cmptcficon{fill:currentColor;height:1em;width:1em;margin-right:.5em}svg.cmpexternallinkicon,svg.cmptcficon{margin-left:.5em}.cmpbox u{text-decoration:underline!important}.cmpfadein{opacity:0;transition-property:opacity;transition-duration:.9s;transition-timing-function:ease}.cmpflyin{left:-600px!important;right:600px!important}.cmpflyinR{left:calc(100vw + 600px)!important;right:calc(-100vw - 600px)!important}.cmpflyinT{top:-600px!important;bottom:calc(100vh + 1200px)!important}.cmpflyinB{top:calc(100vh + 600px)!important;bottom:calc(-100vh - 1200px)!important}.cmpflyin2{transition-property:left,right;transition-duration:1.9s;transition-timing-function:ease}.cmpflyin3{transition-property:top,bottom;transition-duration:1.9s;transition-timing-function:ease}.cmppolicybox{display:flex;flex-direction:column;height:100%}.cmppolicybox .cmppolicycontent{flex-grow:1;flex-shrink:1;overflow:auto}.cmppolicybox .cmpboxbtnsmore{flex-grow:0;flex-shrink:0}.cmpadchoicesoolink{display:flex;justify-content:center;color:var(--clrButtonText);background-color:var(--clrButton);font-weight:700;align-items:center;width:100%;margin:0 0 10px}.cmpadchoiceslearnmorelink{display:flex;align-items:center;justify-content:center;color:var(--clrButton);background-color:var(--clrButtonText);width:100%;margin:0}.cmpqrcontent,.cmpqrcontentalternative{text-align:center}.cmpqrcontent canvas,.cmpqrcontent img{border:5px solid #fff;border-radius:5px}.cmpqrouter{position:relative}.cmpqrspinner{width:100%;height:140px;align-items:center;justify-content:center;position:absolute;bottom:-70px;right:-120px}.cmpqrspinner .cmploadingspinner{width:60px;height:60px}.cmpqrspinner .cmploadingspinner div{border:6px solid var(--clrHeadline);border-color:var(--clrHeadline) transparent transparent transparent}.cmpboxdsaouter{max-width:800px;margin-left:auto;margin-right:auto}.cmpboxdsaaddetailouter,.cmpboxdsaaddetailoutersingle{border:1px solid silver;border-radius:5px;margin-bottom:50px}.cmpboxdsaaddetailouter{display:flex}.cmpboxdsaaddetail,.cmpboxdsaaddetailimg{padding:30px}.cmpboxdsaaddetailouter .cmpboxdsaaddetail,.cmpboxdsaaddetailouter .cmpboxdsaaddetailimg{width:100%}.cmpboxdsaaddetailimg{align-self:center;text-align:center}.cmpboxdsaaddetailimg img{max-width:100%;max-height:100%;width:100%}.cmpboxdsaaddetailline{margin-bottom:15px}.cmpboxdsaaddetailhl{color:var(--clrHeadline);font-weight:700;font-size:var(--x11pt)}.cmpboxdsaaddetailname{color:var(--clrText);font-size:var(--x8pt);opacity:.8;margin-bottom:.5em}.cmpboxdsaaddetaildescr,.cmpboxdsaaddetaildescritem{color:var(--clrText);font-size:var(--x10pt)}.cmpboxdsaaddetaildescrimg{text-align:center}.cmpboxdsaaddetaildescrimg img{width:100%;max-width:380px;max-height:600px}.cmpboxdsaaddetaildescritem{padding-left:2.5em;margin-left:.5em;padding-bottom:10px;padding-top:5px;background-repeat:no-repeat;background-size:24px;background-position:0 5px}.cmpboxDSA .cmpboxinner{overflow-y:auto}.cmpboxDSA .cmpclose,.cmpclose svg{fill:var(--clrHeadline);width:20px;height:20px;display:block}.cmpboxDSA .cmpboxh2 img{vertical-align:text-bottom;height:1.2em;margin-right:.5em}.cmpboxDSA .cmpboxdsaaddetaildescr .cmpboxbtn.cmpboxbtnyes{margin-left:0}.cmpboxdsaview{height:1.3em;margin-left:.5em}@media (max-height:926px) and (max-width:480px) and (orientation:portrait){.cmpboxdsaaddetailouter{display:block}.cmpboxdsaaddetaildescrimg img{max-width:100%}}.cmppurposedescrgpc{display:flex;align-items:center;gap:8px;background-color:rgba(50,118,174,.1);border-left:3px solid var(--clrButton);padding:8px 12px;margin-top:10px;margin-bottom:10px;border-radius:0 4px 4px 0;font-size:var(--x10pt);color:var(--clrText)}.cmppurposedescrgpc svg{flex-shrink:0;width:18px;height:18px;fill:var(--clrButton)}.skippmsg,.skippmsg *{--clrBackground:#FFFFFF;--clrHeadline:#3B3B3B;--clrText:#5F5F5F;--clrTextSecondary:#CFCFCF;--clrButton:#3276AE;--clrButtonText:#FFFFFF;--clrLink:#666666;--clrHighlight:#FFFDCD}.cmpspinnercenter{text-align:center!important}.cmploadingspinner{display:inline-block;position:relative;width:120px;height:120px;border-radius:50%;overflow:hidden}.cmploadingspinner div{box-sizing:border-box;display:block;position:absolute;width:100%;height:100%;border:12px solid var(--clrButton);border-radius:50%;animation:cmploadingspinner 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:var(--clrButton) transparent transparent transparent}.cmploadingspinner div:first-child{animation-delay:-.45s}.cmploadingspinner div:nth-child(2){animation-delay:-.3s}.cmploadingspinner div:nth-child(3){animation-delay:-.15s}@keyframes cmploadingspinner{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.cmploadingspinner2{display:inline-block;position:relative;width:80px;height:80px}.cmploadingspinner2 div{position:absolute;top:33px;width:13px;height:13px;border-radius:50%;background:var(--clrButton);animation-timing-function:cubic-bezier(0,1,1,0)}.cmploadingspinner2 div:first-child{left:8px;animation:cmploadingspinner21 .6s infinite}.cmploadingspinner2 div:nth-child(2){left:8px;animation:cmploadingspinner22 .6s infinite}.cmploadingspinner2 div:nth-child(3){left:32px;animation:cmploadingspinner22 .6s infinite}.cmploadingspinner2 div:nth-child(4){left:56px;animation:cmploadingspinner23 .6s infinite}@keyframes cmploadingspinner21{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes cmploadingspinner23{0%{transform:scale(1)}100%{transform:scale(0)}}@keyframes cmploadingspinner22{0%{transform:translate(0,0)}100%{transform:translate(24px,0)}}.cmpcookieinfotable-container{position:relative;width:100%;overflow-x:auto}.cmpcookieinfotable-wrapper{display:grid;width:100%}.cmpcookieinfotable-body,.cmpcookieinfotable-header{display:grid;grid-template-columns:repeat(7,1fr);border-bottom:1px solid var(--clrTextSecondary)}.cmpcookieinfotable-body{background-color:var(--clrBackground)}.cmpcookieinfotable-row{display:contents;margin-bottom:5px}.cmpcookieinfotable-cell,.cmpcookieinfotable-cellHeader{position:relative;padding:10px;border-bottom:1px solid var(--clrTextSecondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box;text-align:left}.cmpcookieinfotable-cellHeader{font-weight:700}.cmpcookieinfotable-description{grid-column:1/-1;background-color:#f3f3f3;padding:15px;margin-top:10px;margin-bottom:10px;border-top:2px solid var(--clrTextSecondary);border-bottom:2px solid var(--clrTextSecondary)}
+
+
+/*CLIENT CUSTOM CSS*/.cmpstyleroot, .cmpstyleroot *
+{
+    --clrBackground:    #FFFFFF;
+    --clrHeadline:      #0D3172;
+    --clrText:          #444444;
+    --clrTextSecondary: #444444;
+    --clrButton:        #0BB0E7;
+    --clrButtonText:    #FFFFFF;
+    --clrLink:          #0D3172;
+    --clrHighlight:     #F4F4F4;
+}.cmplogo {right: 20px; top: 20px;}
+.cmpbox:dir(rtl) .cmplogo, .cmpbox[dir="rtl"] .cmplogo {left: 20px; top: 20px; right:auto;}@media (max-width: 570px){.cmplogo{ display: none !important;}}
+    @media (max-height: 926px) and (max-width: 480px) and (orientation: portrait){.cmplogo{display: none !important;}}
+    @media (max-width: 926px) and (max-height: 480px) and (orientation: landscape){.cmplogo{display: none !important;}} *.cmpboxhl{font-size:12pt;color:var(--clrHeadline);padding-bottom:10px;font-weight:bold;} *.cmpboxtxt, td.cmpvendname{font-size:11pt;color:var(--clrText);}.cmpwelcomeprpstxt, .cmpwelcomeprpstxt A:link, .cmpwelcomeprpsbtn, .cmpwelcomeprpsbtn A:link, .cmpwelcomeprpsbtn span{font-size:11pt;color:var(--clrText);} *.cmpboxtxt{padding-bottom:20px;}.cmpwelcomeprpstxt, .cmpwelcomeprpstxt A:link, .cmpwelcomeprpsbtn, .cmpwelcomeprpsbtn A:link, .cmpwelcomeprpsbtn span{font-size:11pt;color:var(--clrText);}.cmpboxwelcomeprps{margin-bottom:20px;}.cmpmore{font-size:9pt;} .cmpsavemychoice, .cmpsavemychoice label{font-size:9pt;color:var(--clrText);} .cmpmorelink, A.cmpmorelink, A.cmpmorelink:link, .cmpmore A, .cmpmore A:link{font-size:9pt;color:var(--clrLink);} .cmpsavemychoice, .cmpsavemychoice label{font-size:9pt;color:var(--clrText);}  *.cmpboxbtnyes, A.cmpboxbtnyes, A.cmpboxbtnyes:link{font-size:11pt;color:var(--clrButtonText);background-color:var(--clrButton);} *.cmpboxbtnno, A.cmpboxbtnno, A.cmpboxbtnno:link{font-size:11pt;color:var(--clrButtonText);background-color:var(--clrButton);} *.cmpboxbtnsave, A.cmpboxbtnsave, A.cmpboxbtnsave:link{font-size:11pt;color:var(--clrButtonText);background-color:var(--clrButton);} *.cmpboxbtncustom, A.cmpboxbtncustom, A.cmpboxbtncustom:link{font-size:11pt;color:var(--clrButtonText);background-color:var(--clrButton);} .cmpfullscreen *.cmpboxbtnyes, .cmpfullscreen A.cmpboxbtnyes, .cmpfullscreen A.cmpboxbtnyes:link{font-size:11pt;color:var(--clrButtonText);background-color:var(--clrButton);} .cmpfullscreen *.cmpboxbtnaccept, .cmpfullscreen A.cmpboxbtnaccept, .cmpfullscreen A.cmpboxbtnaccept:link{color:var(--clrButtonText);background-color:var(--clrButton);} .cmpfullscreen *.cmpboxbtnreject, .cmpfullscreen A.cmpboxbtnreject, .cmpfullscreen A.cmpboxbtnreject:link{color:var(--clrButtonText);background-color:var(--clrButton);} *.cmpexplicitconsentbtn, A.cmpexplicitconsentbtn, A.cmpexplicitconsentbtn:link, *.cmpexplicitconsentbtnon, A.cmpexplicitconsentbtnon, A.cmpexplicitconsentbtnon:link{color:var(--clrButtonText);background-color:var(--clrButton);} *.cmpexplicitconsentbtnoff, A.cmpexplicitconsentbtnoff, A.cmpexplicitconsentbtnoff:link{color:var(--clrButtonText);background-color:var(--clrButton);} .cmpfullscreen .cmpmorelink, .cmpfullscreen A.cmpmorelink, .cmpfullscreen A.cmpmorelink:link{font-size:9pt;color:var(--clrLink);} *.cmpboxbtnyes svg{fill:currentColor;width:1em;height:1em;}*.cmpboxbtnno svg{fill:currentColor;width:1em;height:1em;}*.cmpboxbtnaccept svg{fill:currentColor;width:1em;height:1em;vertical-align: middle;}*.cmpboxbtnreject svg{fill:currentColor;width:1em;height:1em;vertical-align: middle;} *.cmpboxbtnyescustomchoices *.cmpimg, *.cmpboxbtnyescustomchoices svg{display:none !important;} *.cmpboxbtnyescustomchoices{padding-left:0px;} *.cmpbox{background-color:var(--clrBackground);border-top:solid 12px var(--clrButton);border-right:solid 0px var(--clrBackground);border-bottom:solid 5px var(--clrTextSecondary);border-left:solid 0px var(--clrBackground);padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px;} *.cmpclose{display:none;}  .cmpfullscreen *.cmpboxhl{font-size:12pt;color:var(--clrHeadline);font-weight:bold;} .cmpfullscreen *.cmpprpshl{font-size:12pt;color:var(--clrHeadline);font-weight:bold;} .cmpfullscreen *.cmpboxtxt, .cmpfullscreen, .cmpprpsdescr, td.cmpvendname, .cmpfullscreen A.cmpvendurl, .cmpfullscreen A.cmpvendurl:link{font-size:11pt;color:var(--clrText);} .cmpfullscreen.cmpbox{background-color:var(--clrBackground);} .cmpboxnaviitemactive, TD.cmpallvend, TH.cmpallvend, TD.cmpallprps, TH.cmpallprps{background-color:var(--clrHighlight);}@media (max-height: 926px) and (max-width: 480px) and (orientation: portrait) {.cmpbox{overflow:auto;max-width:100%; min-width:100%; }}@media (max-height: 480px) and (max-width: 926px) and (orientation: landscape) {.cmpbox{overflow:auto;max-height:100%; min-height:100%;}}.cmptogglespan svg{width:40px; height:20px;}.cmptogglespan svg .cmpsvggreenfill{fill:#5AB14B !important;} .cmptogglespan svg .cmpsvggreenstroke{stroke:#5AB14B !important;}.cmptogglespan svg .cmpsvgredfill{fill:#F64C4E !important;} .cmptogglespan svg .cmpsvgredstroke{stroke:#F64C4E !important;}.cmptogglespan svg .cmpsvgwhitefill{fill:#FFFFFF !important;} .cmptogglespan svg .cmpsvgwhitestroke{stroke:#FFFFFF !important;}.cmptogglespan svg .cmpsvgblackfill{fill:#111111 !important;} .cmptogglespan svg .cmpsvgblackstroke{stroke:#111111 !important;}.cmptogglespan svg .cmpsvggrayfill{fill:#777777 !important;} .cmptogglespan svg .cmpsvggraystroke{stroke:#777777 !important;}.cmptogglespan svg .cmpsvggray2fill{fill:#AAAAAA !important;} .cmptogglespan svg .cmpsvggray2stroke{stroke:#AAAAAA !important;}.cmptogglespan svg .cmpsvgsilverfill{fill:#E5E5E5 !important;} .cmptogglespan svg .cmpsvgsilverstroke{stroke:#E5E5E5 !important;}.cmptogglespan svg .cmpsvgsilver2fill{fill:#DDDDDD !important;} .cmptogglespan svg .cmpsvgsilver2stroke{stroke:#DDDDDD !important;}</style></body></html>

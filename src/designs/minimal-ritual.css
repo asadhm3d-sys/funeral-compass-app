@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-sans: "Roboto Condensed", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 0 0% 98%;
+  --foreground: 0 0% 9%;
+  --card: 0 0% 98%;
+  --card-foreground: 0 0% 9%;
+  --popover: 0 0% 98%;
+  --popover-foreground: 0 0% 9%;
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  --primary-soft: 0 0% 42%;
+  --secondary: 0 0% 91%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 93%;
+  --muted-foreground: 0 0% 42%;
+  --accent: 12 42% 42%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 55% 38%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 78%;
+  --input: 0 0% 38%;
+  --ring: 0 0% 9%;
+  --radius: 0px;
+  --shadow-soft: 0 0 0 0 transparent;
+  --shadow-card: 0 0 0 0 transparent;
+  --gradient-warm: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 96%));
+  --gradient-hero: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 96%));
+  --transition-smooth: all 0.16s ease;
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 0 0% 9%;
+  --sidebar-primary: 0 0% 9%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 0 0% 93%;
+  --sidebar-accent-foreground: 0 0% 9%;
+  --sidebar-border: 0 0% 78%;
+  --sidebar-ring: 0 0% 9%;
+  --logo-ring-dark: #171717;
+  --logo-ring-soft: #777777;
+  --logo-path: #9a9a9a;
+  --logo-path-dark: #5e5e5e;
+  --logo-flame: #9f452f;
+  --logo-cutout: hsl(0 0% 98%);
+}
+
+.app-shell {
+  background:
+    linear-gradient(90deg, transparent 0, transparent 4.5rem, hsl(0 0% 9% / 0.08) 4.5rem, hsl(0 0% 9% / 0.08) 4.56rem, transparent 4.56rem),
+    linear-gradient(180deg, transparent 0, transparent 13rem, hsl(0 0% 9% / 0.08) 13rem, hsl(0 0% 9% / 0.08) 13.06rem, transparent 13.06rem),
+    hsl(var(--background)) !important;
+}
+
+.app-header {
+  border-bottom: 1px solid hsl(var(--foreground)) !important;
+  background: hsl(var(--background)) !important;
+  backdrop-filter: none !important;
+}
+
+.app-header-inner {
+  height: 60px !important;
+}
+
+.app-logo-mark {
+  width: 2rem !important;
+  height: 2rem !important;
+  border: 1px solid hsl(var(--foreground)) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.app-logo-text {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em !important;
+}
+
+.app-main {
+  max-width: 920px !important;
+  padding-top: 3rem !important;
+}
+
+.entry-title,
+.step-title {
+  font-size: clamp(2rem, 4vw, 4rem) !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0 !important;
+}
+
+.entry-lead,
+.step-subtitle {
+  max-width: 560px !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.entry-card-grid {
+  gap: 1px !important;
+  background: hsl(var(--foreground));
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 1px solid hsl(var(--foreground)) !important;
+  border-radius: 0 !important;
+  background: hsl(var(--background)) !important;
+  box-shadow: none !important;
+}
+
+.entry-card-grid .entry-card {
+  border: 0 !important;
+}
+
+.entry-card:hover,
+.option-card:hover {
+  transform: none !important;
+  background: hsl(var(--secondary)) !important;
+}
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 2 / 1 !important;
+  border-bottom: 1px solid hsl(var(--foreground));
+}
+
+.entry-card img,
+.option-card img {
+  filter: grayscale(1) contrast(1.08);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.25rem !important;
+}
+
+.entry-card-icon {
+  border: 1px solid hsl(var(--foreground)) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.app-button,
+.theme-pill,
+.theme-input {
+  border-radius: 0 !important;
+}
+
+.app-button {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.theme-input {
+  background: hsl(var(--background)) !important;
+  border-color: hsl(var(--foreground)) !important;
+}
+
+.theme-progress-track {
+  height: 2px !important;
+  border-radius: 0 !important;
+  background: hsl(var(--foreground) / 0.2) !important;
+}
+
+.theme-progress-bar {
+  border-radius: 0 !important;
+  background: hsl(var(--foreground)) !important;
+}
+
+.step-footer,
+.entry-actions,
+.app-footer {
+  border-color: hsl(var(--foreground)) !important;
+}

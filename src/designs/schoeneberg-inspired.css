@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap");
+
+:root {
+  --font-sans: "Barlow", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 34 42% 91%;
+  --foreground: 16 36% 14%;
+  --card: 38 48% 96%;
+  --card-foreground: 16 36% 14%;
+  --popover: 38 48% 96%;
+  --popover-foreground: 16 36% 14%;
+  --primary: 354 56% 36%;
+  --primary-foreground: 38 48% 96%;
+  --primary-soft: 354 35% 53%;
+  --secondary: 30 48% 82%;
+  --secondary-foreground: 16 36% 14%;
+  --muted: 33 34% 86%;
+  --muted-foreground: 20 20% 39%;
+  --accent: 28 62% 52%;
+  --accent-foreground: 16 36% 14%;
+  --destructive: 354 56% 36%;
+  --destructive-foreground: 38 48% 96%;
+  --border: 22 26% 66%;
+  --input: 20 20% 39%;
+  --ring: 354 56% 36%;
+  --radius: 8px;
+  --shadow-soft: 0 24px 56px -36px hsl(16 44% 12% / 0.5);
+  --shadow-card: 0 16px 42px -32px hsl(16 42% 12% / 0.36);
+  --gradient-warm: linear-gradient(140deg, hsl(34 42% 91%) 0%, hsl(30 48% 82%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(354 56% 36%) 0%, hsl(28 62% 52%) 100%);
+  --transition-smooth: all 0.24s ease;
+  --sidebar-background: 34 42% 91%;
+  --sidebar-foreground: 16 36% 14%;
+  --sidebar-primary: 354 56% 36%;
+  --sidebar-primary-foreground: 38 48% 96%;
+  --sidebar-accent: 33 34% 86%;
+  --sidebar-accent-foreground: 16 36% 14%;
+  --sidebar-border: 22 26% 66%;
+  --sidebar-ring: 354 56% 36%;
+  --logo-ring-dark: #401b17;
+  --logo-ring-soft: #9b5a4d;
+  --logo-path: #bd9d83;
+  --logo-path-dark: #8b6655;
+  --logo-flame: #d57934;
+  --logo-cutout: hsl(34 42% 91%);
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at 86% 10%, hsl(var(--accent) / 0.24), transparent 20rem),
+    radial-gradient(circle at 10% 90%, hsl(var(--primary) / 0.18), transparent 22rem),
+    radial-gradient(ellipse at 50% 0%, hsl(38 48% 96% / 0.58), transparent 22rem),
+    linear-gradient(140deg, hsl(34 42% 91%), hsl(30 48% 82%)) !important;
+}
+
+.app-header {
+  border-bottom: 3px solid hsl(var(--primary)) !important;
+  background: hsl(38 48% 96% / 0.92) !important;
+  box-shadow: none !important;
+}
+
+.app-header-inner {
+  height: 74px !important;
+}
+
+.app-logo {
+  gap: 0.9rem !important;
+}
+
+.app-logo-mark {
+  width: 3.35rem !important;
+  height: 3.35rem !important;
+}
+
+.app-logo-text {
+  font-family: "Merriweather", Georgia, serif !important;
+  font-size: 1.42rem !important;
+  font-weight: 700 !important;
+}
+
+.app-logo-text span {
+  color: hsl(var(--primary)) !important;
+}
+
+.app-main {
+  max-width: 1080px !important;
+  padding-top: 3.8rem !important;
+}
+
+.entry-hero,
+.step-header {
+  max-width: 760px !important;
+  border-left: 8px solid hsl(var(--primary));
+  padding-left: 1.4rem;
+}
+
+.entry-title,
+.step-title {
+  font-family: "Merriweather", Georgia, serif !important;
+  color: hsl(var(--foreground)) !important;
+  font-size: clamp(2.35rem, 5vw, 5.1rem) !important;
+  line-height: 0.98 !important;
+  font-weight: 700 !important;
+}
+
+.entry-lead,
+.step-subtitle {
+  max-width: 640px !important;
+  color: hsl(var(--foreground) / 0.76) !important;
+  font-size: 1.09rem !important;
+}
+
+.entry-card-grid {
+  gap: 1rem !important;
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 2px solid hsl(var(--foreground) / 0.12) !important;
+  border-radius: 10px !important;
+  background: hsl(var(--card) / 0.92) !important;
+  box-shadow: var(--shadow-card) !important;
+  position: relative;
+}
+
+.entry-card::before,
+.option-card::before,
+.theme-section::before,
+.entry-detail-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-top: 5px solid hsl(var(--primary));
+  border-radius: inherit;
+}
+
+.entry-card:hover,
+.option-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: hsl(var(--primary) / 0.45) !important;
+}
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 16 / 9 !important;
+  background: hsl(var(--muted)) !important;
+  border-bottom: 2px solid hsl(var(--primary) / 0.85);
+}
+
+.entry-card img,
+.option-card img {
+  filter: sepia(0.12) saturate(0.92) contrast(1.06);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.5rem !important;
+}
+
+.entry-card-icon {
+  border-radius: 8px !important;
+  background: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+.entry-card-title,
+.option-card-title,
+.theme-section-title {
+  font-family: "Merriweather", Georgia, serif !important;
+  font-weight: 700 !important;
+}
+
+.app-button {
+  border-radius: 8px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.theme-pill {
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+
+.theme-input {
+  height: 2.9rem !important;
+  border: 2px solid hsl(var(--foreground) / 0.26) !important;
+  border-radius: 8px !important;
+  background: hsl(var(--card) / 0.9) !important;
+}
+
+.theme-progress-labels {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.theme-progress-track {
+  height: 0.55rem !important;
+  border-radius: 0 !important;
+  background: hsl(var(--card) / 0.9) !important;
+  border: 1px solid hsl(var(--foreground) / 0.2);
+}
+
+.theme-progress-bar {
+  border-radius: 0 !important;
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))) !important;
+}
+
+.step-footer,
+.entry-actions {
+  border-top: 2px solid hsl(var(--primary) / 0.25) !important;
+}
+
+.app-footer {
+  border-top: 3px solid hsl(var(--primary)) !important;
+  background: hsl(var(--card) / 0.64) !important;
+}

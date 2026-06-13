@@ -1,0 +1,95 @@
+@import "./design.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Funeral Compass design tokens are loaded from src/design.css. */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: var(--font-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .app-logo-mark {
+    width: 3rem !important;
+    height: 3rem !important;
+    flex-shrink: 0;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: inherit !important;
+  }
+
+  .app-logo-svg {
+    --logo-ring-dark: #1e3448;
+    --logo-ring-soft: #6f9799;
+    --logo-path: #86a9aa;
+    --logo-path-dark: #5f8789;
+    --logo-flame: #d39a27;
+    --logo-cutout: hsl(var(--background));
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .logo-ring-dark,
+  .logo-ring-soft {
+    fill: none;
+    stroke-linecap: butt;
+    stroke-width: 27;
+  }
+
+  .logo-ring-dark {
+    stroke: var(--logo-ring-dark);
+  }
+
+  .logo-ring-soft {
+    stroke: var(--logo-ring-soft);
+  }
+
+  .logo-path {
+    fill: var(--logo-path);
+  }
+
+  .logo-path-dark {
+    fill: var(--logo-path-dark);
+    opacity: 0.9;
+  }
+
+  .logo-flame {
+    fill: var(--logo-flame);
+    stroke: var(--logo-flame);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 6;
+  }
+
+  .logo-cutout {
+    fill: var(--logo-cutout);
+    stroke: none;
+  }
+}

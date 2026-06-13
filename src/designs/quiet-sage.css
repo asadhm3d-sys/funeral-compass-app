@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-sans: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 95 18% 95%;
+  --foreground: 150 11% 13%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 150 11% 13%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 150 11% 13%;
+
+  --primary: 151 28% 28%;
+  --primary-foreground: 0 0% 100%;
+  --primary-soft: 150 18% 48%;
+
+  --secondary: 50 22% 88%;
+  --secondary-foreground: 150 11% 13%;
+
+  --muted: 96 15% 90%;
+  --muted-foreground: 150 7% 39%;
+
+  --accent: 36 32% 72%;
+  --accent-foreground: 150 11% 13%;
+
+  --destructive: 356 48% 38%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 104 12% 76%;
+  --input: 150 7% 43%;
+  --ring: 151 28% 28%;
+
+  --radius: 8px;
+
+  --shadow-soft: 0 16px 38px -28px hsl(151 30% 18% / 0.46);
+  --shadow-card: 0 10px 30px -25px hsl(151 20% 22% / 0.36);
+  --gradient-warm: linear-gradient(180deg, hsl(95 18% 95%) 0%, hsl(50 22% 92%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(95 18% 95%) 0%, hsl(36 30% 92%) 100%);
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sidebar-background: 95 18% 96%;
+  --sidebar-foreground: 150 11% 17%;
+  --sidebar-primary: 151 28% 28%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 96 15% 90%;
+  --sidebar-accent-foreground: 150 11% 14%;
+  --sidebar-border: 104 12% 78%;
+  --sidebar-ring: 151 28% 28%;
+}
+
+.dark {
+  --background: 150 15% 11%;
+  --foreground: 96 16% 91%;
+  --card: 150 13% 15%;
+  --card-foreground: 96 16% 91%;
+  --popover: 150 13% 15%;
+  --popover-foreground: 96 16% 91%;
+  --primary: 128 24% 64%;
+  --primary-foreground: 150 15% 11%;
+  --primary-soft: 128 18% 35%;
+  --secondary: 150 10% 22%;
+  --secondary-foreground: 96 16% 91%;
+  --muted: 150 10% 19%;
+  --muted-foreground: 96 10% 68%;
+  --accent: 36 24% 42%;
+  --accent-foreground: 96 16% 91%;
+  --destructive: 356 45% 58%;
+  --destructive-foreground: 150 15% 11%;
+  --border: 150 10% 27%;
+  --input: 150 10% 27%;
+  --ring: 128 24% 64%;
+}
+

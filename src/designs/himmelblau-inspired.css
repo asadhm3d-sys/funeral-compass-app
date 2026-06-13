@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
+
+:root {
+  --font-sans: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --background: 195 64% 96%;
+  --foreground: 211 38% 18%;
+  --card: 0 0% 100%;
+  --card-foreground: 211 38% 18%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 211 38% 18%;
+  --primary: 198 77% 45%;
+  --primary-foreground: 0 0% 100%;
+  --primary-soft: 197 58% 69%;
+  --secondary: 48 92% 88%;
+  --secondary-foreground: 211 38% 18%;
+  --muted: 196 44% 91%;
+  --muted-foreground: 210 18% 42%;
+  --accent: 42 94% 58%;
+  --accent-foreground: 211 38% 18%;
+  --destructive: 356 60% 42%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 197 36% 78%;
+  --input: 210 18% 42%;
+  --ring: 198 77% 45%;
+  --radius: 22px;
+  --shadow-soft: 0 28px 60px -38px hsl(198 70% 28% / 0.38);
+  --shadow-card: 0 18px 46px -34px hsl(198 58% 28% / 0.32);
+  --gradient-warm: linear-gradient(180deg, hsl(195 64% 96%) 0%, hsl(190 58% 91%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(195 64% 96%) 0%, hsl(48 92% 88%) 100%);
+  --transition-smooth: all 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+  --sidebar-background: 195 64% 96%;
+  --sidebar-foreground: 211 38% 18%;
+  --sidebar-primary: 198 77% 45%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 196 44% 91%;
+  --sidebar-accent-foreground: 211 38% 18%;
+  --sidebar-border: 197 36% 78%;
+  --sidebar-ring: 198 77% 45%;
+  --logo-ring-dark: #173a59;
+  --logo-ring-soft: #58a9bb;
+  --logo-path: #8fc9cf;
+  --logo-path-dark: #3c8ea3;
+  --logo-flame: #f3b33a;
+  --logo-cutout: hsl(195 64% 96%);
+}
+
+.app-shell {
+  background:
+    radial-gradient(ellipse at 22% 18%, hsl(0 0% 100% / 0.92) 0 12rem, transparent 12.2rem),
+    radial-gradient(ellipse at 42% 8%, hsl(0 0% 100% / 0.66) 0 9rem, transparent 9.2rem),
+    radial-gradient(circle at 82% 12%, hsl(48 94% 66% / 0.38), transparent 13rem),
+    radial-gradient(circle at 92% 74%, hsl(198 78% 66% / 0.2), transparent 22rem),
+    linear-gradient(180deg, hsl(195 64% 96%) 0%, hsl(190 58% 91%) 55%, hsl(0 0% 100%) 100%) !important;
+}
+
+.app-header {
+  border-bottom: 0 !important;
+  background: hsl(0 0% 100% / 0.78) !important;
+  box-shadow: 0 16px 46px -38px hsl(198 70% 25% / 0.55);
+}
+
+.app-header-inner {
+  height: 78px !important;
+}
+
+.app-logo {
+  gap: 0.85rem !important;
+}
+
+.app-logo-mark {
+  width: 3.45rem !important;
+  height: 3.45rem !important;
+}
+
+.app-logo-text {
+  color: hsl(var(--foreground)) !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+}
+
+.app-logo-text span {
+  color: hsl(var(--primary)) !important;
+}
+
+.app-main {
+  max-width: 1140px !important;
+  padding-top: 3.4rem !important;
+}
+
+.entry-hero,
+.step-header {
+  max-width: 780px !important;
+}
+
+.entry-title,
+.step-title {
+  color: hsl(var(--foreground)) !important;
+  font-size: clamp(2.65rem, 5.6vw, 5.9rem) !important;
+  line-height: 0.95 !important;
+  font-weight: 900 !important;
+}
+
+.entry-title::after,
+.step-title::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 0.5rem;
+  margin-top: 1.1rem;
+  border-radius: 999px;
+  background: hsl(var(--accent));
+}
+
+.entry-lead,
+.step-subtitle {
+  max-width: 680px !important;
+  color: hsl(var(--muted-foreground)) !important;
+  font-size: 1.14rem !important;
+}
+
+.entry-card-grid {
+  gap: 1.4rem !important;
+}
+
+.entry-card,
+.option-card,
+.theme-section,
+.entry-detail-panel {
+  border: 0 !important;
+  border-radius: 34px !important;
+  background: hsl(0 0% 100% / 0.9) !important;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.entry-card:hover,
+.option-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+.entry-card-media,
+.option-card-media {
+  aspect-ratio: 16 / 10 !important;
+  border-radius: 30px 30px 0 0 !important;
+  background: hsl(var(--muted)) !important;
+}
+
+.entry-card img,
+.option-card img {
+  filter: saturate(1.08) contrast(0.98) brightness(1.03);
+}
+
+.entry-card-content,
+.option-card-content {
+  padding: 1.75rem !important;
+}
+
+.entry-card-icon {
+  width: 3.1rem !important;
+  height: 3.1rem !important;
+  border-radius: 20px !important;
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-soft))) !important;
+  color: hsl(var(--primary-foreground)) !important;
+}
+
+.entry-card-title,
+.option-card-title,
+.theme-section-title {
+  font-weight: 900 !important;
+}
+
+.app-button {
+  border-radius: 999px !important;
+  font-weight: 900 !important;
+  box-shadow: 0 16px 30px -22px hsl(var(--primary) / 0.72) !important;
+}
+
+.theme-pill {
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+}
+
+.theme-input {
+  height: 3rem !important;
+  border: 2px solid hsl(var(--border)) !important;
+  border-radius: 18px !important;
+  background: hsl(0 0% 100% / 0.82) !important;
+}
+
+.theme-progress-track {
+  height: 0.75rem !important;
+  background: hsl(0 0% 100% / 0.85) !important;
+}
+
+.theme-progress-bar {
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))) !important;
+}
+
+.step-footer,
+.entry-actions {
+  border-color: hsl(var(--border) / 0.75) !important;
+}
+
+.app-footer {
+  border-top: 0 !important;
+  background: transparent !important;
+}

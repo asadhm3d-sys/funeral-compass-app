@@ -1,0 +1,35 @@
+FUNERAL COMPASS — project with account/plans/submission/invoice features
+========================================================================
+
+This zip's contents ARE the project root (package.json is right here,
+next to this file). Do NOT look for a nested folder.
+
+WINDOWS SETUP
+-------------
+1. Extract this zip to a NEW folder, e.g.:
+   C:\Users\Asad\Desktop\funeral-compass
+
+2. Open PowerShell and run:
+   cd C:\Users\Asad\Desktop\funeral-compass
+   dir src\pages
+   --> you should see Account.tsx, MyPlans.tsx, Datenschutz.tsx
+
+3. Install and run:
+   npm.cmd install
+   npm.cmd run dev
+   --> open the http://localhost:8080/ URL it prints
+
+WHAT'S NEW (look for these in the browser)
+------------------------------------------
+- "My plans" and "Account" links in the top-right header
+- 24h help strip above the footer; Privacy/Datenschutz footer link
+- Trust badges + Sternenkinder notice on the start screen
+- Summary page: Save plan, Send to funeral home (office dropdown),
+  demo deposit, demo invoice
+- Direct routes: /account  /plans  /datenschutz
+
+DEPLOY TO VERCEL
+----------------
+   npm.cmd install --global vercel
+   vercel login
+   vercel deploy
