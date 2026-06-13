@@ -23,7 +23,7 @@ import { PROVIDER } from "@/lib/providerConfig";
 import { getRepository, useOwner } from "@/lib/plans";
 import { newReference, type SavedPlan } from "@/lib/plans/types";
 import { exportInvoicePdf } from "@/lib/invoicePdf";
-import { calculateTotal, formatEUR, type WizardState } from "@/types/wizard";
+import { calculateBreakdown, calculateTotal, formatEUR, type WizardState } from "@/types/wizard";
 import { toast } from "sonner";
 import { BookmarkPlus, FileText, HandCoins, Send } from "lucide-react";
 
@@ -132,6 +132,21 @@ export const PlanActions = ({ state }: Props) => {
       rememberActive(updated);
       setSubmitOpen(false);
       toast(t("sb_sent"), { description: t("sb_sentDesc", { ref: submission.reference }) });
+
+      // Fire-and-forget confirmation email — failure is non-fatal
+      fetch("/api/send-confirmation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: submission.contactEmail,
+          name: submission.contactName,
+          reference: submission.reference,
+          lang,
+          breakdown: calculateBreakdown(state, lang),
+          total: calculateTotal(state, lang),
+          office: submission.office,
+        }),
+      }).catch(() => undefined);
     } catch (e) {
       toast.error(t("sb_error"), { description: String(e) });
     } finally {
