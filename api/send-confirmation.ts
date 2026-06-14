@@ -157,17 +157,17 @@ export default async function handler(req: Request): Promise<Response> {
 
   const resend = new Resend(apiKey);
 
-  try {
-    await resend.emails.send({ from, to: email, subject, html: buildHtml(body) });
-    return new Response(JSON.stringify({ ok: true }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" },
-    });
-  } catch (err) {
-    console.error("[send-confirmation]", err);
-    return new Response(JSON.stringify({ ok: false }), {
+  const { data, error } = await resend.emails.send({ from, to: email, subject, html: buildHtml(body) });
+  if (error) {
+    console.error("[send-confirmation] Resend error:", JSON.stringify(error));
+    return new Response(JSON.stringify({ ok: false, error: error.message }), {
       status: 500,
       headers: { "Content-Type": "application/json" },
     });
   }
+  console.log("[send-confirmation] sent:", data?.id);
+  return new Response(JSON.stringify({ ok: true, id: data?.id }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
 }
