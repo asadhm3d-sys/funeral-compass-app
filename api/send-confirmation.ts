@@ -20,6 +20,15 @@ interface Body {
   message?: string;
 }
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_NAME_LENGTH = 200;
+const MAX_EMAIL_LENGTH = 320;
+const MAX_REFERENCE_LENGTH = 50;
+const MAX_OFFICE_LENGTH = 200;
+const MAX_PHONE_LENGTH = 50;
+const MAX_MESSAGE_LENGTH = 5000;
+const MAX_BREAKDOWN_ITEMS = 50;
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
@@ -195,12 +204,57 @@ export default async function handler(req: Request): Promise<Response> {
     });
   }
 
-  const { email, name, reference, lang = "en" } = body;
+  body.name = body.name?.trim() ?? "";
+  body.email = body.email?.trim() ?? "";
+  body.reference = body.reference?.trim() ?? "";
+  body.office = body.office?.trim() || undefined;
+  body.contactPhone = body.contactPhone?.trim() || undefined;
+  body.message = body.message?.trim() || undefined;
+  body.lang = body.lang === "de" ? "de" : "en";
+  const { email, name, reference, lang, office, contactPhone, message, breakdown, total } = body;
+
   if (!email || !name || !reference) {
     return new Response(JSON.stringify({ ok: false, error: "Missing required fields" }), {
       status: 400,
       headers: { "Content-Type": "application/json" },
     });
+  }
+
+  if (!EMAIL_RE.test(email)) {
+    return new Response(JSON.stringify({ ok: false, error: "Invalid email address" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  if (
+    name.length > MAX_NAME_LENGTH ||
+    email.length > MAX_EMAIL_LENGTH ||
+    reference.length > MAX_REFERENCE_LENGTH ||
+    (office?.length ?? 0) > MAX_OFFICE_LENGTH ||
+    (contactPhone?.length ?? 0) > MAX_PHONE_LENGTH ||
+    (message?.length ?? 0) > MAX_MESSAGE_LENGTH
+  ) {
+    return new Response(JSON.stringify({ ok: false, error: "Input too long" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  if (!Array.isArray(breakdown) || breakdown.length > MAX_BREAKDOWN_ITEMS || !Number.isFinite(total)) {
+    return new Response(JSON.stringify({ ok: false, error: "Invalid plan data" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  for (const line of breakdown) {
+    if (typeof line.label !== "string" || !Number.isFinite(line.amount)) {
+      return new Response(JSON.stringify({ ok: false, error: "Invalid plan data" }), {
+        status: 400,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
   }
 
   const de = lang === "de";
