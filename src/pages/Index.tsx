@@ -19,6 +19,7 @@ import { initialState, WizardState, buildSteps, StepId } from "@/types/wizard";
 import { applyWithCascade } from "@/lib/wizardCascade";
 import { toast } from "sonner";
 import { EmergencyHelp } from "@/components/EmergencyHelp";
+import { SiteNav } from "@/components/SiteNav";
 
 
 const STORAGE_KEY = "funeral-compass:v3";
@@ -114,6 +115,7 @@ const Index = () => {
             >
               {t("nav_account")}
             </Link>
+            <SiteNav />
             <LanguageSwitcher />
           </div>
         </div>

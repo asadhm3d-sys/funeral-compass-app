@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Logo } from "@/components/wizard/Logo";
 import { LanguageSwitcher, useLang } from "@/lib/i18n";
 import { EmergencyHelp } from "@/components/EmergencyHelp";
+import { SiteNav } from "@/components/SiteNav";
 
 export const StaticPageLayout = ({ children }: { children: ReactNode }) => {
   const { t } = useLang();
@@ -26,6 +27,7 @@ export const StaticPageLayout = ({ children }: { children: ReactNode }) => {
             >
               {t("nav_account")}
             </Link>
+            <SiteNav />
             <LanguageSwitcher />
           </div>
         </div>

@@ -22,6 +22,7 @@ const dict = {
   nav_contact: { en: "Contact Us", de: "Kontakt" },
   nav_about: { en: "About Us", de: "Über uns" },
   nav_impressum: { en: "Legal Notice", de: "Impressum" },
+  nav_pages: { en: "Pages", de: "Seiten" },
 
   // Contact page
   contact_title: { en: "Contact Us", de: "Kontakt" },

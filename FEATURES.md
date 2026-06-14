@@ -100,6 +100,12 @@ throughout the app.
 Full EN/DE translations with a language switcher; all user-facing strings
 are translation keys.
 
+## Site Navigation (`src/components/SiteNav.tsx`)
+
+"Pages" dropdown in the header (wizard + all static pages) linking to Home,
+About, Contact, Impressum, Datenschutz, and Terms — lets users jump between
+pages without scrolling to the footer or using the browser back button.
+
 ## Static Pages (`src/pages/*`)
 
 - **About** — provider/company info
