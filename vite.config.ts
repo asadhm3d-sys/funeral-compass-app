@@ -31,19 +31,6 @@ export default defineConfig(({ mode }) => ({
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
   },
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (!id.includes("node_modules")) return;
-          if (id.includes("jspdf") || id.includes("canvg") || id.includes("dompurify")) return "vendor-pdf";
-          if (id.includes("recharts") || id.includes("d3-") || id.includes("victory")) return "vendor-charts";
-          if (id.includes("@radix-ui")) return "vendor-radix";
-          if (id.includes("react-router") || id.includes("react-hook-form") || id.includes("@hookform")) return "vendor-react-ext";
-          if (id.includes("react") || id.includes("react-dom")) return "vendor-react";
-          if (id.includes("@supabase")) return "vendor-supabase";
-          return "vendor";
-        },
-      },
-    },
+    chunkSizeWarningLimit: 1000,
   },
 }));
