@@ -13,6 +13,7 @@ import { AuthProvider } from "@/lib/plans";
 import Account from "./pages/Account.tsx";
 import MyPlans from "./pages/MyPlans.tsx";
 import Datenschutz from "./pages/Datenschutz.tsx";
+import Terms from "./pages/Terms.tsx";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/account" element={<Account />} />
             <Route path="/plans" element={<MyPlans />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="/terms" element={<Terms />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

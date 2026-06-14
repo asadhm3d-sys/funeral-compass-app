@@ -89,6 +89,9 @@ are translation keys.
 - **About** — provider/company info
 - **Impressum** — legal notice (DE requirement)
 - **Datenschutz** — privacy policy
+- **Terms** (`/terms`) — terms & conditions: clarifies that plan submissions
+  are non-binding requests, prices are estimates, deposits/payments are
+  simulated (demo only), liability, governing law (EN/DE)
 - **NotFound** — 404
 
 ## Deployment

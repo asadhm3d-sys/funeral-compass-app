@@ -67,6 +67,12 @@ export const StaticPageLayout = ({ children }: { children: ReactNode }) => {
             >
               {t("nav_datenschutz")}
             </Link>
+            <Link
+              to="/terms"
+              className="text-muted-foreground transition-smooth hover:text-primary"
+            >
+              {t("nav_terms")}
+            </Link>
           </nav>
         </div>
       </footer>

@@ -854,6 +854,39 @@ const dict = {
     en: "You can delete saved plans at any time under “My plans”. Under the GDPR you have the right to access, rectification, and erasure of your personal data — contact us at any time. (Demo project of the University of Würzburg.)",
     de: "Gespeicherte Planungen können Sie jederzeit unter „Meine Planungen“ löschen. Nach DSGVO haben Sie das Recht auf Auskunft, Berichtigung und Löschung Ihrer personenbezogenen Daten — kontaktieren Sie uns jederzeit. (Demo-Projekt der Universität Würzburg.)",
   },
+
+  // ── Terms & Conditions ───────────────────────────────────────────
+  nav_terms: { en: "Terms", de: "AGB" },
+  terms_title: { en: "Terms & Conditions", de: "Allgemeine Geschäftsbedingungen" },
+  terms_lead: {
+    en: "These terms explain what Funeral Compass is — and what it isn't.",
+    de: "Diese Bedingungen erklären, was Funeral Compass ist — und was nicht.",
+  },
+  terms_s1_title: { en: "What this platform is", de: "Was diese Plattform ist" },
+  terms_s1_body: {
+    en: "Funeral Compass is a planning tool that helps you put together a funeral plan and an estimated cost overview. Submitting a plan sends a non-binding request to the funeral home for a personal consultation — it does not create a contract.",
+    de: "Funeral Compass ist ein Planungswerkzeug, mit dem Sie eine Bestattung zusammenstellen und eine geschätzte Kostenübersicht erhalten. Das Übermitteln einer Planung sendet eine unverbindliche Anfrage an das Bestattungshaus für ein persönliches Beratungsgespräch — es entsteht dadurch kein Vertrag.",
+  },
+  terms_s2_title: { en: "Pricing & quotes", de: "Preise & Angebote" },
+  terms_s2_body: {
+    en: "All prices shown are non-binding estimates based on your selections. Final prices, availability, and any binding agreement are made directly with the funeral home before any contract is concluded.",
+    de: "Alle angezeigten Preise sind unverbindliche Schätzungen basierend auf Ihrer Auswahl. Endgültige Preise, Verfügbarkeit und ein verbindlicher Vertrag werden direkt mit dem Bestattungshaus vereinbart, bevor ein Vertrag geschlossen wird.",
+  },
+  terms_s3_title: { en: "Demo payments", de: "Demo-Zahlungen" },
+  terms_s3_body: {
+    en: "Any “deposit” or “payment” shown in this demo is simulated. No real money is processed and no payment provider is contacted.",
+    de: "Jede in dieser Demo angezeigte „Anzahlung“ oder „Zahlung“ ist simuliert. Es wird kein echtes Geld verarbeitet und kein Zahlungsdienstleister kontaktiert.",
+  },
+  terms_s4_title: { en: "Liability", de: "Haftung" },
+  terms_s4_body: {
+    en: "This is a demo project (University of Würzburg) provided as-is, without warranty of any kind. We are not liable for decisions made based on the estimates shown here.",
+    de: "Dies ist ein Demo-Projekt (Universität Würzburg), das ohne jegliche Gewährleistung bereitgestellt wird. Wir haften nicht für Entscheidungen, die auf Grundlage der hier angezeigten Schätzungen getroffen werden.",
+  },
+  terms_s5_title: { en: "Governing law", de: "Anwendbares Recht" },
+  terms_s5_body: {
+    en: "These terms are governed by German law.",
+    de: "Für diese Bedingungen gilt deutsches Recht.",
+  },
 } satisfies Dict;
 
 export type DictKey = keyof typeof dict;
