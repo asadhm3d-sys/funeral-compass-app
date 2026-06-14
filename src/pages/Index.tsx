@@ -77,6 +77,7 @@ const Index = () => {
     setStep(0);
     try {
       localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem("funeral-compass:active-plan-id");
     } catch {
       // ignore
     }
