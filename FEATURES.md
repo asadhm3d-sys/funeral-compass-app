@@ -22,10 +22,18 @@ Steps (dynamic — some are skipped depending on earlier answers, see
 9. **Obituary** (`ObituaryStep`)
 10. **Sympathy cards** (`SympathyStep`)
 11. **Assistance** (`AssistanceStep`)
-12. **Summary** (`SummaryStep`) — full cost breakdown, PDF export, submit/restart
+12. **Summary** (`SummaryStep`) — full cost breakdown, PDF export, submit/restart,
+    document checklist
 
 Cascade logic (`src/lib/wizardCascade.ts`): changing an earlier answer
 auto-clears dependent later answers, with a toast listing what was cleared.
+
+## Document Checklist (`src/lib/documentChecklist.ts`)
+
+Shown inline in the Summary step — a personalised, tickable (session-only)
+list of paperwork to gather (ID, birth certificate, death certificate, etc.),
+with extra items added for cremation, obituary/ceremony photos, requested
+administrative assistance, or pre-planning mode.
 
 ## Plans & Accounts (`src/lib/plans/*`, `src/pages/Account.tsx`, `src/pages/MyPlans.tsx`)
 

@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { ArrowLeft, Edit3, FileDown } from "lucide-react";
 import {
   AlertDialog,
@@ -14,6 +16,7 @@ import {
 import { WizardState, calculateTotal, calculateBreakdown, formatEUR, buildSteps } from "@/types/wizard";
 import { exportSummaryPdf } from "@/lib/exportPdf";
 import { buildSummaryGroups } from "@/lib/wizardLabels";
+import { buildDocumentChecklist } from "@/lib/documentChecklist";
 import { PlanActions } from "@/components/wizard/PlanActions";
 import { useLang } from "@/lib/i18n";
 import { toast } from "sonner";
@@ -32,6 +35,17 @@ export const SummaryStep = ({ state, onBack, onEdit, onRestart }: Props) => {
   const stepIndexOf = (id: string) => steps.findIndex((s) => s.id === id);
   const groups = buildSummaryGroups(state, stepIndexOf, lang);
   const breakdown = calculateBreakdown(state, lang);
+  const documentChecklist = buildDocumentChecklist(state, lang);
+  const [checkedDocs, setCheckedDocs] = useState<Set<string>>(new Set());
+
+  const toggleDoc = (id: string) => {
+    setCheckedDocs((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
 
   const stepLabel = (key: string) => {
     const map: Record<string, string> = {
@@ -127,6 +141,33 @@ export const SummaryStep = ({ state, onBack, onEdit, onRestart }: Props) => {
           </div>
 
           <p className="px-2 text-xs italic leading-relaxed text-muted-foreground">{t("su_disclaimer")}</p>
+
+          {documentChecklist.length > 0 && (
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
+              <div className="border-b border-border bg-muted/40 px-5 py-3">
+                <h2 className="text-sm font-medium text-foreground">{t("su_documents_title")}</h2>
+                <p className="mt-1 text-xs text-muted-foreground">{t("su_documents_lead")}</p>
+              </div>
+              <ul className="divide-y divide-border">
+                {documentChecklist.map((item) => (
+                  <li key={item.id} className="flex items-start gap-3 px-5 py-3">
+                    <Checkbox
+                      id={`doc-${item.id}`}
+                      checked={checkedDocs.has(item.id)}
+                      onCheckedChange={() => toggleDoc(item.id)}
+                      className="mt-0.5"
+                    />
+                    <label htmlFor={`doc-${item.id}`} className="cursor-pointer text-sm leading-relaxed text-foreground">
+                      <span className={checkedDocs.has(item.id) ? "text-muted-foreground line-through" : ""}>
+                        {item.label}
+                      </span>
+                      {item.note && <span className="mt-0.5 block text-xs text-muted-foreground">{item.note}</span>}
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
 
         <aside className="lg:sticky lg:top-6 lg:self-start">

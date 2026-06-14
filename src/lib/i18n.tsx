@@ -675,6 +675,11 @@ const dict = {
   su_breakdown: { en: "Estimated costs", de: "Kostenübersicht" },
   su_estimated: { en: "estimated", de: "geschätzt" },
   su_disclaimer: { en: "Individual requests (flowers, music, etc.) may affect final pricing.", de: "Individuelle Wünsche können zu Preisabweichungen führen." },
+  su_documents_title: { en: "Documents to prepare", de: "Benötigte Unterlagen" },
+  su_documents_lead: {
+    en: "Based on your selections, you may be asked for the following. Tick off items as you gather them.",
+    de: "Basierend auf Ihrer Auswahl werden folgende Unterlagen häufig benötigt. Haken Sie ab, was Sie schon zusammengestellt haben.",
+  },
   su_estTotal: { en: "Estimated total", de: "Voraussichtliche Gesamtsumme" },
   su_estNote: { en: "Items not yet selected are estimated using regional averages. Final costs depend on local fees, cemetery charges, and the specific services chosen.", de: "Noch nicht getroffene Auswahlen wurden mit regionalen Durchschnittswerten berechnet. Die tatsächlichen Kosten hängen von lokalen Gebühren, Friedhofskosten und den individuell gewählten Leistungen ab." },
   su_downloadPdf: { en: "Download PDF", de: "PDF herunterladen" },
