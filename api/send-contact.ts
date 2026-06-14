@@ -9,6 +9,20 @@ interface Body {
   lang?: "en" | "de";
 }
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_NAME_LENGTH = 200;
+const MAX_EMAIL_LENGTH = 320;
+const MAX_MESSAGE_LENGTH = 5000;
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export default async function handler(req: Request): Promise<Response> {
   if (req.method !== "POST") {
     return new Response("Method Not Allowed", { status: 405 });
@@ -32,9 +46,27 @@ export default async function handler(req: Request): Promise<Response> {
     });
   }
 
-  const { name, email, message, lang = "en" } = body;
-  if (!name?.trim() || !email?.trim() || !message?.trim()) {
+  const name = body.name?.trim() ?? "";
+  const email = body.email?.trim() ?? "";
+  const message = body.message?.trim() ?? "";
+  const lang = body.lang === "de" ? "de" : "en";
+
+  if (!name || !email || !message) {
     return new Response(JSON.stringify({ ok: false, error: "Missing required fields" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  if (!EMAIL_RE.test(email)) {
+    return new Response(JSON.stringify({ ok: false, error: "Invalid email address" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  if (name.length > MAX_NAME_LENGTH || email.length > MAX_EMAIL_LENGTH || message.length > MAX_MESSAGE_LENGTH) {
+    return new Response(JSON.stringify({ ok: false, error: "Input too long" }), {
       status: 400,
       headers: { "Content-Type": "application/json" },
     });
@@ -51,13 +83,13 @@ export default async function handler(req: Request): Promise<Response> {
 <body style="margin:0;padding:32px 16px;background:#f5f4f2;font-family:system-ui,-apple-system,sans-serif;">
   <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:12px;padding:32px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
     <p style="margin:0 0 6px;color:#9ca3af;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;">Funeral Compass — New contact message</p>
-    <h1 style="margin:0 0 24px;color:#1f2937;font-size:18px;font-weight:600;">Message from ${name}</h1>
+    <h1 style="margin:0 0 24px;color:#1f2937;font-size:18px;font-weight:600;">Message from ${escapeHtml(name)}</h1>
     <table style="width:100%;border-collapse:collapse;margin-bottom:20px;">
-      <tr><td style="padding:6px 0;color:#6b7280;font-size:13px;width:80px;">Name</td><td style="padding:6px 0;color:#1f2937;font-size:14px;">${name}</td></tr>
-      <tr><td style="padding:6px 0;color:#6b7280;font-size:13px;">Email</td><td style="padding:6px 0;color:#1f2937;font-size:14px;"><a href="mailto:${email}" style="color:#5c4a3a;">${email}</a></td></tr>
+      <tr><td style="padding:6px 0;color:#6b7280;font-size:13px;width:80px;">Name</td><td style="padding:6px 0;color:#1f2937;font-size:14px;">${escapeHtml(name)}</td></tr>
+      <tr><td style="padding:6px 0;color:#6b7280;font-size:13px;">Email</td><td style="padding:6px 0;color:#1f2937;font-size:14px;"><a href="mailto:${escapeHtml(email)}" style="color:#5c4a3a;">${escapeHtml(email)}</a></td></tr>
     </table>
     <div style="background:#f9f7f5;border-left:4px solid #5c4a3a;border-radius:0 8px 8px 0;padding:16px 20px;">
-      <p style="margin:0;color:#374151;font-size:14px;line-height:1.7;white-space:pre-wrap;">${message.replace(/</g, "&lt;")}</p>
+      <p style="margin:0;color:#374151;font-size:14px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(message)}</p>
     </div>
   </div>
 </body></html>`;
@@ -74,7 +106,7 @@ export default async function handler(req: Request): Promise<Response> {
       </h1>
     </div>
     <div style="background:#fff;padding:32px;border-radius:0 0 12px 12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-      <p style="margin:0 0 20px;color:#374151;font-size:15px;">${de ? `Guten Tag ${name},` : `Dear ${name},`}</p>
+      <p style="margin:0 0 20px;color:#374151;font-size:15px;">${de ? `Guten Tag ${escapeHtml(name)},` : `Dear ${escapeHtml(name)},`}</p>
       <p style="margin:0 0 28px;color:#6b7280;font-size:14px;line-height:1.7;">
         ${de
           ? "Vielen Dank für Ihre Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen."

@@ -16,6 +16,17 @@ interface Body {
   breakdown: BreakdownLine[];
   total: number;
   office?: string;
+  contactPhone?: string;
+  message?: string;
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 function formatEUR(n: number, de: boolean) {
@@ -26,16 +37,13 @@ function formatEUR(n: number, de: boolean) {
   }).format(n);
 }
 
-function buildHtml(body: Body): string {
-  const { name, reference, lang, breakdown, total, office } = body;
-  const de = lang === "de";
-
-  const rows = breakdown
+function buildBreakdownRows(breakdown: BreakdownLine[], de: boolean): string {
+  return breakdown
     .map(
       (l) => `
       <tr>
         <td style="padding:7px 0;color:#374151;font-size:14px;border-bottom:1px solid #f3f4f6;">
-          ${l.label}${l.estimated ? " *" : ""}
+          ${escapeHtml(l.label)}${l.estimated ? " *" : ""}
         </td>
         <td style="padding:7px 0;text-align:right;color:#374151;font-size:14px;border-bottom:1px solid #f3f4f6;white-space:nowrap;">
           ${formatEUR(l.amount, de)}
@@ -43,6 +51,12 @@ function buildHtml(body: Body): string {
       </tr>`
     )
     .join("");
+}
+
+function buildHtml(body: Body): string {
+  const { name, reference, lang, breakdown, total, office } = body;
+  const de = lang === "de";
+  const rows = buildBreakdownRows(breakdown, de);
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -62,7 +76,7 @@ function buildHtml(body: Body): string {
     <div style="background:#fff;padding:32px;border-radius:0 0 12px 12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
 
       <p style="margin:0 0 20px;color:#374151;font-size:15px;">
-        ${de ? `Guten Tag ${name},` : `Dear ${name},`}
+        ${de ? `Guten Tag ${escapeHtml(name)},` : `Dear ${escapeHtml(name)},`}
       </p>
       <p style="margin:0 0 28px;color:#6b7280;font-size:14px;line-height:1.7;">
         ${de
@@ -75,11 +89,11 @@ function buildHtml(body: Body): string {
           ${de ? "Ihre Referenznummer" : "Your reference number"}
         </p>
         <p style="margin:0;color:#1f2937;font-size:24px;font-weight:700;letter-spacing:0.06em;">
-          ${reference}
+          ${escapeHtml(reference)}
         </p>
         ${office
           ? `<p style="margin:8px 0 0;color:#6b7280;font-size:13px;">
-              ${de ? "Gewünschter Standort" : "Preferred office"}: <strong>${office}</strong>
+              ${de ? "Gewünschter Standort" : "Preferred office"}: <strong>${escapeHtml(office)}</strong>
              </p>`
           : ""}
       </div>
@@ -116,6 +130,46 @@ function buildHtml(body: Body): string {
   </div>
 </body>
 </html>`;
+}
+
+function buildProviderHtml(body: Body): string {
+  const { name, email, reference, lang, breakdown, total, office, contactPhone, message } = body;
+  const de = lang === "de";
+  const rows = buildBreakdownRows(breakdown, de);
+
+  return `<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head>
+<body style="margin:0;padding:32px 16px;background:#f5f4f2;font-family:system-ui,-apple-system,sans-serif;">
+  <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:12px;padding:32px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <p style="margin:0 0 6px;color:#9ca3af;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;">Funeral Compass — New plan submission</p>
+    <h1 style="margin:0 0 24px;color:#1f2937;font-size:18px;font-weight:600;">Reference ${escapeHtml(reference)}</h1>
+    <table style="width:100%;border-collapse:collapse;margin-bottom:20px;">
+      <tr><td style="padding:6px 0;color:#6b7280;font-size:13px;width:80px;">Name</td><td style="padding:6px 0;color:#1f2937;font-size:14px;">${escapeHtml(name)}</td></tr>
+      <tr><td style="padding:6px 0;color:#6b7280;font-size:13px;">Email</td><td style="padding:6px 0;color:#1f2937;font-size:14px;"><a href="mailto:${escapeHtml(email)}" style="color:#5c4a3a;">${escapeHtml(email)}</a></td></tr>
+      ${contactPhone ? `<tr><td style="padding:6px 0;color:#6b7280;font-size:13px;">Phone</td><td style="padding:6px 0;color:#1f2937;font-size:14px;">${escapeHtml(contactPhone)}</td></tr>` : ""}
+      ${office ? `<tr><td style="padding:6px 0;color:#6b7280;font-size:13px;">Office</td><td style="padding:6px 0;color:#1f2937;font-size:14px;">${escapeHtml(office)}</td></tr>` : ""}
+    </table>
+    ${message
+      ? `<div style="background:#f9f7f5;border-left:4px solid #5c4a3a;border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:20px;">
+          <p style="margin:0;color:#374151;font-size:14px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(message)}</p>
+        </div>`
+      : ""}
+    <h2 style="margin:0 0 14px;color:#1f2937;font-size:15px;font-weight:600;">
+      ${de ? "Übersicht der Auswahl" : "Plan summary"}
+    </h2>
+    <table style="width:100%;border-collapse:collapse;margin-bottom:10px;">
+      ${rows}
+      <tr>
+        <td style="padding:12px 0 0;color:#1f2937;font-size:15px;font-weight:700;">
+          ${de ? "Geschätzter Gesamtbetrag" : "Estimated total"}
+        </td>
+        <td style="padding:12px 0 0;text-align:right;color:#1f2937;font-size:15px;font-weight:700;white-space:nowrap;">
+          ${formatEUR(total, de)}
+        </td>
+      </tr>
+    </table>
+  </div>
+</body></html>`;
 }
 
 export default async function handler(req: Request): Promise<Response> {
@@ -157,16 +211,37 @@ export default async function handler(req: Request): Promise<Response> {
 
   const resend = new Resend(apiKey);
 
-  const { data, error } = await resend.emails.send({ from, to: email, subject, html: buildHtml(body) });
-  if (error) {
-    console.error("[send-confirmation] Resend error:", JSON.stringify(error));
-    return new Response(JSON.stringify({ ok: false, error: error.message }), {
+  const familySend = resend.emails.send({ from, to: email, subject, html: buildHtml(body) });
+
+  const notifyTo = process.env.RESEND_TO;
+  const providerSend = notifyTo
+    ? resend.emails.send({
+        from,
+        to: notifyTo,
+        subject: `New plan submission – ${reference}`,
+        html: buildProviderHtml(body),
+        replyTo: email,
+      })
+    : null;
+
+  const [familyResult, providerResult] = await Promise.all([familySend, providerSend].filter(Boolean) as Promise<
+    Awaited<typeof familySend>
+  >[]);
+
+  if (familyResult.error) {
+    console.error("[send-confirmation] Resend error (family):", JSON.stringify(familyResult.error));
+    return new Response(JSON.stringify({ ok: false, error: familyResult.error.message }), {
       status: 500,
       headers: { "Content-Type": "application/json" },
     });
   }
-  console.log("[send-confirmation] sent:", data?.id);
-  return new Response(JSON.stringify({ ok: true, id: data?.id }), {
+
+  if (providerResult?.error) {
+    console.error("[send-confirmation] Resend error (provider):", JSON.stringify(providerResult.error));
+  }
+
+  console.log("[send-confirmation] sent:", familyResult.data?.id, "provider:", providerResult?.data?.id);
+  return new Response(JSON.stringify({ ok: true, id: familyResult.data?.id }), {
     status: 200,
     headers: { "Content-Type": "application/json" },
   });

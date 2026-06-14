@@ -145,6 +145,8 @@ export const PlanActions = ({ state }: Props) => {
           breakdown: calculateBreakdown(state, lang),
           total: calculateTotal(state, lang),
           office: submission.office,
+          contactPhone: submission.contactPhone,
+          message: submission.message,
         }),
       }).catch(() => undefined);
     } catch (e) {
