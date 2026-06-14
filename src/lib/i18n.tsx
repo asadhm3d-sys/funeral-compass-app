@@ -41,6 +41,19 @@ const dict = {
     en: "For urgent matters outside of these hours, please leave a message and we will get back to you as soon as possible.",
     de: "Bei dringenden Anliegen außerhalb dieser Zeiten hinterlassen Sie uns bitte eine Nachricht — wir melden uns so schnell wie möglich bei Ihnen.",
   },
+  contact_form_name: { en: "Your name", de: "Ihr Name" },
+  contact_form_email: { en: "Email address", de: "E-Mail-Adresse" },
+  contact_form_message: { en: "Message", de: "Nachricht" },
+  contact_form_submit: { en: "Send message", de: "Nachricht senden" },
+  contact_form_sending: { en: "Sending…", de: "Wird gesendet…" },
+  contact_form_success: {
+    en: "Your message has been sent. We will be in touch within 24 hours.",
+    de: "Ihre Nachricht wurde gesendet. Wir melden uns innerhalb von 24 Stunden.",
+  },
+  contact_form_error: {
+    en: "Something went wrong. Please try again or email us directly.",
+    de: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
+  },
 
   // About page
   about_title: { en: "About Us", de: "Über uns" },
