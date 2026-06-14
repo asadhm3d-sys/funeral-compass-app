@@ -1,6 +1,10 @@
 import { Resend } from "resend";
+import { getClientIp, isRateLimited } from "./_lib/spam";
 
 export const config = { runtime: "edge" };
+
+const RATE_LIMIT = 5;
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
 
 interface BreakdownLine {
   label: string;
@@ -190,6 +194,13 @@ export default async function handler(req: Request): Promise<Response> {
   if (!apiKey) {
     return new Response(JSON.stringify({ ok: false, error: "Email service not configured" }), {
       status: 503,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  if (isRateLimited(`confirmation:${getClientIp(req)}`, RATE_LIMIT, RATE_LIMIT_WINDOW_MS)) {
+    return new Response(JSON.stringify({ ok: false, error: "Too many requests, please try again later" }), {
+      status: 429,
       headers: { "Content-Type": "application/json" },
     });
   }

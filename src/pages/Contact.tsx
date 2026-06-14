@@ -2,14 +2,16 @@ import { useState } from "react";
 import { StaticPageLayout } from "@/components/StaticPageLayout";
 import { useLang } from "@/lib/i18n";
 
-type Status = "idle" | "sending" | "success" | "error";
+type Status = "idle" | "sending" | "success" | "error" | "rate-limited";
 
 export const Contact = () => {
   const { t, lang } = useLang();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<Status>("idle");
+  const [formStartedAt] = useState(() => Date.now());
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,8 +20,12 @@ export const Contact = () => {
       const res = await fetch("/api/send-contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message, lang }),
+        body: JSON.stringify({ name, email, message, lang, honeypot, formStartedAt }),
       });
+      if (res.status === 429) {
+        setStatus("rate-limited");
+        return;
+      }
       const json = await res.json() as { ok: boolean };
       setStatus(json.ok ? "success" : "error");
     } catch {
@@ -38,6 +44,20 @@ export const Contact = () => {
             <p className="text-sm leading-relaxed text-foreground">{t("contact_form_success")}</p>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
+              {/* Honeypot field: hidden from real users, bots tend to fill every field. */}
+              <div className="absolute -left-[9999px]" aria-hidden="true">
+                <label htmlFor="company">Company</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </div>
+
               <div>
                 <label className="mb-1.5 block text-sm font-medium text-foreground">
                   {t("contact_form_name")}
@@ -79,6 +99,9 @@ export const Contact = () => {
 
               {status === "error" && (
                 <p className="text-sm text-destructive">{t("contact_form_error")}</p>
+              )}
+              {status === "rate-limited" && (
+                <p className="text-sm text-destructive">{t("contact_form_rate_limited")}</p>
               )}
 
               <button

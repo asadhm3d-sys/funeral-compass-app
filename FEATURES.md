@@ -59,13 +59,21 @@ auto-clears dependent later answers, with a toast listing what was cleared.
 
 ## Contact Form (`src/pages/Contact.tsx`, `api/send-contact.ts`)
 
-- Name/email/message form with sending/success/error states.
+- Name/email/message form with sending/success/error/rate-limited states.
 - `/api/send-contact` (Vercel Edge Function, Resend):
   - Server-side validation: required fields, email format, max lengths
     (name ≤200, email ≤320, message ≤5000 chars).
   - HTML-escapes all user input before building email HTML.
   - Sends a notification to `RESEND_TO` (funeral home inbox) and a bilingual
     (EN/DE) auto-reply to the visitor.
+
+## Spam Protection (`api/_lib/spam.ts`)
+
+- Shared in-memory helpers used by `send-contact` and `send-confirmation`:
+  - Per-IP rate limiting (contact: 3 / 15 min, plan submission: 5 / 15 min;
+    returns HTTP 429).
+  - Contact form also has a hidden honeypot field and a minimum fill-time
+    check (<1.5s = bot) — both silently return `ok:true` without sending.
 
 ## Provider Branding (`src/lib/providerConfig.ts`)
 

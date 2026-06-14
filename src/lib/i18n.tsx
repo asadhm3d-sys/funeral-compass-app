@@ -54,6 +54,10 @@ const dict = {
     en: "Something went wrong. Please try again or email us directly.",
     de: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
   },
+  contact_form_rate_limited: {
+    en: "Too many messages sent. Please try again later.",
+    de: "Zu viele Nachrichten gesendet. Bitte versuchen Sie es später erneut.",
+  },
 
   // About page
   about_title: { en: "About Us", de: "Über uns" },

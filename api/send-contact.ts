@@ -1,4 +1,5 @@
 import { Resend } from "resend";
+import { getClientIp, isRateLimited } from "./_lib/spam";
 
 export const config = { runtime: "edge" };
 
@@ -7,12 +8,17 @@ interface Body {
   email: string;
   message: string;
   lang?: "en" | "de";
+  honeypot?: string;
+  formStartedAt?: number;
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_NAME_LENGTH = 200;
 const MAX_EMAIL_LENGTH = 320;
 const MAX_MESSAGE_LENGTH = 5000;
+const MIN_SUBMIT_MS = 1500;
+const RATE_LIMIT = 3;
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
 
 function escapeHtml(value: string): string {
   return value
@@ -42,6 +48,30 @@ export default async function handler(req: Request): Promise<Response> {
   } catch {
     return new Response(JSON.stringify({ ok: false, error: "Invalid JSON" }), {
       status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  // Honeypot field: real users never fill this in. Pretend success so bots
+  // don't learn to avoid it.
+  if (body.honeypot) {
+    return new Response(JSON.stringify({ ok: true }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  // Forms filled out faster than this are almost certainly scripted.
+  if (typeof body.formStartedAt === "number" && Date.now() - body.formStartedAt < MIN_SUBMIT_MS) {
+    return new Response(JSON.stringify({ ok: true }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  if (isRateLimited(`contact:${getClientIp(req)}`, RATE_LIMIT, RATE_LIMIT_WINDOW_MS)) {
+    return new Response(JSON.stringify({ ok: false, error: "Too many requests, please try again later" }), {
+      status: 429,
       headers: { "Content-Type": "application/json" },
     });
   }
