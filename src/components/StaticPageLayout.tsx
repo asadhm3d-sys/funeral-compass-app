@@ -4,6 +4,7 @@ import { Logo } from "@/components/wizard/Logo";
 import { LanguageSwitcher, useLang } from "@/lib/i18n";
 import { EmergencyHelp } from "@/components/EmergencyHelp";
 import { SiteNav } from "@/components/SiteNav";
+import { MobileNav } from "@/components/MobileNav";
 
 export const StaticPageLayout = ({ children }: { children: ReactNode }) => {
   const { t } = useLang();
@@ -15,20 +16,23 @@ export const StaticPageLayout = ({ children }: { children: ReactNode }) => {
             <Logo />
           </Link>
           <div className="flex items-center gap-3">
-            <Link
-              to="/plans"
-              className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
-            >
-              {t("nav_myPlans")}
-            </Link>
-            <Link
-              to="/account"
-              className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
-            >
-              {t("nav_account")}
-            </Link>
-            <SiteNav />
+            <div className="hidden items-center gap-3 sm:flex">
+              <Link
+                to="/plans"
+                className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
+              >
+                {t("nav_myPlans")}
+              </Link>
+              <Link
+                to="/account"
+                className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
+              >
+                {t("nav_account")}
+              </Link>
+              <SiteNav />
+            </div>
             <LanguageSwitcher />
+            <MobileNav />
           </div>
         </div>
       </header>

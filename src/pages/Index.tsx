@@ -20,6 +20,7 @@ import { applyWithCascade } from "@/lib/wizardCascade";
 import { toast } from "sonner";
 import { EmergencyHelp } from "@/components/EmergencyHelp";
 import { SiteNav } from "@/components/SiteNav";
+import { MobileNav } from "@/components/MobileNav";
 
 
 const STORAGE_KEY = "funeral-compass:v3";
@@ -94,29 +95,38 @@ const Index = () => {
         <div className="app-header-inner container flex h-16 items-center justify-between gap-3">
           <Logo />
           <div className="flex items-center gap-3">
-            {currentId !== "intro" && currentId !== "summary" && summaryIndex >= 0 && (
-              <button
-                type="button"
-                onClick={() => setStep(summaryIndex)}
+            <div className="hidden items-center gap-3 sm:flex">
+              {currentId !== "intro" && currentId !== "summary" && summaryIndex >= 0 && (
+                <button
+                  type="button"
+                  onClick={() => setStep(summaryIndex)}
+                  className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
+                >
+                  {t("viewSummary")}
+                </button>
+              )}
+              <Link
+                to="/plans"
                 className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
               >
-                {t("viewSummary")}
-              </button>
-            )}
-            <Link
-              to="/plans"
-              className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
-            >
-              {t("nav_myPlans")}
-            </Link>
-            <Link
-              to="/account"
-              className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
-            >
-              {t("nav_account")}
-            </Link>
-            <SiteNav />
+                {t("nav_myPlans")}
+              </Link>
+              <Link
+                to="/account"
+                className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary"
+              >
+                {t("nav_account")}
+              </Link>
+              <SiteNav />
+            </div>
             <LanguageSwitcher />
+            <MobileNav
+              onViewSummary={
+                currentId !== "intro" && currentId !== "summary" && summaryIndex >= 0
+                  ? () => setStep(summaryIndex)
+                  : undefined
+              }
+            />
           </div>
         </div>
       </header>

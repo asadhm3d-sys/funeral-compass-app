@@ -104,11 +104,16 @@ throughout the app.
 Full EN/DE translations with a language switcher; all user-facing strings
 are translation keys.
 
-## Site Navigation (`src/components/SiteNav.tsx`)
+## Site Navigation (`src/components/SiteNav.tsx`, `src/components/MobileNav.tsx`)
 
 "Pages" dropdown in the header (wizard + all static pages) linking to Home,
 About, Contact, Impressum, Datenschutz, and Terms — lets users jump between
 pages without scrolling to the footer or using the browser back button.
+
+On small screens (`<sm`), the "My Plans" / "Account" links and "Pages"
+dropdown (and, in the wizard, "View summary") collapse into a hamburger
+menu (`MobileNav`) opened via a slide-out sheet, keeping the header from
+overflowing on phones. The language switcher stays visible.
 
 ## Static Pages (`src/pages/*`)
 
