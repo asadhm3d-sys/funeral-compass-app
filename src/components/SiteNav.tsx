@@ -21,8 +21,8 @@ export const SiteNav = () => {
   const { t } = useLang();
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-smooth hover:text-primary focus:outline-none">
-        <Menu className="h-4 w-4" />
+      <DropdownMenuTrigger className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-muted-foreground transition-smooth hover:border-primary/40 hover:text-primary focus:outline-none">
+        <Menu className="h-3.5 w-3.5" />
         {t("nav_pages")}
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
