@@ -124,7 +124,7 @@ const Index = () => {
       <main className="app-main container max-w-5xl py-8 sm:py-12">
         {currentId !== "intro" && currentId !== "summary" && (
           <div className="app-progress mb-10">
-            <Progress current={safeStep} total={totalSteps} labels={labels} />
+            <Progress current={safeStep} total={totalSteps} labels={labels} onJump={setStep} />
           </div>
         )}
 

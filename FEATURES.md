@@ -28,6 +28,10 @@ Steps (dynamic — some are skipped depending on earlier answers, see
 Cascade logic (`src/lib/wizardCascade.ts`): changing an earlier answer
 auto-clears dependent later answers, with a toast listing what was cleared.
 
+Step progress (`Progress`) doubles as a "jump to step" menu: clicking it
+lists all steps, with completed/current ones clickable to jump directly
+back without repeated "Back" clicks; upcoming steps are disabled.
+
 ## Document Checklist (`src/lib/documentChecklist.ts`)
 
 Shown inline in the Summary step — a personalised, tickable (session-only)
